@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,22 +18,97 @@
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxm-uG-0O3">
-                        <rect key="frame" x="277" y="285" width="46" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxm-uG-0O3">
+                        <rect key="frame" x="189" y="400" width="223" height="35"/>
                         <animations/>
-                        <state key="normal" title="Button"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="223" id="SK3-hu-rbD"/>
+                            <constraint firstAttribute="height" constant="35" id="nbu-W9-07R"/>
+                        </constraints>
+                        <state key="normal" image="Facebook"/>
                         <connections>
                             <action selector="loginPressed:" destination="NKA-Ea-rFv" eventType="touchUpInside" id="SUg-0c-lVe"/>
                         </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gradient2" translatesAutoresizingMaskIntoConstraints="NO" id="lFr-OB-ER6">
+                        <rect key="frame" x="0.0" y="450" width="600" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="EQ1-ZW-9QR"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cart Icon" translatesAutoresizingMaskIntoConstraints="NO" id="RHI-ZC-2kj">
+                        <rect key="frame" x="225" y="180" width="150" height="129"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RHI-ZC-2kj" secondAttribute="height" multiplier="78:67" id="645-CB-com"/>
+                            <constraint firstAttribute="width" constant="150" id="C5b-JU-kQV"/>
+                            <constraint firstAttribute="height" constant="150" id="j1X-wi-eLV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="j1X-wi-eLV"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swerve@1x" translatesAutoresizingMaskIntoConstraints="NO" id="Xhc-6w-kKK">
+                        <rect key="frame" x="150.5" y="329" width="300" height="62.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="0a8-bH-vUX"/>
+                            <constraint firstAttribute="width" secondItem="Xhc-6w-kKK" secondAttribute="height" multiplier="75:32" id="N8q-WA-ERY"/>
+                            <constraint firstAttribute="width" secondItem="Xhc-6w-kKK" secondAttribute="height" multiplier="307:64" id="Tky-fy-HWg"/>
+                            <constraint firstAttribute="width" constant="150" id="gE2-dE-kra"/>
+                            <constraint firstAttribute="width" secondItem="Xhc-6w-kKK" secondAttribute="height" multiplier="307:58" id="uz1-NW-ZlA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="N8q-WA-ERY"/>
+                                <exclude reference="gE2-dE-kra"/>
+                                <exclude reference="uz1-NW-ZlA"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="KLT-1Y-HiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="RER-mg-yuW"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <animations/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
+                    <constraint firstItem="Sxm-uG-0O3" firstAttribute="top" secondItem="Xhc-6w-kKK" secondAttribute="bottom" constant="15" id="2bY-wS-0iZ"/>
+                    <constraint firstAttribute="trailing" secondItem="lFr-OB-ER6" secondAttribute="trailing" id="77o-hp-pgW"/>
                     <constraint firstItem="Sxm-uG-0O3" firstAttribute="centerY" secondItem="bQ8-FH-Hib" secondAttribute="centerY" id="AiC-pw-kg0"/>
+                    <constraint firstItem="Xhc-6w-kKK" firstAttribute="top" secondItem="RHI-ZC-2kj" secondAttribute="bottom" constant="20" id="DWk-9x-g9C"/>
+                    <constraint firstAttribute="trailing" secondItem="KLT-1Y-HiZ" secondAttribute="trailing" id="DeP-DC-Xjz"/>
+                    <constraint firstItem="Sxm-uG-0O3" firstAttribute="centerX" secondItem="bQ8-FH-Hib" secondAttribute="centerX" id="GcL-G2-b4l"/>
+                    <constraint firstItem="RHI-ZC-2kj" firstAttribute="centerX" secondItem="bQ8-FH-Hib" secondAttribute="centerX" id="Q3M-6g-nt9"/>
+                    <constraint firstItem="RHI-ZC-2kj" firstAttribute="top" secondItem="KLT-1Y-HiZ" secondAttribute="bottom" constant="30" id="ZQG-Ja-Ukt"/>
+                    <constraint firstItem="KLT-1Y-HiZ" firstAttribute="top" secondItem="bQ8-FH-Hib" secondAttribute="topMargin" id="aeL-gm-LH2"/>
+                    <constraint firstItem="lFr-OB-ER6" firstAttribute="top" secondItem="Sxm-uG-0O3" secondAttribute="bottom" constant="15" id="bu5-nh-9U2"/>
+                    <constraint firstItem="JGX-ly-Jxs" firstAttribute="top" secondItem="lFr-OB-ER6" secondAttribute="bottom" id="fZG-Xf-scg"/>
+                    <constraint firstItem="Xhc-6w-kKK" firstAttribute="centerX" secondItem="bQ8-FH-Hib" secondAttribute="centerX" id="s5r-EN-k1A"/>
+                    <constraint firstItem="lFr-OB-ER6" firstAttribute="leading" secondItem="bQ8-FH-Hib" secondAttribute="leading" id="u2w-PC-83g"/>
                     <constraint firstItem="Sxm-uG-0O3" firstAttribute="centerX" secondItem="bQ8-FH-Hib" secondAttribute="centerX" id="uhe-Ku-OFf"/>
+                    <constraint firstItem="KLT-1Y-HiZ" firstAttribute="leading" secondItem="bQ8-FH-Hib" secondAttribute="leading" id="uyh-h5-8YT"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="2bY-wS-0iZ"/>
+                        <exclude reference="AiC-pw-kg0"/>
+                        <exclude reference="uhe-Ku-OFf"/>
+                    </mask>
+                </variation>
             </view>
+            <point key="canvasLocation" x="302" y="344"/>
         </viewController>
     </objects>
+    <resources>
+        <image name="Cart Icon" width="106" height="82"/>
+        <image name="Facebook" width="223" height="35"/>
+        <image name="Gradient2" width="375" height="173"/>
+        <image name="Swerve@1x" width="220" height="49"/>
+        <image name="gradient" width="375" height="175"/>
+    </resources>
 </document>
