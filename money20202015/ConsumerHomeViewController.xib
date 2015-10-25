@@ -19,8 +19,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrN-1q-oQt">
-                        <rect key="frame" x="20" y="20" width="560" height="44"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrN-1q-oQt" userLabel="Navigation Bar">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOL-AA-T1G">
                                 <rect key="frame" x="0.0" y="0.0" width="46" height="44"/>
@@ -31,7 +31,7 @@
                                 <state key="normal" image="Back Arrow"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8As-OE-uC4">
-                                <rect key="frame" x="255.5" y="9" width="49" height="27.5"/>
+                                <rect key="frame" x="275" y="9" width="49" height="27.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,14 +58,14 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMu-Ck-a6j">
-                        <rect key="frame" x="237.5" y="240" width="125.5" height="34.5"/>
+                        <rect key="frame" x="237" y="240" width="125.5" height="34.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                         <color key="textColor" red="0.54728835980000001" green="0.54728835980000001" blue="0.54728835980000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Business" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIJ-V1-rtJ">
-                        <rect key="frame" x="267" y="272.5" width="65" height="23.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consumer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIJ-V1-rtJ">
+                        <rect key="frame" x="260" y="279" width="78" height="23.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                         <color key="textColor" red="0.54728835980000001" green="0.54728835980000001" blue="0.54728835980000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -80,13 +80,13 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pho-U8-lqi">
                                         <rect key="frame" x="66" y="66" width="133" height="133"/>
                                         <animations/>
-                                        <state key="normal" image="Queue"/>
+                                        <state key="normal" image="Newsfeed"/>
                                         <connections>
                                             <action selector="feedPressed:" destination="PJs-jL-9wb" eventType="touchUpInside" id="v1Z-ZU-j6s"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV3-1C-ezz">
-                                        <rect key="frame" x="102" y="199" width="61.5" height="27.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsfeed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV3-1C-ezz">
+                                        <rect key="frame" x="87.5" y="199" width="90.5" height="27.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,16 +179,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5W6-y1-T2L">
                                 <rect key="frame" x="0.0" y="0.0" width="266" height="266"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKm-o2-UYe">
-                                        <rect key="frame" x="79" y="77" width="110" height="110"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKm-o2-UYe">
+                                        <rect key="frame" x="66" y="66" width="133" height="133"/>
                                         <animations/>
-                                        <state key="normal" image="Add"/>
+                                        <state key="normal" image="Shop"/>
                                         <connections>
                                             <action selector="scanPressed:" destination="PJs-jL-9wb" eventType="touchUpInside" id="VUs-wA-64J"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vo-rF-Uef">
-                                        <rect key="frame" x="92" y="195" width="84" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vo-rF-Uef">
+                                        <rect key="frame" x="110" y="199.5" width="46.5" height="27.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -245,7 +245,7 @@
                     <constraint firstItem="dgf-ps-rBE" firstAttribute="top" secondItem="ae1-M0-VCU" secondAttribute="bottom" constant="60" id="Goj-Sg-lDJ"/>
                     <constraint firstItem="dgf-ps-rBE" firstAttribute="centerY" secondItem="Fwf-f5-pMO" secondAttribute="centerY" id="Hk3-W4-9MN"/>
                     <constraint firstItem="JMu-Ck-a6j" firstAttribute="centerX" secondItem="dgf-ps-rBE" secondAttribute="centerX" id="Ikf-TQ-cup"/>
-                    <constraint firstItem="nrN-1q-oQt" firstAttribute="leading" secondItem="Fwf-f5-pMO" secondAttribute="leadingMargin" id="Qyn-c6-sBV"/>
+                    <constraint firstItem="nrN-1q-oQt" firstAttribute="leading" secondItem="Fwf-f5-pMO" secondAttribute="leading" id="Qyn-c6-sBV"/>
                     <constraint firstItem="nrN-1q-oQt" firstAttribute="top" secondItem="ae1-M0-VCU" secondAttribute="bottom" id="Tcu-GO-1pf"/>
                     <constraint firstAttribute="trailingMargin" secondItem="tq2-0o-0rX" secondAttribute="trailing" constant="14" id="Xd9-No-RCS"/>
                     <constraint firstItem="dgf-ps-rBE" firstAttribute="leading" secondItem="Fwf-f5-pMO" secondAttribute="leadingMargin" constant="112" id="bba-0D-gSZ"/>
@@ -253,7 +253,7 @@
                     <constraint firstItem="dgf-ps-rBE" firstAttribute="centerX" secondItem="Fwf-f5-pMO" secondAttribute="centerX" id="cZR-BU-aRC"/>
                     <constraint firstItem="pIJ-V1-rtJ" firstAttribute="centerX" secondItem="JMu-Ck-a6j" secondAttribute="centerX" id="iZb-Rp-VMv"/>
                     <constraint firstItem="dgf-ps-rBE" firstAttribute="centerY" secondItem="Fwf-f5-pMO" secondAttribute="centerY" id="qUe-3j-uG4"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="nrN-1q-oQt" secondAttribute="trailing" id="zaV-eT-gcP"/>
+                    <constraint firstAttribute="trailing" secondItem="nrN-1q-oQt" secondAttribute="trailing" id="zaV-eT-gcP"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
@@ -267,11 +267,11 @@
         </viewController>
     </objects>
     <resources>
-        <image name="Add" width="110" height="110"/>
         <image name="Back Arrow" width="14" height="22"/>
         <image name="Data" width="110" height="110"/>
         <image name="Icon Profile" width="150" height="150"/>
         <image name="Manage" width="110" height="110"/>
-        <image name="Queue" width="110" height="110"/>
+        <image name="Newsfeed" width="110" height="110"/>
+        <image name="Shop" width="110" height="110"/>
     </resources>
 </document>
