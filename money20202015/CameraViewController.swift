@@ -10,7 +10,14 @@ import AVFoundation
 
 class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
-    @IBOutlet weak var messageLabel:UILabel!
+    @IBOutlet var cameraView: UIView!
+    
+    @IBOutlet var cameraViewHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet var listTableViewTopConstraint: NSLayoutConstraint!
+    
+    @IBOutlet var listTableView: UITableView!
+    
     
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
@@ -48,14 +55,11 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             // Initialize the video preview layer and add it as a sublayer to the viewPreview view's layer.
             videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
             videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
-            videoPreviewLayer?.frame = view.layer.bounds
-            view.layer.addSublayer(videoPreviewLayer!)
+            videoPreviewLayer?.frame = cameraView.layer.bounds
+            cameraView.layer.addSublayer(videoPreviewLayer!)
             
             // Start video capture
             captureSession?.startRunning()
-            
-            // Move the message label to the top view
-            view.bringSubviewToFront(messageLabel)
             
             // Initialize QR Code Frame to highlight the QR code
             qrCodeFrameView = UIView()
@@ -63,8 +67,8 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             if let qrCodeFrameView = qrCodeFrameView {
                 qrCodeFrameView.layer.borderColor = UIColor.greenColor().CGColor
                 qrCodeFrameView.layer.borderWidth = 2
-                view.addSubview(qrCodeFrameView)
-                view.bringSubviewToFront(qrCodeFrameView)
+                cameraView.addSubview(qrCodeFrameView)
+                cameraView.bringSubviewToFront(qrCodeFrameView)
             }
             
         } catch {
@@ -85,7 +89,6 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         // Check if the metadataObjects array is not nil and it contains at least one object.
         if metadataObjects == nil || metadataObjects.count == 0 {
             qrCodeFrameView?.frame = CGRectZero
-            messageLabel.text = "No barcode/QR code is detected"
             return
         }
         
@@ -102,7 +105,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
             if metadataObj.stringValue != nil {
-                messageLabel.text = metadataObj.stringValue
+                print(metadataObj.stringValue)//Read value
             }
         }
     }

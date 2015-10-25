@@ -23,23 +23,32 @@ class ChooseUsageViewController: UIViewController {
 
     @IBAction func continueAsConsumer(sender: UIButton) {
         markType("Consumer");
-        if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
+//        if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
+//            self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+//                print("done nigah")
+//            })
+//        } else {
+//            print("failed loading CameraViewController")
+//        }
+        if let nextViewController = "SearchPlacesViewController".loadNib() as? SearchPlacesViewController {
+            nextViewController.isConsumer = true
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
         } else {
-            print("failed loading CameraViewController")
+            print("failed loading SearchPlacesViewController")
         }
     }
     
     @IBAction func continueAsBusiness(sender: UIButton) {
         markType("Business")
-        if let nextViewController = "NewItemViewController".loadNib() as? NewItemViewController {
+        if let nextViewController = "SearchPlacesViewController".loadNib() as? SearchPlacesViewController {
+            nextViewController.isConsumer = false
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
         } else {
-            print("failed loading NewItemViewController")
+            print("failed loading SearchPlacesViewController")
         }
     }
     
