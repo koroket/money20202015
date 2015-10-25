@@ -21,6 +21,28 @@ class ConsumerHomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func scanPressed(sender: UIButton) {
+        if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
+            self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                print("done nigah")
+            })
+        } else {
+            print("failed loading CameraViewController")
+        }
+    }
+    
+    @IBAction func feedPressed(sender: UIButton) {
+        
+    }
+    
+    @IBAction func showDataPressed(sender: UIButton) {
+        
+    }
+    
+    @IBAction func settingsPressed(sender: UIButton) {
+        
+    }
+    
 
     /*
     // MARK: - Navigation

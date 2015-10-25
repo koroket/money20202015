@@ -24,8 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            var storyboard = UIStoryboard(name: "Main", bundle: nil)
 //            self.window?.rootViewController = "LoginViewController".loadNib() as! LoginViewController
 //            self.window?.rootViewController = "CameraViewController".loadNib() as! CameraViewController
-            //self.window?.rootViewController = "ChooseUsageViewController".loadNib() as! ChooseUsageViewController
-             self.window?.rootViewController = "LoginViewController".loadNib() as! LoginViewController
+            self.window?.rootViewController = "ChooseUsageViewController".loadNib() as! ChooseUsageViewController
+ //               self.window?.rootViewController = "CameraViewController".loadNib() as! CameraViewController
+//             self.window?.rootViewController = "LoginViewController".loadNib() as! LoginViewController
         
 //        } else {
 //            var storyboard = UIStoryboard(name: "Main", bundle: nil)

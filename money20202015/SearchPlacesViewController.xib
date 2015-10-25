@@ -27,12 +27,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MH-68-wwV">
                                                 <rect key="frame" x="5" y="0.0" width="45" height="60"/>
+                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="45" id="zI0-iA-tfZ"/>
                                                 </constraints>
                                                 <state key="normal" image="Back Arrow"/>
                                             </button>
                                         </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.80317873679999996" green="0.80317873679999996" blue="0.80317873679999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="1MH-68-wwV" secondAttribute="bottom" id="ASi-hl-knv"/>

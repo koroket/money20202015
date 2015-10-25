@@ -104,12 +104,12 @@ extension SearchPlacesViewController : UITableViewDelegate, UITableViewDataSourc
             print("Selected place with place id = \(place.pid)")
             //Do somthing with this
             if isConsumer {
-                if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
+                if let nextViewController = "ConsumerHomeViewController".loadNib() as? ConsumerHomeViewController {
                     self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                         print("done nigah")
                     })
                 } else {
-                    print("failed loading CameraViewController")
+                    print("failed loading ConsumerHomeViewController")
                 }
             } else {
                 if let nextViewController = "BusinessHomeViewController".loadNib() as? BusinessHomeViewController {
