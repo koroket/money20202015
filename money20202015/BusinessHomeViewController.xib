@@ -33,7 +33,7 @@
                                     <action selector="backPressed:" destination="ykG-P7-qe5" eventType="touchUpInside" id="MIp-wO-SYa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-Ac-nVu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-Ac-nVu">
                                 <rect key="frame" x="255" y="9" width="49" height="27.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
@@ -52,7 +52,7 @@
                             <constraint firstAttribute="height" constant="44" id="kvc-aq-tRn"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Profile" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-ud-Twt">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Profile" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-ud-Twt">
                         <rect key="frame" x="225" y="80" width="150" height="150"/>
                         <animations/>
                         <constraints>
@@ -60,7 +60,7 @@
                             <constraint firstAttribute="width" constant="150" id="fqu-zi-LYd"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFW-oY-hto">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tim Horng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFW-oY-hto">
                         <rect key="frame" x="237" y="240" width="125.5" height="34.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>

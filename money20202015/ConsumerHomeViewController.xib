@@ -52,7 +52,7 @@
                             <constraint firstAttribute="bottom" secondItem="oOL-AA-T1G" secondAttribute="bottom" id="x66-EN-NQC"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Profile" translatesAutoresizingMaskIntoConstraints="NO" id="dgf-ps-rBE">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Profile" translatesAutoresizingMaskIntoConstraints="NO" id="dgf-ps-rBE">
                         <rect key="frame" x="225" y="80" width="150" height="150"/>
                         <animations/>
                         <constraints>
@@ -60,7 +60,7 @@
                             <constraint firstAttribute="height" constant="150" id="y3k-tz-VQP"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMu-Ck-a6j">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tim Horng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMu-Ck-a6j">
                         <rect key="frame" x="237" y="240" width="125.5" height="34.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
