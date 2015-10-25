@@ -21,7 +21,8 @@ class ConsumerHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String {
-            profileImageView.smartLoad("https://graph.facebook.com/" + fbid + "/picture?type=square")
+            profileImageView.circleCrop()
+            profileImageView.smartLoad("https://graph.facebook.com/" + fbid + "/picture?type=large")
         }
     }
 
@@ -46,7 +47,13 @@ class ConsumerHomeViewController: UIViewController {
     }
     
     @IBAction func showDataPressed(sender: UIButton) {
-        
+        if let nextViewController = "ConsumerDataViewController".loadNib() as? ConsumerDataViewController {
+            self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                print("done nigah")
+            })
+        } else {
+            print("failed loading ConsumerDataViewController")
+        }
     }
     
     @IBAction func settingsPressed(sender: UIButton) {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,10 +15,75 @@
             <view key="view" contentMode="scaleToFill" id="JrJ-jB-uWp">
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5me-pg-kpg">
+                        <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-dG-osX" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daE-CA-kH5">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="44"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="VJu-Lu-Vs4"/>
+                                        </constraints>
+                                        <state key="normal" image="Back Arrow"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="HkS-7d-ijT" eventType="touchUpInside" id="fgc-rL-Y0L"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeS-O7-hF6">
+                                        <rect key="frame" x="278" y="9" width="42.5" height="27.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="daE-CA-kH5" secondAttribute="bottom" id="1OG-U3-D2N"/>
+                                    <constraint firstItem="oeS-O7-hF6" firstAttribute="centerX" secondItem="DJr-dG-osX" secondAttribute="centerX" id="5Ow-bh-hna"/>
+                                    <constraint firstItem="daE-CA-kH5" firstAttribute="leading" secondItem="DJr-dG-osX" secondAttribute="leading" id="8Vl-uE-QZA"/>
+                                    <constraint firstAttribute="height" constant="44" id="BJp-ov-ajw"/>
+                                    <constraint firstItem="oeS-O7-hF6" firstAttribute="centerY" secondItem="DJr-dG-osX" secondAttribute="centerY" id="UgS-oc-pQE"/>
+                                    <constraint firstItem="daE-CA-kH5" firstAttribute="top" secondItem="DJr-dG-osX" secondAttribute="top" id="nYH-cc-XAE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nB-Fk-vl7" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="44" width="600" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DJr-dG-osX" firstAttribute="top" secondItem="5me-pg-kpg" secondAttribute="top" id="M2s-7w-XpU"/>
+                            <constraint firstItem="3nB-Fk-vl7" firstAttribute="top" secondItem="DJr-dG-osX" secondAttribute="bottom" id="QO7-Ie-d1S"/>
+                            <constraint firstAttribute="trailing" secondItem="3nB-Fk-vl7" secondAttribute="trailing" id="Qfq-7p-o2a"/>
+                            <constraint firstItem="3nB-Fk-vl7" firstAttribute="leading" secondItem="5me-pg-kpg" secondAttribute="leading" id="TMp-ds-rqV"/>
+                            <constraint firstAttribute="bottom" secondItem="3nB-Fk-vl7" secondAttribute="bottom" id="XTG-3Y-OlE"/>
+                            <constraint firstItem="DJr-dG-osX" firstAttribute="leading" secondItem="5me-pg-kpg" secondAttribute="leading" id="m4J-MK-xGV"/>
+                            <constraint firstAttribute="trailing" secondItem="DJr-dG-osX" secondAttribute="trailing" id="oSY-0D-9H9"/>
+                        </constraints>
+                    </view>
+                </subviews>
                 <animations/>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="5me-pg-kpg" firstAttribute="top" secondItem="Url-jN-Uup" secondAttribute="bottom" id="GrV-YA-bUL"/>
+                    <constraint firstItem="5me-pg-kpg" firstAttribute="leading" secondItem="JrJ-jB-uWp" secondAttribute="leading" id="P8p-dh-9Xt"/>
+                    <constraint firstItem="CXy-oh-DCT" firstAttribute="top" secondItem="5me-pg-kpg" secondAttribute="bottom" id="Xjg-gb-ifu"/>
+                    <constraint firstAttribute="trailing" secondItem="5me-pg-kpg" secondAttribute="trailing" id="sSW-SZ-Iu8"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="203" y="225"/>
         </viewController>
     </objects>
+    <resources>
+        <image name="Back Arrow" width="14" height="22"/>
+    </resources>
 </document>
