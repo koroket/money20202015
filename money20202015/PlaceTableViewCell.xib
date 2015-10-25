@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="placeCell" id="2V1-l2-Fe0" customClass="PlaceTableViewCell" customModule="money20202015" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2V1-l2-Fe0" id="F4N-pZ-aNL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YkS-i6-LGD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IuL-Wm-Eel">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86H-qJ-fNT">
+                                <rect key="frame" x="139" y="12" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IuL-Wm-Eel" firstAttribute="leading" secondItem="YkS-i6-LGD" secondAttribute="leading" id="59Z-My-lLl"/>
+                            <constraint firstItem="86H-qJ-fNT" firstAttribute="centerX" secondItem="YkS-i6-LGD" secondAttribute="centerX" id="Bt9-GF-qhQ"/>
+                            <constraint firstAttribute="bottom" secondItem="IuL-Wm-Eel" secondAttribute="bottom" id="Kti-Af-ZRw"/>
+                            <constraint firstItem="86H-qJ-fNT" firstAttribute="centerY" secondItem="YkS-i6-LGD" secondAttribute="centerY" id="UUI-Zv-PHV"/>
+                            <constraint firstItem="IuL-Wm-Eel" firstAttribute="top" secondItem="YkS-i6-LGD" secondAttribute="top" id="f6q-PF-JIq"/>
+                            <constraint firstAttribute="trailing" secondItem="IuL-Wm-Eel" secondAttribute="trailing" id="kCy-xe-8y2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="YkS-i6-LGD" firstAttribute="top" secondItem="F4N-pZ-aNL" secondAttribute="top" id="Dkh-tQ-oDw"/>
+                    <constraint firstAttribute="trailing" secondItem="YkS-i6-LGD" secondAttribute="trailing" id="Vn8-60-kO6"/>
+                    <constraint firstAttribute="bottom" secondItem="YkS-i6-LGD" secondAttribute="bottom" id="ZqO-DD-G0o"/>
+                    <constraint firstItem="YkS-i6-LGD" firstAttribute="leading" secondItem="F4N-pZ-aNL" secondAttribute="leading" id="htm-Pg-5Go"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="placeImageView" destination="IuL-Wm-Eel" id="X0z-d8-ruk"/>
+                <outlet property="placeNameLabel" destination="86H-qJ-fNT" id="jKS-I2-aU4"/>
+            </connections>
+            <point key="canvasLocation" x="195" y="101"/>
+        </tableViewCell>
+    </objects>
+</document>

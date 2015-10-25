@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -53,15 +53,18 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-Hi-knt">
                                 <rect key="frame" x="0.0" y="0.0" width="607" height="114"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="UX3-7Y-DP6"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Hello." translatesAutoresizingMaskIntoConstraints="NO" id="1XK-mH-dQX">
                                 <rect key="frame" x="240" y="240" width="121" height="37"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Are you a consumer" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-pm-1lc">
                                 <rect key="frame" x="180" y="289" width="239" height="48"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="gZu-aT-m1l"/>
                                     <constraint firstAttribute="width" constant="239" id="j0W-bx-NGe"/>
@@ -75,12 +78,14 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gradient2" translatesAutoresizingMaskIntoConstraints="NO" id="dHY-5u-rMZ">
                                 <rect key="frame" x="0.0" y="466" width="600" height="114"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="DYN-75-ovW"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Cart Icon" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-7z-R2F">
                                 <rect key="frame" x="243" y="118" width="114" height="114"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="1CO-H5-kCz"/>
                                     <constraint firstAttribute="height" constant="114" id="fJe-XN-xz8"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62A2F4941BDCA49600688656 /* SearchPlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62A2F4931BDCA49600688656 /* SearchPlacesViewController.xib */; };
 		62FB25DF1BDC44E800502514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25DE1BDC44E800502514 /* AppDelegate.swift */; };
 		62FB25E11BDC44E800502514 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25E01BDC44E800502514 /* LoginViewController.swift */; };
 		62FB25E71BDC44E800502514 /* money20202015.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25E51BDC44E800502514 /* money20202015.xcdatamodeld */; };
@@ -32,7 +33,10 @@
 		62FB263C1BDC866500502514 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB263B1BDC866500502514 /* NewItemViewController.swift */; };
 		62FB263E1BDC8C0F00502514 /* ChooseUsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */; };
 		62FB26401BDC8C2E00502514 /* ChooseUsageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */; };
-		62FB26421BDC93AB00502514 /* SerachPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26411BDC93AB00502514 /* SerachPlacesViewController.swift */; };
+		62FB26421BDC93AB00502514 /* SearchPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26411BDC93AB00502514 /* SearchPlacesViewController.swift */; };
+		62FB26491BDC97FF00502514 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26481BDC97FF00502514 /* Place.swift */; };
+		62FB264C1BDC9F9C00502514 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB264B1BDC9F9C00502514 /* PlaceTableViewCell.swift */; };
+		62FB264E1BDC9FB500502514 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB264D1BDC9FB500502514 /* PlaceTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		62A2F4931BDCA49600688656 /* SearchPlacesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchPlacesViewController.xib; sourceTree = "<group>"; };
 		62FB25DB1BDC44E800502514 /* money20202015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = money20202015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FB25DE1BDC44E800502514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62FB25E01BDC44E800502514 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +103,10 @@
 		62FB263B1BDC866500502514 /* NewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseUsageViewController.swift; sourceTree = "<group>"; };
 		62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseUsageViewController.xib; sourceTree = "<group>"; };
-		62FB26411BDC93AB00502514 /* SerachPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerachPlacesViewController.swift; sourceTree = "<group>"; };
+		62FB26411BDC93AB00502514 /* SearchPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlacesViewController.swift; sourceTree = "<group>"; };
+		62FB26481BDC97FF00502514 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		62FB264B1BDC9F9C00502514 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		62FB264D1BDC9FB500502514 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,7 @@
 				62FB26211BDC534100502514 /* FBSDKLoginKit.framework */,
 				62FB25DE1BDC44E800502514 /* AppDelegate.swift */,
 				62FB26431BDC93D600502514 /* Helpers */,
+				62FB264A1BDC980600502514 /* CustomJSONWrappers */,
 				62FB26441BDC940800502514 /* SharedViewControllers */,
 				62FB26451BDC941200502514 /* ConsumerViewControllers */,
 				62FB26461BDC942000502514 /* BusinessViewControllers */,
@@ -192,7 +201,6 @@
 			children = (
 				62FB262D1BDC67B500502514 /* Extension.swift */,
 				62FB26181BDC48C400502514 /* Tool.swift */,
-				62FB26161BDC485900502514 /* JSONObject.swift */,
 				62FB26151BDC47C500502514 /* Bridging_Header.h */,
 			);
 			name = Helpers;
@@ -203,6 +211,8 @@
 			children = (
 				62FB25E01BDC44E800502514 /* LoginViewController.swift */,
 				62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */,
+				62FB26411BDC93AB00502514 /* SearchPlacesViewController.swift */,
+				62A2F4931BDCA49600688656 /* SearchPlacesViewController.xib */,
 			);
 			name = SharedViewControllers;
 			sourceTree = "<group>";
@@ -210,8 +220,10 @@
 		62FB26451BDC941200502514 /* ConsumerViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				62FB26411BDC93AB00502514 /* SerachPlacesViewController.swift */,
 				62FB26311BDC769F00502514 /* CameraViewController.swift */,
+				62FB26331BDC7C2100502514 /* CameraViewController.xib */,
+				62FB264B1BDC9F9C00502514 /* PlaceTableViewCell.swift */,
+				62FB264D1BDC9FB500502514 /* PlaceTableViewCell.xib */,
 			);
 			name = ConsumerViewControllers;
 			sourceTree = "<group>";
@@ -231,11 +243,19 @@
 				62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */,
 				62FB262F1BDC6DD900502514 /* LoginViewController.xib */,
 				62FB262B1BDC672800502514 /* OnBoardViewController.xib */,
-				62FB26331BDC7C2100502514 /* CameraViewController.xib */,
 				62FB26391BDC855C00502514 /* NewItemViewController.xib */,
 				62FB26351BDC813500502514 /* DisplayQRViewController.xib */,
 			);
 			name = XIB;
+			sourceTree = "<group>";
+		};
+		62FB264A1BDC980600502514 /* CustomJSONWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				62FB26161BDC485900502514 /* JSONObject.swift */,
+				62FB26481BDC97FF00502514 /* Place.swift */,
+			);
+			name = CustomJSONWrappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,9 +366,11 @@
 			files = (
 				62FB26361BDC813500502514 /* DisplayQRViewController.xib in Resources */,
 				62FB26401BDC8C2E00502514 /* ChooseUsageViewController.xib in Resources */,
+				62FB264E1BDC9FB500502514 /* PlaceTableViewCell.xib in Resources */,
 				62FB263A1BDC855C00502514 /* NewItemViewController.xib in Resources */,
 				62FB26301BDC6DD900502514 /* LoginViewController.xib in Resources */,
 				62FB25EC1BDC44E800502514 /* LaunchScreen.storyboard in Resources */,
+				62A2F4941BDCA49600688656 /* SearchPlacesViewController.xib in Resources */,
 				62FB25E91BDC44E800502514 /* Assets.xcassets in Resources */,
 				62FB262C1BDC672800502514 /* OnBoardViewController.xib in Resources */,
 				62FB26341BDC7C2100502514 /* CameraViewController.xib in Resources */,
@@ -379,9 +401,11 @@
 				62FB26171BDC485900502514 /* JSONObject.swift in Sources */,
 				62FB26381BDC816400502514 /* DisplayQRViewController.swift in Sources */,
 				62FB263C1BDC866500502514 /* NewItemViewController.swift in Sources */,
+				62FB26491BDC97FF00502514 /* Place.swift in Sources */,
+				62FB264C1BDC9F9C00502514 /* PlaceTableViewCell.swift in Sources */,
 				62FB25E11BDC44E800502514 /* LoginViewController.swift in Sources */,
 				62FB25DF1BDC44E800502514 /* AppDelegate.swift in Sources */,
-				62FB26421BDC93AB00502514 /* SerachPlacesViewController.swift in Sources */,
+				62FB26421BDC93AB00502514 /* SearchPlacesViewController.swift in Sources */,
 				62FB262E1BDC67B500502514 /* Extension.swift in Sources */,
 				62FB26321BDC769F00502514 /* CameraViewController.swift in Sources */,
 				62FB263E1BDC8C0F00502514 /* ChooseUsageViewController.swift in Sources */,
@@ -623,6 +647,7 @@
 				62FB26081BDC44E800502514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62FB26091BDC44E800502514 /* Build configuration list for PBXNativeTarget "money20202015Tests" */ = {
 			isa = XCConfigurationList;
@@ -631,6 +656,7 @@
 				62FB260B1BDC44E800502514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62FB260C1BDC44E800502514 /* Build configuration list for PBXNativeTarget "money20202015UITests" */ = {
 			isa = XCConfigurationList;
@@ -639,6 +665,7 @@
 				62FB260E1BDC44E800502514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

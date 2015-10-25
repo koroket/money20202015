@@ -59,3 +59,11 @@ extension UIImageView {
         }
     }
 }
+
+extension UITextView {
+    func setBody(newText:String){
+        editable = true
+        text = newText
+        editable = false
+    }
+}
