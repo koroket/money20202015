@@ -53,13 +53,14 @@ class ChooseUsageViewController: UIViewController {
     }
     
     func markType(type:String){
-//        let data = NSMutableDictionary();
-//        data["item"] = self.nameTextField.text ?? "";
-//        data["price"] = self.priceTextField.text ?? "";
-//        data["category"] = self.categoryTextField.text ?? "";
         
         //call api to update type
-        var fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId")
+        var fbId = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String ?? ""
+        var url = SERVER + "/markType/\(fbId)/\(type)";
+        
+        Tool.callREST(nil, url: url, method: "POST") { (response) -> Void in
+            print(response)
+        }
         
     }
 
