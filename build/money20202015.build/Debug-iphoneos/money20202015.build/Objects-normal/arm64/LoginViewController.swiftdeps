@@ -1,0 +1,648 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginViewController"
+provides-nominal:
+- "C13money2020201519LoginViewController"
+provides-member:
+- ["C13money2020201519LoginViewController", ""]
+- ["C13money2020201519LoginViewController", "login"]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "loginButton"
+- "loginPressed"
+- "loginButtonDidLogOut"
+- "fbButton"
+- "login"
+depends-top-level:
+- !private "+"
+- !private "SERVER"
+- "FBSDKLoginManagerLoginResult"
+- !private "print"
+- !private "NSArray"
+- "UIViewController"
+- "LoginViewController"
+- "AnyObject"
+- !private "StringLiteralType"
+- !private "=="
+- "FBSDKLoginButton"
+- "FBSDKLoginButtonDelegate"
+- "BooleanLiteralType"
+- !private "Tool"
+- !private "UIControlEvents"
+- !private "ChooseUsageViewController"
+- !private "NSUserDefaults"
+- !private "NSDictionary"
+- "NSError"
+- "String"
+- !private "Void"
+depends-member:
+- !private ["PSs9AnyObject", "FBSDKLoginButton"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "SERVER"]
+- !private ["PSs9AnyObject", "Tool"]
+- !private ["PSs9AnyObject", "UIControlEvents"]
+- !private ["PSs9AnyObject", "callREST"]
+- !private ["PSs9AnyObject", "delegate"]
+- ["PSs9AnyObject", "fbButton"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "loadNib"]
+- ["PSs9AnyObject", "login"]
+- ["PSs9AnyObject", "loginButton"]
+- ["PSs9AnyObject", "loginButtonDidLogOut"]
+- ["PSs9AnyObject", "loginButtonWillLogin"]
+- ["PSs9AnyObject", "loginPressed"]
+- !private ["PSs9AnyObject", "presentViewController"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "sendActionsForControlEvents"]
+- !private ["PSs9AnyObject", "setValue"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["PSs9AnyObject", "synchronize"]
+- !private ["PSs9AnyObject", "token"]
+- !private ["PSs9AnyObject", "userID"]
+- !private ["PSs9AnyObject", "valueForKey"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "TouchUpInside"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "FBSDKLoginButton"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- !private ["PSs11CVarArgType", "SERVER"]
+- !private ["PSs11CVarArgType", "Tool"]
+- !private ["PSs11CVarArgType", "UIControlEvents"]
+- !private ["PSs11CVarArgType", "delegate"]
+- ["PSs11CVarArgType", "fbButton"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "loadNib"]
+- ["PSs11CVarArgType", "login"]
+- ["PSs11CVarArgType", "loginButton"]
+- ["PSs11CVarArgType", "loginButtonDidLogOut"]
+- ["PSs11CVarArgType", "loginButtonWillLogin"]
+- ["PSs11CVarArgType", "loginPressed"]
+- !private ["PSs11CVarArgType", "presentViewController"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "sendActionsForControlEvents"]
+- !private ["PSs11CVarArgType", "setValue"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "subscript"]
+- !private ["PSs11CVarArgType", "synchronize"]
+- !private ["PSs11CVarArgType", "token"]
+- !private ["PSs11CVarArgType", "userID"]
+- !private ["PSs11CVarArgType", "valueForKey"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs10Comparable", "loadNib"]
+- !private ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "loadNib"]
+- !private ["PSs23CustomStringConvertible", "FBSDKLoginButton"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "SERVER"]
+- !private ["PSs23CustomStringConvertible", "Tool"]
+- !private ["PSs23CustomStringConvertible", "UIControlEvents"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "delegate"]
+- ["PSs23CustomStringConvertible", "fbButton"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "loadNib"]
+- ["PSs23CustomStringConvertible", "login"]
+- ["PSs23CustomStringConvertible", "loginButton"]
+- ["PSs23CustomStringConvertible", "loginButtonDidLogOut"]
+- ["PSs23CustomStringConvertible", "loginButtonWillLogin"]
+- ["PSs23CustomStringConvertible", "loginPressed"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "sendActionsForControlEvents"]
+- !private ["PSs23CustomStringConvertible", "setValue"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "synchronize"]
+- !private ["PSs23CustomStringConvertible", "token"]
+- !private ["PSs23CustomStringConvertible", "userID"]
+- !private ["PSs23CustomStringConvertible", "valueForKey"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["PSs9Equatable", "FBSDKLoginButton"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "SERVER"]
+- !private ["PSs9Equatable", "Tool"]
+- !private ["PSs9Equatable", "TouchUpInside"]
+- !private ["PSs9Equatable", "UIControlEvents"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "delegate"]
+- ["PSs9Equatable", "fbButton"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "loadNib"]
+- ["PSs9Equatable", "login"]
+- ["PSs9Equatable", "loginButton"]
+- ["PSs9Equatable", "loginButtonDidLogOut"]
+- ["PSs9Equatable", "loginButtonWillLogin"]
+- ["PSs9Equatable", "loginPressed"]
+- !private ["PSs9Equatable", "presentViewController"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "sendActionsForControlEvents"]
+- !private ["PSs9Equatable", "setValue"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "subscript"]
+- !private ["PSs9Equatable", "synchronize"]
+- !private ["PSs9Equatable", "token"]
+- !private ["PSs9Equatable", "userID"]
+- !private ["PSs9Equatable", "valueForKey"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "loadNib"]
+- !private ["CSo16FBSDKAccessToken", "userID"]
+- !private ["CSo11FBSDKButton", "delegate"]
+- !private ["CSo11FBSDKButton", "init"]
+- !private ["CSo11FBSDKButton", "sendActionsForControlEvents"]
+- !private ["PSo12FBSDKCopying", "userID"]
+- !private ["CSo16FBSDKLoginButton", "delegate"]
+- !private ["CSo16FBSDKLoginButton", "init"]
+- !private ["CSo16FBSDKLoginButton", "sendActionsForControlEvents"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "FBSDKLoginButton"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "NSUserDefaults"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "SERVER"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "Tool"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "UIControlEvents"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "fbButton"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "login"]
+- ["PSo24FBSDKLoginButtonDelegate", "loginButton"]
+- ["PSo24FBSDKLoginButtonDelegate", "loginButtonDidLogOut"]
+- ["PSo24FBSDKLoginButtonDelegate", "loginButtonWillLogin"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "presentViewController"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "print"]
+- ["PSo24FBSDKLoginButtonDelegate", ""]
+- !private ["CSo28FBSDKLoginManagerLoginResult", "token"]
+- !private ["PSs8Hashable", "FBSDKLoginButton"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "SERVER"]
+- !private ["PSs8Hashable", "Tool"]
+- !private ["PSs8Hashable", "UIControlEvents"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "delegate"]
+- ["PSs8Hashable", "fbButton"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "loadNib"]
+- ["PSs8Hashable", "login"]
+- ["PSs8Hashable", "loginButton"]
+- ["PSs8Hashable", "loginButtonDidLogOut"]
+- ["PSs8Hashable", "loginButtonWillLogin"]
+- ["PSs8Hashable", "loginPressed"]
+- !private ["PSs8Hashable", "presentViewController"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "sendActionsForControlEvents"]
+- !private ["PSs8Hashable", "setValue"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "subscript"]
+- !private ["PSs8Hashable", "synchronize"]
+- !private ["PSs8Hashable", "token"]
+- !private ["PSs8Hashable", "userID"]
+- !private ["PSs8Hashable", "valueForKey"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- ["C13money2020201519LoginViewController", "AnyObject"]
+- !private ["C13money2020201519LoginViewController", "ChooseUsageViewController"]
+- ["C13money2020201519LoginViewController", "FBSDKLoginButton"]
+- ["C13money2020201519LoginViewController", "FBSDKLoginManagerLoginResult"]
+- !private ["C13money2020201519LoginViewController", "NSArray"]
+- !private ["C13money2020201519LoginViewController", "NSDictionary"]
+- ["C13money2020201519LoginViewController", "NSError"]
+- !private ["C13money2020201519LoginViewController", "NSUserDefaults"]
+- !private ["C13money2020201519LoginViewController", "SERVER"]
+- ["C13money2020201519LoginViewController", "String"]
+- !private ["C13money2020201519LoginViewController", "Tool"]
+- !private ["C13money2020201519LoginViewController", "UIControlEvents"]
+- !private ["C13money2020201519LoginViewController", "Void"]
+- ["C13money2020201519LoginViewController", "deinit"]
+- ["C13money2020201519LoginViewController", "fbButton"]
+- ["C13money2020201519LoginViewController", "init"]
+- ["C13money2020201519LoginViewController", "login"]
+- ["C13money2020201519LoginViewController", "loginButton"]
+- ["C13money2020201519LoginViewController", "loginButtonDidLogOut"]
+- ["C13money2020201519LoginViewController", "loginButtonWillLogin"]
+- ["C13money2020201519LoginViewController", "loginPressed"]
+- !private ["C13money2020201519LoginViewController", "presentViewController"]
+- !private ["C13money2020201519LoginViewController", "print"]
+- ["C13money2020201519LoginViewController", "viewDidLoad"]
+- !private ["PSs14MirrorPathType", "loadNib"]
+- !private ["CSo7NSArray", "subscript"]
+- !private ["PSo8NSCoding", "FBSDKLoginButton"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "SERVER"]
+- !private ["PSo8NSCoding", "Tool"]
+- !private ["PSo8NSCoding", "UIControlEvents"]
+- !private ["PSo8NSCoding", "delegate"]
+- ["PSo8NSCoding", "fbButton"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "loadNib"]
+- ["PSo8NSCoding", "login"]
+- ["PSo8NSCoding", "loginButton"]
+- ["PSo8NSCoding", "loginButtonDidLogOut"]
+- ["PSo8NSCoding", "loginButtonWillLogin"]
+- ["PSo8NSCoding", "loginPressed"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "sendActionsForControlEvents"]
+- !private ["PSo8NSCoding", "subscript"]
+- !private ["PSo8NSCoding", "userID"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "loadNib"]
+- !private ["PSo9NSCopying", "subscript"]
+- !private ["PSo9NSCopying", "userID"]
+- !private ["CSo12NSDictionary", "subscript"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKLoginButton"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "SERVER"]
+- !private ["PSo26NSExtensionRequestHandling", "Tool"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
+- ["PSo26NSExtensionRequestHandling", "fbButton"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "login"]
+- ["PSo26NSExtensionRequestHandling", "loginButton"]
+- ["PSo26NSExtensionRequestHandling", "loginButtonDidLogOut"]
+- ["PSo26NSExtensionRequestHandling", "loginButtonWillLogin"]
+- ["PSo26NSExtensionRequestHandling", "loginPressed"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "subscript"]
+- !private ["PSo16NSMutableCopying", "loadNib"]
+- !private ["PSo16NSMutableCopying", "subscript"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "ChooseUsageViewController"]
+- ["CSo8NSObject", "FBSDKLoginButton"]
+- ["CSo8NSObject", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo8NSObject", "NSArray"]
+- !private ["CSo8NSObject", "NSDictionary"]
+- ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "SERVER"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "Tool"]
+- !private ["CSo8NSObject", "UIControlEvents"]
+- !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "fbButton"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "loadNib"]
+- ["CSo8NSObject", "login"]
+- ["CSo8NSObject", "loginButton"]
+- ["CSo8NSObject", "loginButtonDidLogOut"]
+- ["CSo8NSObject", "loginButtonWillLogin"]
+- ["CSo8NSObject", "loginPressed"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "sendActionsForControlEvents"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "synchronize"]
+- !private ["CSo8NSObject", "token"]
+- !private ["CSo8NSObject", "userID"]
+- !private ["CSo8NSObject", "valueForKey"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "FBSDKLoginButton"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "SERVER"]
+- !private ["PSo16NSObjectProtocol", "Tool"]
+- !private ["PSo16NSObjectProtocol", "UIControlEvents"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "fbButton"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "loadNib"]
+- ["PSo16NSObjectProtocol", "login"]
+- ["PSo16NSObjectProtocol", "loginButton"]
+- ["PSo16NSObjectProtocol", "loginButtonDidLogOut"]
+- ["PSo16NSObjectProtocol", "loginButtonWillLogin"]
+- ["PSo16NSObjectProtocol", "loginPressed"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "sendActionsForControlEvents"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- !private ["PSo16NSObjectProtocol", "token"]
+- !private ["PSo16NSObjectProtocol", "userID"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "loadNib"]
+- !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["PSo14NSSecureCoding", "userID"]
+- !private ["CSo8NSString", "loadNib"]
+- !private ["CSo14NSUserDefaults", "setValue"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- !private ["CSo14NSUserDefaults", "valueForKey"]
+- !private ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs13OptionSetType", "TouchUpInside"]
+- !private ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "loadNib"]
+- !private ["PSs16RawRepresentable", "TouchUpInside"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "TouchUpInside"]
+- !private ["PSs10Streamable", "loadNib"]
+- !private ["SS", "deinit"]
+- !private ["SS", "loadNib"]
+- !private ["PSs30StringInterpolationConvertible", "loadNib"]
+- !private ["PSs24StringLiteralConvertible", "loadNib"]
+- !private ["C13money202020154Tool", "callREST"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "sendActionsForControlEvents"]
+- !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "sendActionsForControlEvents"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKLoginButton"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "SERVER"]
+- !private ["PSo21UIAppearanceContainer", "Tool"]
+- !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
+- ["PSo21UIAppearanceContainer", "fbButton"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "login"]
+- ["PSo21UIAppearanceContainer", "loginButton"]
+- ["PSo21UIAppearanceContainer", "loginButtonDidLogOut"]
+- ["PSo21UIAppearanceContainer", "loginButtonWillLogin"]
+- ["PSo21UIAppearanceContainer", "loginPressed"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "sendActionsForControlEvents"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "delegate"]
+- !private ["CSo8UIButton", "init"]
+- !private ["CSo8UIButton", "sendActionsForControlEvents"]
+- !private ["PSo18UIContentContainer", "FBSDKLoginButton"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "SERVER"]
+- !private ["PSo18UIContentContainer", "Tool"]
+- !private ["PSo18UIContentContainer", "UIControlEvents"]
+- ["PSo18UIContentContainer", "fbButton"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "login"]
+- ["PSo18UIContentContainer", "loginButton"]
+- ["PSo18UIContentContainer", "loginButtonDidLogOut"]
+- ["PSo18UIContentContainer", "loginButtonWillLogin"]
+- ["PSo18UIContentContainer", "loginPressed"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "delegate"]
+- !private ["CSo9UIControl", "init"]
+- !private ["CSo9UIControl", "sendActionsForControlEvents"]
+- !private ["VSC15UIControlEvents", "TouchUpInside"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "sendActionsForControlEvents"]
+- !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "sendActionsForControlEvents"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKLoginButton"]
+- !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- !private ["PSo18UIFocusEnvironment", "SERVER"]
+- !private ["PSo18UIFocusEnvironment", "Tool"]
+- !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "fbButton"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "login"]
+- ["PSo18UIFocusEnvironment", "loginButton"]
+- ["PSo18UIFocusEnvironment", "loginButtonDidLogOut"]
+- ["PSo18UIFocusEnvironment", "loginButtonWillLogin"]
+- ["PSo18UIFocusEnvironment", "loginPressed"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "sendActionsForControlEvents"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "ChooseUsageViewController"]
+- ["CSo11UIResponder", "FBSDKLoginButton"]
+- ["CSo11UIResponder", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo11UIResponder", "NSArray"]
+- !private ["CSo11UIResponder", "NSDictionary"]
+- ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- !private ["CSo11UIResponder", "SERVER"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "Tool"]
+- !private ["CSo11UIResponder", "UIControlEvents"]
+- !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "fbButton"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "login"]
+- ["CSo11UIResponder", "loginButton"]
+- ["CSo11UIResponder", "loginButtonDidLogOut"]
+- ["CSo11UIResponder", "loginButtonWillLogin"]
+- ["CSo11UIResponder", "loginPressed"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "sendActionsForControlEvents"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "FBSDKLoginButton"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "SERVER"]
+- !private ["PSo16UIStateRestoring", "Tool"]
+- !private ["PSo16UIStateRestoring", "UIControlEvents"]
+- ["PSo16UIStateRestoring", "fbButton"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "login"]
+- ["PSo16UIStateRestoring", "loginButton"]
+- ["PSo16UIStateRestoring", "loginButtonDidLogOut"]
+- ["PSo16UIStateRestoring", "loginButtonWillLogin"]
+- ["PSo16UIStateRestoring", "loginPressed"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "FBSDKLoginButton"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "SERVER"]
+- !private ["PSo18UITraitEnvironment", "Tool"]
+- !private ["PSo18UITraitEnvironment", "UIControlEvents"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
+- ["PSo18UITraitEnvironment", "fbButton"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "login"]
+- ["PSo18UITraitEnvironment", "loginButton"]
+- ["PSo18UITraitEnvironment", "loginButtonDidLogOut"]
+- ["PSo18UITraitEnvironment", "loginButtonWillLogin"]
+- ["PSo18UITraitEnvironment", "loginPressed"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "sendActionsForControlEvents"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "sendActionsForControlEvents"]
+- ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "ChooseUsageViewController"]
+- ["CSo16UIViewController", "FBSDKLoginButton"]
+- ["CSo16UIViewController", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo16UIViewController", "NSArray"]
+- !private ["CSo16UIViewController", "NSDictionary"]
+- ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- !private ["CSo16UIViewController", "SERVER"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "Tool"]
+- !private ["CSo16UIViewController", "UIControlEvents"]
+- !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "fbButton"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "login"]
+- ["CSo16UIViewController", "loginButton"]
+- ["CSo16UIViewController", "loginButtonDidLogOut"]
+- ["CSo16UIViewController", "loginButtonWillLogin"]
+- ["CSo16UIViewController", "loginPressed"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "loadNib"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "loadNib"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "loadNib"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "loadNib"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "loadNib"]
+- !private ["PSs16_CocoaStringType", "loadNib"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "loadNib"]
+- !private ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "delegate"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "loadNib"]
+- !private ["PSs12_Reflectable", "sendActionsForControlEvents"]
+- !private ["PSs12_Reflectable", "subscript"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo16FBSDKAccessToken"
+- !private "CSo11FBSDKButton"
+- !private "PSo12FBSDKCopying"
+- !private "CSo16FBSDKLoginButton"
+- "PSo24FBSDKLoginButtonDelegate"
+- !private "CSo28FBSDKLoginManagerLoginResult"
+- "PSs8Hashable"
+- !private "SQ"
+- "C13money2020201519LoginViewController"
+- !private "PSs14MirrorPathType"
+- !private "CSo7NSArray"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo14NSUserDefaults"
+- !private "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "C13money202020154Tool"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "VSC15UIControlEvents"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Bridging_Header.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+interface-hash: "a65faef40eb05805d894563e9b384647"

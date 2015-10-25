@@ -6,47 +6,47 @@ provides-nominal:
 provides-member:
 - ["C13money2020201511AppDelegate", ""]
 provides-dynamic-lookup:
+- "saveContext"
+- "applicationWillResignActive"
+- "applicationDidEnterBackground"
+- "managedObjectModel"
+- "applicationWillTerminate"
+- "applicationDidBecomeActive"
+- "managedObjectContext"
+- "applicationWillEnterForeground"
+- "applicationDocumentsDirectory"
 - "persistentStoreCoordinator"
 - "application"
 - "application"
-- "saveContext"
-- "applicationDocumentsDirectory"
-- "applicationDidBecomeActive"
-- "managedObjectModel"
-- "applicationWillTerminate"
 - "window"
-- "applicationWillEnterForeground"
-- "managedObjectContext"
-- "applicationDidEnterBackground"
-- "applicationWillResignActive"
 depends-top-level:
-- "String"
-- "UIResponder"
-- "NSURL"
-- "UIWindow"
-- !private "NSUnderlyingErrorKey"
-- !private "NSFileManager"
-- !private "NSLog"
-- !private "NSError"
-- "NSPersistentStoreCoordinator"
-- "UIApplicationDelegate"
-- !private "NSSQLiteStoreType"
-- !private "UIScreen"
-- !private "ChooseUsageViewController"
-- !private "NSLocalizedFailureReasonErrorKey"
-- !private "NSBundle"
 - "AppDelegate"
-- "NSManagedObjectContext"
 - !private "FBSDKApplicationDelegate"
-- "NSManagedObjectModel"
-- !private "abort"
 - "UIApplication"
-- "StringLiteralType"
+- !private "NSUnderlyingErrorKey"
+- "UIResponder"
+- "NSPersistentStoreCoordinator"
+- !private "NSError"
 - "Bool"
+- !private "abort"
+- "NSManagedObjectContext"
+- !private "UIScreen"
+- !private "NSSQLiteStoreType"
+- "String"
+- !private "NSBundle"
+- !private "NSFileManager"
+- "UIWindow"
+- "NSManagedObjectModel"
+- !private "NSLocalizedFailureReasonErrorKey"
+- "NSURL"
 - "NSObject"
-- !private "NSLocalizedDescriptionKey"
-- "AnyObject"
+- !private "LoginViewController"
 - !private "-"
+- "StringLiteralType"
+- "UIApplicationDelegate"
+- !private "NSLog"
+- "AnyObject"
+- !private "NSLocalizedDescriptionKey"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "FBSDKApplicationDelegate"]
@@ -107,8 +107,8 @@ depends-member:
 - ["PSs9AnyObject", ""]
 - ["C13money2020201511AppDelegate", "AnyObject"]
 - ["C13money2020201511AppDelegate", "Bool"]
-- !private ["C13money2020201511AppDelegate", "ChooseUsageViewController"]
 - !private ["C13money2020201511AppDelegate", "FBSDKApplicationDelegate"]
+- !private ["C13money2020201511AppDelegate", "LoginViewController"]
 - !private ["C13money2020201511AppDelegate", "NSBundle"]
 - !private ["C13money2020201511AppDelegate", "NSError"]
 - !private ["C13money2020201511AppDelegate", "NSFileManager"]
@@ -527,8 +527,8 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "loadNib"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "ChooseUsageViewController"]
 - !private ["CSo8NSObject", "FBSDKApplicationDelegate"]
+- !private ["CSo8NSObject", "LoginViewController"]
 - !private ["CSo8NSObject", "NSBundle"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSFileManager"]
@@ -750,8 +750,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "ChooseUsageViewController"]
 - !private ["CSo11UIResponder", "FBSDKApplicationDelegate"]
+- !private ["CSo11UIResponder", "LoginViewController"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSFileManager"]

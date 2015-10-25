@@ -1,0 +1,467 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SERVERNAME"
+- "SERVER"
+- "Tool"
+- "setUpCookie"
+- "saveCookies"
+- "clearCookies"
+provides-nominal:
+- "C13money202020154Tool"
+provides-member:
+- ["C13money202020154Tool", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Void"
+- !private "NSHTTPCookieStorage"
+- "clearCookies"
+- !private "!="
+- !private "SESSION_NAME"
+- !private "Dictionary"
+- "Bool"
+- !private "_ToolSharedInstance"
+- !private "NSHTTPCookieName"
+- !private "NSHTTPCookieDomain"
+- !private "NSURLSession"
+- !private "=="
+- !private "NSMutableURLRequest"
+- "Tool"
+- "StringLiteralType"
+- "SERVER"
+- !private "Array"
+- "saveCookies"
+- !private "UnicodeScalarType"
+- !private "NSJSONSerialization"
+- !private "NSHTTPCookie"
+- "String"
+- "setUpCookie"
+- "NSDictionary"
+- !private "print"
+- !private "dispatch_get_main_queue"
+- !private "_StandardUserDefaultsInstance"
+- "AnyObject"
+- !private "NSHTTPCookiePath"
+- !private "NSArray"
+- !private "dispatch_async"
+- "NSUserDefaults"
+- !private "NSURL"
+- !private "NSHTTPCookieValue"
+- "SERVERNAME"
+- !private "BooleanLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "Element"]
+- !private ["PSs9AnyObject", "Generator"]
+- !private ["PSs9AnyObject", "HTTPBody"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- !private ["PSs9AnyObject", "JSONObjectWithData"]
+- !private ["PSs9AnyObject", "NSJSONSerialization"]
+- !private ["PSs9AnyObject", "NSMutableURLRequest"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "NSURLSession"]
+- !private ["PSs9AnyObject", "URL"]
+- !private ["PSs9AnyObject", "_StandardUserDefaultsInstance"]
+- !private ["PSs9AnyObject", "_ToolSharedInstance"]
+- !private ["PSs9AnyObject", "addValue"]
+- !private ["PSs9AnyObject", "cookies"]
+- !private ["PSs9AnyObject", "dataTaskWithRequest"]
+- !private ["PSs9AnyObject", "dataWithJSONObject"]
+- !private ["PSs9AnyObject", "deinit"]
+- !private ["PSs9AnyObject", "deleteCookie"]
+- !private ["PSs9AnyObject", "dispatch_async"]
+- !private ["PSs9AnyObject", "dispatch_get_main_queue"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "name"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "removeObjectForKey"]
+- !private ["PSs9AnyObject", "resume"]
+- !private ["PSs9AnyObject", "setCookie"]
+- !private ["PSs9AnyObject", "setObject"]
+- !private ["PSs9AnyObject", "sharedHTTPCookieStorage"]
+- !private ["PSs9AnyObject", "sharedSession"]
+- ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "stringForKey"]
+- !private ["PSs9AnyObject", "synchronize"]
+- !private ["PSs9AnyObject", "userDefaults"]
+- !private ["PSs9AnyObject", "value"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "MutableLeaves"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Generator"]
+- !private ["PSs11CVarArgType", "HTTPBody"]
+- !private ["PSs11CVarArgType", "HTTPMethod"]
+- !private ["PSs11CVarArgType", "JSONObjectWithData"]
+- !private ["PSs11CVarArgType", "URL"]
+- !private ["PSs11CVarArgType", "addValue"]
+- !private ["PSs11CVarArgType", "cookies"]
+- !private ["PSs11CVarArgType", "dataTaskWithRequest"]
+- !private ["PSs11CVarArgType", "dataWithJSONObject"]
+- !private ["PSs11CVarArgType", "deleteCookie"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "removeObjectForKey"]
+- !private ["PSs11CVarArgType", "resume"]
+- !private ["PSs11CVarArgType", "setCookie"]
+- !private ["PSs11CVarArgType", "setObject"]
+- !private ["PSs11CVarArgType", "sharedHTTPCookieStorage"]
+- !private ["PSs11CVarArgType", "sharedSession"]
+- ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "stringForKey"]
+- !private ["PSs11CVarArgType", "synchronize"]
+- !private ["PSs11CVarArgType", "value"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "HTTPBody"]
+- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
+- !private ["PSs23CustomStringConvertible", "JSONObjectWithData"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "URL"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addValue"]
+- !private ["PSs23CustomStringConvertible", "cookies"]
+- !private ["PSs23CustomStringConvertible", "dataTaskWithRequest"]
+- !private ["PSs23CustomStringConvertible", "dataWithJSONObject"]
+- !private ["PSs23CustomStringConvertible", "deleteCookie"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "removeObjectForKey"]
+- !private ["PSs23CustomStringConvertible", "resume"]
+- !private ["PSs23CustomStringConvertible", "setCookie"]
+- !private ["PSs23CustomStringConvertible", "setObject"]
+- !private ["PSs23CustomStringConvertible", "sharedHTTPCookieStorage"]
+- !private ["PSs23CustomStringConvertible", "sharedSession"]
+- ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "stringForKey"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "synchronize"]
+- !private ["PSs23CustomStringConvertible", "value"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["PSs9Equatable", "Element"]
+- !private ["PSs9Equatable", "Generator"]
+- !private ["PSs9Equatable", "HTTPBody"]
+- !private ["PSs9Equatable", "HTTPMethod"]
+- !private ["PSs9Equatable", "JSONObjectWithData"]
+- !private ["PSs9Equatable", "MutableLeaves"]
+- !private ["PSs9Equatable", "URL"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addValue"]
+- !private ["PSs9Equatable", "cookies"]
+- !private ["PSs9Equatable", "dataTaskWithRequest"]
+- !private ["PSs9Equatable", "dataWithJSONObject"]
+- !private ["PSs9Equatable", "deleteCookie"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "removeObjectForKey"]
+- !private ["PSs9Equatable", "resume"]
+- !private ["PSs9Equatable", "setCookie"]
+- !private ["PSs9Equatable", "setObject"]
+- !private ["PSs9Equatable", "sharedHTTPCookieStorage"]
+- !private ["PSs9Equatable", "sharedSession"]
+- ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "stringForKey"]
+- !private ["PSs9Equatable", "synchronize"]
+- !private ["PSs9Equatable", "value"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Generator"]
+- !private ["PSs8Hashable", "HTTPBody"]
+- !private ["PSs8Hashable", "HTTPMethod"]
+- !private ["PSs8Hashable", "JSONObjectWithData"]
+- !private ["PSs8Hashable", "URL"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addValue"]
+- !private ["PSs8Hashable", "cookies"]
+- !private ["PSs8Hashable", "dataTaskWithRequest"]
+- !private ["PSs8Hashable", "dataWithJSONObject"]
+- !private ["PSs8Hashable", "deleteCookie"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "removeObjectForKey"]
+- !private ["PSs8Hashable", "resume"]
+- !private ["PSs8Hashable", "setCookie"]
+- !private ["PSs8Hashable", "setObject"]
+- !private ["PSs8Hashable", "sharedHTTPCookieStorage"]
+- !private ["PSs8Hashable", "sharedSession"]
+- ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "stringForKey"]
+- !private ["PSs8Hashable", "synchronize"]
+- !private ["PSs8Hashable", "value"]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["CSo7NSArray", "Generator"]
+- !private ["PSo8NSCoding", "Generator"]
+- !private ["PSo8NSCoding", "HTTPBody"]
+- !private ["PSo8NSCoding", "HTTPMethod"]
+- !private ["PSo8NSCoding", "URL"]
+- !private ["PSo8NSCoding", "addValue"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "Generator"]
+- !private ["PSo9NSCopying", "HTTPBody"]
+- !private ["PSo9NSCopying", "HTTPMethod"]
+- !private ["PSo9NSCopying", "URL"]
+- !private ["PSo9NSCopying", "addValue"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["PSo17NSFastEnumeration", "Generator"]
+- !private ["C10Foundation15NSFastGenerator", "Element"]
+- !private ["CSo12NSHTTPCookie", "init"]
+- !private ["CSo12NSHTTPCookie", "value"]
+- !private ["CSo19NSHTTPCookieStorage", "cookies"]
+- !private ["CSo19NSHTTPCookieStorage", "deleteCookie"]
+- !private ["CSo19NSHTTPCookieStorage", "setCookie"]
+- !private ["CSo19NSHTTPCookieStorage", "sharedHTTPCookieStorage"]
+- !private ["VSC20NSJSONReadingOptions", "MutableLeaves"]
+- !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
+- !private ["CSo19NSJSONSerialization", "dataWithJSONObject"]
+- !private ["VSC20NSJSONWritingOptions", "Element"]
+- !private ["PSo16NSMutableCopying", "Generator"]
+- !private ["PSo16NSMutableCopying", "HTTPBody"]
+- !private ["PSo16NSMutableCopying", "HTTPMethod"]
+- !private ["PSo16NSMutableCopying", "URL"]
+- !private ["PSo16NSMutableCopying", "addValue"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo19NSMutableURLRequest", "HTTPBody"]
+- !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
+- !private ["CSo19NSMutableURLRequest", "URL"]
+- !private ["CSo19NSMutableURLRequest", "addValue"]
+- !private ["CSo19NSMutableURLRequest", "init"]
+- !private ["CSo8NSObject", "Generator"]
+- !private ["CSo8NSObject", "HTTPBody"]
+- !private ["CSo8NSObject", "HTTPMethod"]
+- !private ["CSo8NSObject", "JSONObjectWithData"]
+- !private ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "addValue"]
+- !private ["CSo8NSObject", "cookies"]
+- !private ["CSo8NSObject", "dataTaskWithRequest"]
+- !private ["CSo8NSObject", "dataWithJSONObject"]
+- !private ["CSo8NSObject", "deleteCookie"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "removeObjectForKey"]
+- !private ["CSo8NSObject", "resume"]
+- !private ["CSo8NSObject", "setCookie"]
+- !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "sharedHTTPCookieStorage"]
+- !private ["CSo8NSObject", "sharedSession"]
+- ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "stringForKey"]
+- !private ["CSo8NSObject", "synchronize"]
+- !private ["CSo8NSObject", "value"]
+- !private ["PSo16NSObjectProtocol", "Generator"]
+- !private ["PSo16NSObjectProtocol", "HTTPBody"]
+- !private ["PSo16NSObjectProtocol", "HTTPMethod"]
+- !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- !private ["PSo16NSObjectProtocol", "addValue"]
+- !private ["PSo16NSObjectProtocol", "cookies"]
+- !private ["PSo16NSObjectProtocol", "dataTaskWithRequest"]
+- !private ["PSo16NSObjectProtocol", "dataWithJSONObject"]
+- !private ["PSo16NSObjectProtocol", "deleteCookie"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "removeObjectForKey"]
+- !private ["PSo16NSObjectProtocol", "resume"]
+- !private ["PSo16NSObjectProtocol", "setCookie"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "sharedHTTPCookieStorage"]
+- !private ["PSo16NSObjectProtocol", "sharedSession"]
+- ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "stringForKey"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- !private ["PSo16NSObjectProtocol", "value"]
+- !private ["PSo14NSSecureCoding", "Generator"]
+- !private ["PSo14NSSecureCoding", "HTTPBody"]
+- !private ["PSo14NSSecureCoding", "HTTPMethod"]
+- !private ["PSo14NSSecureCoding", "URL"]
+- !private ["PSo14NSSecureCoding", "addValue"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo12NSURLRequest", "HTTPBody"]
+- !private ["CSo12NSURLRequest", "HTTPMethod"]
+- !private ["CSo12NSURLRequest", "URL"]
+- !private ["CSo12NSURLRequest", "addValue"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["CSo12NSURLSession", "dataTaskWithRequest"]
+- !private ["CSo12NSURLSession", "sharedSession"]
+- !private ["CSo20NSURLSessionDataTask", "resume"]
+- !private ["CSo16NSURLSessionTask", "resume"]
+- !private ["CSo14NSUserDefaults", "removeObjectForKey"]
+- !private ["CSo14NSUserDefaults", "setObject"]
+- ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "stringForKey"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs13OptionSetType", "Element"]
+- !private ["PSs13OptionSetType", "MutableLeaves"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16RawRepresentable", "Element"]
+- !private ["PSs16RawRepresentable", "MutableLeaves"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "Element"]
+- !private ["PSs14SetAlgebraType", "MutableLeaves"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["SS", "deinit"]
+- ["C13money202020154Tool", "AnyObject"]
+- ["C13money202020154Tool", "NSDictionary"]
+- !private ["C13money202020154Tool", "NSJSONSerialization"]
+- !private ["C13money202020154Tool", "NSMutableURLRequest"]
+- !private ["C13money202020154Tool", "NSURL"]
+- !private ["C13money202020154Tool", "NSURLSession"]
+- ["C13money202020154Tool", "NSUserDefaults"]
+- ["C13money202020154Tool", "String"]
+- ["C13money202020154Tool", "Tool"]
+- ["C13money202020154Tool", "Void"]
+- !private ["C13money202020154Tool", "_StandardUserDefaultsInstance"]
+- !private ["C13money202020154Tool", "_ToolSharedInstance"]
+- ["C13money202020154Tool", "callREST"]
+- ["C13money202020154Tool", "deinit"]
+- !private ["C13money202020154Tool", "dispatch_async"]
+- !private ["C13money202020154Tool", "dispatch_get_main_queue"]
+- ["C13money202020154Tool", "init"]
+- !private ["C13money202020154Tool", "print"]
+- ["C13money202020154Tool", "sharedInstance"]
+- ["C13money202020154Tool", "userDefaults"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Key"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "CSo7NSArray"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo17NSFastEnumeration"
+- !private "C10Foundation15NSFastGenerator"
+- !private "CSo12NSHTTPCookie"
+- !private "CSo19NSHTTPCookieStorage"
+- !private "VSC20NSJSONReadingOptions"
+- !private "CSo19NSJSONSerialization"
+- !private "VSC20NSJSONWritingOptions"
+- !private "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo5NSURL"
+- !private "CSo12NSURLRequest"
+- !private "CSo12NSURLSession"
+- !private "CSo20NSURLSessionDataTask"
+- !private "CSo16NSURLSessionTask"
+- "CSo14NSUserDefaults"
+- "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
+- "Sq"
+- !private "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
+- !private "VSs5Slice"
+- !private "SS"
+- "C13money202020154Tool"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+- !private "name"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Bridging_Header.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+interface-hash: "99df9176aaa9dccf30b0ff14ac6fd6a5"

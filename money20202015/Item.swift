@@ -15,6 +15,9 @@ class Item : NSObject, JSONObject {
     var price:String = ""
     
     required init(json:NSDictionary){
-        self.name = json.stringValue("name")
+        self.name = json.stringValue("item")
+        self.price = json.stringValue("price")
+        self.category = json.stringValue("price")
+        self.itemid = json.stringValue("_id")
     }
 }

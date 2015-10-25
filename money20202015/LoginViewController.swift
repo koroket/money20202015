@@ -47,10 +47,11 @@ extension LoginViewController {
         Tool.callREST(nil, url: url, method: "POST") { (response) -> Void in
             print(response)
             if let jsonArr = response as? NSArray, json = jsonArr[0] as? NSDictionary {
+            //if let json = response as? NSDictionary {
                 print(json);
                 print("login success")
-                print(json["type"] as? String ?? "")
-                let type = json["type"] as? String ?? ""
+                print(json["type"] as! String)
+                let type = json["type"] as! String
                 if type == "" {
                     //take to selection screen
                     print("choose usage controller")

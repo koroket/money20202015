@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C13money2020201525ChooseUsageViewController", ""]
 provides-dynamic-lookup:
-- "markType"
-- "didReceiveMemoryWarning"
-- "continueAsBusiness"
-- "viewDidLoad"
 - "continueAsConsumer"
+- "markType"
+- "viewDidLoad"
+- "continueAsBusiness"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "NSUserDefaults"
 - "ChooseUsageViewController"
-- "UIButton"
-- !private "StringLiteralType"
-- !private "Tool"
-- !private "UnicodeScalarType"
-- "UIViewController"
 - "String"
-- !private "SearchPlacesViewController"
-- !private "BooleanLiteralType"
-- !private "Void"
-- !private "??"
-- !private "SERVER"
-- !private "print"
 - !private "+"
+- !private "Void"
+- !private "UnicodeScalarType"
+- !private "StringLiteralType"
+- !private "SERVER"
+- !private "NSUserDefaults"
+- "UIViewController"
+- !private "SearchPlacesViewController"
+- !private "print"
+- !private "BooleanLiteralType"
+- "UIButton"
+- !private "??"
+- !private "Tool"
 depends-member:
 - !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "SERVER"]

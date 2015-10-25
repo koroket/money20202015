@@ -6,47 +6,48 @@ provides-nominal:
 provides-member:
 - ["C13money2020201526SearchPlacesViewController", ""]
 provides-dynamic-lookup:
-- "currentLocation"
-- "placesTableView"
+- "messageTextView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "numberOfSectionsInTableView"
 - "places"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "messageTextView"
+- "locationManager"
+- "locationManager"
 - "isConsumer"
-- "numberOfSectionsInTableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "didReceiveMemoryWarning"
+- "currentLocation"
+- "placesTableView"
 - "viewDidAppear"
-- "locationManager"
-- "locationManager"
 depends-top-level:
-- "CLLocationManagerDelegate"
-- !private "print"
-- "UITableView"
-- !private "StringLiteralType"
-- "UITableViewDataSource"
-- !private "Void"
-- !private "kCLLocationAccuracyBest"
-- "UITableViewDelegate"
-- "CLLocationManager"
-- "CGFloat"
-- !private "PlaceTableViewCell"
-- !private "UINib"
-- "UIViewController"
-- "Bool"
-- "Int"
 - "SearchPlacesViewController"
-- "NSIndexPath"
-- "UITableViewCell"
-- !private "CameraViewController"
-- "UITextView"
-- "CLLocation"
+- "UITableView"
 - "BooleanLiteralType"
+- !private "kCLLocationAccuracyBest"
+- "UITableViewCell"
+- "Int"
+- !private "UINib"
+- !private "CameraViewController"
+- !private "BusinessHomeViewController"
+- "NSIndexPath"
+- !private "Void"
+- !private "PlaceTableViewCell"
+- !private "StringLiteralType"
+- "CLLocationManager"
+- "Bool"
+- "UITextView"
 - "Place"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- "CGFloat"
+- "CLLocation"
+- "UIViewController"
+- !private "print"
+- "CLLocationManagerDelegate"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs9AnyObject", "CGFloat"]
@@ -594,6 +595,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "loadNib"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "BusinessHomeViewController"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CLLocation"]
 - ["CSo8NSObject", "CLLocationManager"]
@@ -602,7 +604,6 @@ depends-member:
 - ["CSo8NSObject", "NSIndexPath"]
 - ["CSo8NSObject", "Place"]
 - !private ["CSo8NSObject", "PlaceTableViewCell"]
-- !private ["CSo8NSObject", "SearchPlacesViewController"]
 - !private ["CSo8NSObject", "UINib"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
@@ -747,6 +748,7 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - ["C13money2020201526SearchPlacesViewController", "Bool"]
+- !private ["C13money2020201526SearchPlacesViewController", "BusinessHomeViewController"]
 - ["C13money2020201526SearchPlacesViewController", "CGFloat"]
 - ["C13money2020201526SearchPlacesViewController", "CLLocation"]
 - ["C13money2020201526SearchPlacesViewController", "CLLocationManager"]
@@ -755,7 +757,6 @@ depends-member:
 - ["C13money2020201526SearchPlacesViewController", "NSIndexPath"]
 - ["C13money2020201526SearchPlacesViewController", "Place"]
 - !private ["C13money2020201526SearchPlacesViewController", "PlaceTableViewCell"]
-- !private ["C13money2020201526SearchPlacesViewController", "SearchPlacesViewController"]
 - !private ["C13money2020201526SearchPlacesViewController", "UINib"]
 - ["C13money2020201526SearchPlacesViewController", "UITableView"]
 - ["C13money2020201526SearchPlacesViewController", "UITableViewCell"]
@@ -991,6 +992,7 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo5UINib", "init"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "BusinessHomeViewController"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CLLocation"]
 - ["CSo11UIResponder", "CLLocationManager"]
@@ -999,7 +1001,6 @@ depends-member:
 - ["CSo11UIResponder", "NSIndexPath"]
 - ["CSo11UIResponder", "Place"]
 - !private ["CSo11UIResponder", "PlaceTableViewCell"]
-- !private ["CSo11UIResponder", "SearchPlacesViewController"]
 - !private ["CSo11UIResponder", "UINib"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
@@ -1254,6 +1255,7 @@ depends-member:
 - !private ["CSo6UIView", "smartLoad"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "BusinessHomeViewController"]
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CLLocation"]
 - ["CSo16UIViewController", "CLLocationManager"]
@@ -1262,7 +1264,6 @@ depends-member:
 - ["CSo16UIViewController", "NSIndexPath"]
 - ["CSo16UIViewController", "Place"]
 - !private ["CSo16UIViewController", "PlaceTableViewCell"]
-- !private ["CSo16UIViewController", "SearchPlacesViewController"]
 - !private ["CSo16UIViewController", "UINib"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
