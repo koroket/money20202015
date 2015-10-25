@@ -19,6 +19,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Profile" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-ud-Twt">
+                        <rect key="frame" x="225" y="80" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="2bU-eG-AOm"/>
+                            <constraint firstAttribute="width" constant="150" id="fqu-zi-LYd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFW-oY-hto">
+                        <rect key="frame" x="237.5" y="240" width="125.5" height="34.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                        <color key="textColor" red="0.54728835980000001" green="0.54728835980000001" blue="0.54728835980000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Business" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzi-NF-jkL">
+                        <rect key="frame" x="267" y="272.5" width="65" height="23.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <color key="textColor" red="0.54728835980000001" green="0.54728835980000001" blue="0.54728835980000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-oc-xJx">
                         <rect key="frame" x="34" y="40" width="532" height="532"/>
                         <subviews>
@@ -124,22 +143,32 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xj4-HL-P27">
                                 <rect key="frame" x="266" y="266" width="266" height="266"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIs-Co-0OD">
-                                        <rect key="frame" x="105" y="118" width="55" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIs-Co-0OD">
+                                        <rect key="frame" x="66" y="66" width="133" height="133"/>
                                         <animations/>
-                                        <state key="normal" title="Manage"/>
+                                        <state key="normal" image="Manage"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XD-w5-EAg">
+                                        <rect key="frame" x="96" y="199" width="73.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="YIs-Co-0OD" firstAttribute="width" secondItem="Xj4-HL-P27" secondAttribute="width" multiplier="1:2" id="4uj-gl-pZv"/>
                                     <constraint firstItem="YIs-Co-0OD" firstAttribute="centerX" secondItem="Xj4-HL-P27" secondAttribute="centerX" id="62M-gC-IXN"/>
+                                    <constraint firstItem="YIs-Co-0OD" firstAttribute="height" secondItem="Xj4-HL-P27" secondAttribute="height" multiplier="1:2" id="Hdj-cF-yLk"/>
+                                    <constraint firstItem="6XD-w5-EAg" firstAttribute="centerX" secondItem="YIs-Co-0OD" secondAttribute="centerX" id="M7t-xt-mo7"/>
+                                    <constraint firstItem="6XD-w5-EAg" firstAttribute="top" secondItem="YIs-Co-0OD" secondAttribute="bottom" id="XsW-yb-Ibp"/>
                                     <constraint firstItem="YIs-Co-0OD" firstAttribute="centerY" secondItem="Xj4-HL-P27" secondAttribute="centerY" id="xPt-ka-NMB"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.80317873679999996" green="0.80317873679999996" blue="0.80317873679999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="f38-py-RfN" firstAttribute="top" secondItem="KXb-oc-xJx" secondAttribute="top" id="1Y2-TK-yXP"/>
                             <constraint firstItem="f38-py-RfN" firstAttribute="height" secondItem="k37-Ga-hsN" secondAttribute="height" id="9fV-7g-gJg"/>
@@ -168,12 +197,28 @@
                     </view>
                 </subviews>
                 <animations/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.86065641537142856" green="0.86065641537142856" blue="0.86065641537142856" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="ewT-dR-ZlD" firstAttribute="top" secondItem="KXb-oc-xJx" secondAttribute="bottom" constant="28" id="6ib-nD-yR7"/>
+                    <constraint firstItem="qFW-oY-hto" firstAttribute="centerX" secondItem="OLG-ud-Twt" secondAttribute="centerX" id="6lt-JQ-uAh"/>
+                    <constraint firstItem="OLG-ud-Twt" firstAttribute="leading" secondItem="p3g-CA-scI" secondAttribute="leadingMargin" constant="112" id="7se-dc-BNI"/>
+                    <constraint firstItem="OLG-ud-Twt" firstAttribute="top" secondItem="vnQ-oI-cf4" secondAttribute="bottom" constant="60" id="CPH-yN-Xvd"/>
+                    <constraint firstItem="OLG-ud-Twt" firstAttribute="centerY" secondItem="p3g-CA-scI" secondAttribute="centerY" id="Dwk-dF-Ejo"/>
+                    <constraint firstItem="OLG-ud-Twt" firstAttribute="centerY" secondItem="p3g-CA-scI" secondAttribute="centerY" id="OBc-vL-Lic"/>
                     <constraint firstItem="KXb-oc-xJx" firstAttribute="leading" secondItem="p3g-CA-scI" secondAttribute="leadingMargin" constant="14" id="Qfv-nj-vQL"/>
+                    <constraint firstItem="uzi-NF-jkL" firstAttribute="centerX" secondItem="qFW-oY-hto" secondAttribute="centerX" id="THt-MJ-9rF"/>
+                    <constraint firstItem="qFW-oY-hto" firstAttribute="top" secondItem="OLG-ud-Twt" secondAttribute="bottom" constant="10" id="UpZ-pf-9a7"/>
+                    <constraint firstItem="OLG-ud-Twt" firstAttribute="centerX" secondItem="p3g-CA-scI" secondAttribute="centerX" id="Y2J-Lq-xBL"/>
+                    <constraint firstItem="uzi-NF-jkL" firstAttribute="top" secondItem="qFW-oY-hto" secondAttribute="bottom" constant="5" id="ihb-t7-eIo"/>
                     <constraint firstAttribute="trailingMargin" secondItem="KXb-oc-xJx" secondAttribute="trailing" constant="14" id="tPl-U0-I5P"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7se-dc-BNI"/>
+                        <exclude reference="Dwk-dF-Ejo"/>
+                        <exclude reference="OBc-vL-Lic"/>
+                    </mask>
+                </variation>
             </view>
             <point key="canvasLocation" x="403" y="331"/>
         </viewController>
@@ -181,6 +226,8 @@
     <resources>
         <image name="Add" width="110" height="110"/>
         <image name="Data" width="110" height="110"/>
+        <image name="Icon Profile" width="150" height="150"/>
+        <image name="Manage" width="110" height="110"/>
         <image name="Queue" width="110" height="110"/>
     </resources>
 </document>
