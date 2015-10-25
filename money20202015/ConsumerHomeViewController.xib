@@ -29,9 +29,12 @@
                                     <constraint firstAttribute="width" constant="46" id="vmc-yX-k93"/>
                                 </constraints>
                                 <state key="normal" image="Back Arrow"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="PJs-jL-9wb" eventType="touchUpInside" id="c6b-Ju-oX7"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8As-OE-uC4">
-                                <rect key="frame" x="275" y="9" width="49" height="27.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consumer Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8As-OE-uC4">
+                                <rect key="frame" x="223" y="9" width="153.5" height="27.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -86,7 +89,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsfeed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV3-1C-ezz">
-                                        <rect key="frame" x="87.5" y="199" width="90.5" height="27.5"/>
+                                        <rect key="frame" x="87" y="199" width="90.5" height="27.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,7 +191,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vo-rF-Uef">
-                                        <rect key="frame" x="110" y="199.5" width="46.5" height="27.5"/>
+                                        <rect key="frame" x="110" y="199" width="46.5" height="27.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -263,6 +266,9 @@
                     </mask>
                 </variation>
             </view>
+            <connections>
+                <outlet property="profileImageView" destination="dgf-ps-rBE" id="Ewp-Uw-ORl"/>
+            </connections>
             <point key="canvasLocation" x="404" y="436"/>
         </viewController>
     </objects>

@@ -10,6 +10,12 @@ import UIKit
 
 class CheckoutViewController: UIViewController {
     
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     var items:[Item] = []
 
     @IBOutlet var listTableView: UITableView!

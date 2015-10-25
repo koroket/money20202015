@@ -12,6 +12,12 @@ let SLIDE_ANIMATION_DURATION:NSTimeInterval = 0.4
 
 class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     var items:[Item] = []
     
     //Maps itemid to the number of items

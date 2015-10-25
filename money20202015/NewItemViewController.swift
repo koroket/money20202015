@@ -12,6 +12,12 @@ var myNumSet:NSCharacterSet = NSCharacterSet(charactersInString: "0123456789").i
 
 class NewItemViewController: UIViewController {
 
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     @IBOutlet var nameTextField: UITextField!
     
     @IBOutlet var priceTextField: UITextField!

@@ -47,6 +47,9 @@
                                             <constraint firstAttribute="width" constant="48" id="iiK-te-eZh"/>
                                         </constraints>
                                         <state key="normal" image="Edit + Back Arrow"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="mm7-wv-rNm" eventType="touchUpInside" id="M35-Qk-LoR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -112,7 +115,7 @@
                                             <constraint firstAttribute="width" constant="250" id="ZSm-qo-9br"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price of Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr7-dT-Ybl">
@@ -123,7 +126,7 @@
                                             <constraint firstAttribute="width" constant="250" id="mW8-mm-aOc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>

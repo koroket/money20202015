@@ -10,9 +10,20 @@ import UIKit
 
 class BusinessHomeViewController: UIViewController {
 
+    @IBOutlet var profileImageView: UIImageView!
+    
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String {
+            profileImageView.circleCrop()
+            profileImageView.smartLoad("https://graph.facebook.com/" + fbid + "/picture?type=large")
+        }
         // Do any additional setup after loading the view.
     }
 

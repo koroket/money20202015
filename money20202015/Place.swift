@@ -54,7 +54,7 @@ class Place : NSObject, JSONObject {
     
     func placePhotoURL() -> String {
         if (self.photoRef as NSString).length > 0 {
-            let photoURL = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=\(self.photoRef)&sensor=false&key=AIzaSyClmfaOWfPTif6uSc4TWMMyoyCmesXGJFw"
+            let photoURL = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=\(self.photoRef)&sensor=false&key=AIzaSyA8aOqbScPCFE1VEEf5ZsfCG8bECYi78Y0"
             return photoURL
         } else {
             return ""

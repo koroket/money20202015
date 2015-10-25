@@ -10,10 +10,20 @@ import UIKit
 
 class ConsumerHomeViewController: UIViewController {
 
+    @IBOutlet var profileImageView: UIImageView!
+    
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String {
+            profileImageView.circleCrop()
+            profileImageView.smartLoad("https://graph.facebook.com/" + fbid + "/picture?type=large")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +47,13 @@ class ConsumerHomeViewController: UIViewController {
     }
     
     @IBAction func showDataPressed(sender: UIButton) {
-        
+        if let nextViewController = "ConsumerDataViewController".loadNib() as? ConsumerDataViewController {
+            self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                print("done nigah")
+            })
+        } else {
+            print("failed loading ConsumerDataViewController")
+        }
     }
     
     @IBAction func settingsPressed(sender: UIButton) {
