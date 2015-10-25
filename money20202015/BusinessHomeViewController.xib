@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,8 +18,120 @@
             <view key="view" contentMode="scaleToFill" id="p3g-CA-scI">
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-oc-xJx">
+                        <rect key="frame" x="20" y="40" width="560" height="560"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k37-Ga-hsN">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZr-Z3-O9i">
+                                        <rect key="frame" x="110" y="125" width="60" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="add item"/>
+                                        <connections>
+                                            <action selector="addItemPressed:" destination="ykG-P7-qe5" eventType="touchUpInside" id="LXy-Xx-UHF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="centerY" secondItem="k37-Ga-hsN" secondAttribute="centerY" id="bES-1R-99T"/>
+                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="centerX" secondItem="k37-Ga-hsN" secondAttribute="centerX" id="srf-6U-9Xj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f38-py-RfN">
+                                <rect key="frame" x="280" y="0.0" width="280" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBV-kG-DBY">
+                                        <rect key="frame" x="124" y="125" width="31" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="data"/>
+                                        <connections>
+                                            <action selector="showDataPressed:" destination="ykG-P7-qe5" eventType="touchUpInside" id="Hhx-OD-ftV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bBV-kG-DBY" firstAttribute="centerY" secondItem="f38-py-RfN" secondAttribute="centerY" id="4vT-1c-Wz5"/>
+                                    <constraint firstItem="bBV-kG-DBY" firstAttribute="centerX" secondItem="f38-py-RfN" secondAttribute="centerX" id="S0F-E9-228"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RME-tm-EWW">
+                                <rect key="frame" x="0.0" y="280" width="280" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp6-aw-7DH">
+                                        <rect key="frame" x="118" y="125" width="43" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="queue"/>
+                                        <connections>
+                                            <action selector="showQueuePressed:" destination="ykG-P7-qe5" eventType="touchUpInside" id="4Z2-4Y-JeL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yp6-aw-7DH" firstAttribute="centerX" secondItem="RME-tm-EWW" secondAttribute="centerX" id="ebZ-Ol-EuU"/>
+                                    <constraint firstItem="yp6-aw-7DH" firstAttribute="centerY" secondItem="RME-tm-EWW" secondAttribute="centerY" id="rwU-nX-Ou8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xj4-HL-P27">
+                                <rect key="frame" x="280" y="280" width="280" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIs-Co-0OD">
+                                        <rect key="frame" x="112.5" y="125" width="55" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Manage"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YIs-Co-0OD" firstAttribute="centerX" secondItem="Xj4-HL-P27" secondAttribute="centerX" id="62M-gC-IXN"/>
+                                    <constraint firstItem="YIs-Co-0OD" firstAttribute="centerY" secondItem="Xj4-HL-P27" secondAttribute="centerY" id="xPt-ka-NMB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f38-py-RfN" firstAttribute="top" secondItem="KXb-oc-xJx" secondAttribute="top" id="1Y2-TK-yXP"/>
+                            <constraint firstItem="f38-py-RfN" firstAttribute="height" secondItem="k37-Ga-hsN" secondAttribute="height" id="9fV-7g-gJg"/>
+                            <constraint firstAttribute="bottom" secondItem="RME-tm-EWW" secondAttribute="bottom" id="BDJ-t3-Xc4"/>
+                            <constraint firstItem="k37-Ga-hsN" firstAttribute="leading" secondItem="KXb-oc-xJx" secondAttribute="leading" id="C8o-Lz-34s"/>
+                            <constraint firstItem="k37-Ga-hsN" firstAttribute="leading" secondItem="KXb-oc-xJx" secondAttribute="leading" constant="160" id="FdY-V7-nJ1"/>
+                            <constraint firstAttribute="bottom" secondItem="Xj4-HL-P27" secondAttribute="bottom" id="Fsi-Yx-T5J"/>
+                            <constraint firstItem="RME-tm-EWW" firstAttribute="leading" secondItem="KXb-oc-xJx" secondAttribute="leading" id="HHz-aG-sT6"/>
+                            <constraint firstAttribute="width" secondItem="KXb-oc-xJx" secondAttribute="height" multiplier="1:1" id="HNu-gB-VpD"/>
+                            <constraint firstItem="RME-tm-EWW" firstAttribute="top" secondItem="f38-py-RfN" secondAttribute="bottom" id="Lqm-ps-0Pl"/>
+                            <constraint firstItem="Xj4-HL-P27" firstAttribute="top" secondItem="f38-py-RfN" secondAttribute="bottom" id="NHQ-Eq-GG6"/>
+                            <constraint firstItem="Xj4-HL-P27" firstAttribute="leading" secondItem="RME-tm-EWW" secondAttribute="trailing" id="OUC-zv-BQN"/>
+                            <constraint firstAttribute="trailing" secondItem="f38-py-RfN" secondAttribute="trailing" id="PD5-98-3b1"/>
+                            <constraint firstItem="k37-Ga-hsN" firstAttribute="top" secondItem="KXb-oc-xJx" secondAttribute="top" id="POH-wJ-6hj"/>
+                            <constraint firstItem="k37-Ga-hsN" firstAttribute="height" secondItem="KXb-oc-xJx" secondAttribute="height" multiplier="1:2" id="Q4x-JO-Sjs"/>
+                            <constraint firstItem="f38-py-RfN" firstAttribute="leading" secondItem="k37-Ga-hsN" secondAttribute="trailing" id="YLN-dw-Vy3"/>
+                            <constraint firstAttribute="trailing" secondItem="Xj4-HL-P27" secondAttribute="trailing" id="ZqR-d6-ozz"/>
+                            <constraint firstItem="k37-Ga-hsN" firstAttribute="width" secondItem="KXb-oc-xJx" secondAttribute="width" multiplier="1:2" id="wMd-tG-AbC"/>
+                            <constraint firstItem="RME-tm-EWW" firstAttribute="width" secondItem="k37-Ga-hsN" secondAttribute="width" id="xdO-bi-4Iv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FdY-V7-nJ1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
                 <animations/>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ewT-dR-ZlD" firstAttribute="top" secondItem="KXb-oc-xJx" secondAttribute="bottom" id="6ib-nD-yR7"/>
+                    <constraint firstItem="KXb-oc-xJx" firstAttribute="leading" secondItem="p3g-CA-scI" secondAttribute="leadingMargin" id="Qfv-nj-vQL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KXb-oc-xJx" secondAttribute="trailing" id="tPl-U0-I5P"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="403" y="331"/>
         </viewController>
