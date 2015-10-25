@@ -88,10 +88,10 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import AVFoundation;
+@import CoreGraphics;
+@import ObjectiveC;
 @import FBSDKLoginKit;
 @import Foundation;
-@import ObjectiveC;
-@import CoreGraphics;
 @import CoreLocation;
 #endif
 
@@ -123,34 +123,78 @@ SWIFT_CLASS("_TtC13money2020201511AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIView;
-@class NSLayoutConstraint;
-@class UITableView;
-@class AVCaptureSession;
-@class AVCaptureVideoPreviewLayer;
-@class AVCaptureOutput;
-@class AVCaptureConnection;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC13money2020201520CameraViewController")
-@interface CameraViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
-@property (nonatomic, strong) IBOutlet UIView * __null_unspecified cameraView;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * __null_unspecified cameraViewHeightConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * __null_unspecified listTableViewTopConstraint;
-@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified listTableView;
-@property (nonatomic, strong) AVCaptureSession * __nullable captureSession;
-@property (nonatomic, strong) AVCaptureVideoPreviewLayer * __nullable videoPreviewLayer;
-@property (nonatomic, strong) UIView * __nullable qrCodeFrameView;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull supportedBarCodes;
+SWIFT_CLASS("_TtC13money2020201526BusinessHomeViewController")
+@interface BusinessHomeViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (void)captureOutput:(AVCaptureOutput * __null_unspecified)captureOutput didOutputMetadataObjects:(NSArray * __null_unspecified)metadataObjects fromConnection:(AVCaptureConnection * __null_unspecified)connection;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class Item;
+@class NSMutableDictionary;
+@class UIView;
+@class NSLayoutConstraint;
+@class UITableView;
 @class UIButton;
+@class AVCaptureSession;
+@class AVCaptureVideoPreviewLayer;
+@class AVCaptureOutput;
+@class AVCaptureConnection;
+
+SWIFT_CLASS("_TtC13money2020201520CameraViewController")
+@interface CameraViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
+@property (nonatomic, copy) NSArray<Item *> * __nonnull items;
+@property (nonatomic, strong) NSMutableDictionary * __nonnull itemCountHash;
+@property (nonatomic, strong) IBOutlet UIView * __null_unspecified cameraView;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint * __null_unspecified cameraViewHeightConstraint;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint * __null_unspecified listTableViewTopConstraint;
+@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified listTableView;
+@property (nonatomic, strong) IBOutlet UIButton * __null_unspecified switchCameraButton;
+@property (nonatomic, strong) AVCaptureSession * __nullable captureSession;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer * __nullable videoPreviewLayer;
+@property (nonatomic, strong) UIView * __nullable qrCodeFrameView;
+@property (nonatomic) BOOL isShowingQR;
+@property (nonatomic) BOOL occupied;
+- (void)shiftDown;
+- (void)shiftUp;
+- (void)getItemData:(NSString * __nonnull)itemid;
+- (void)addItem:(Item * __nonnull)item;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull supportedBarCodes;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)captureOutput:(AVCaptureOutput * __null_unspecified)captureOutput didOutputMetadataObjects:(NSArray * __null_unspecified)metadataObjects fromConnection:(AVCaptureConnection * __null_unspecified)connection;
+- (IBAction)switchCameraPressed:(UIButton * __nonnull)sender;
+- (IBAction)checkoutPressed:(UIButton * __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSIndexPath;
+@class UITableViewCell;
+
+@interface CameraViewController (SWIFT_EXTENSION(money20202015)) <UITableViewDelegate, UIScrollViewDelegate, UITableViewDataSource>
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForHeaderInSection:(NSInteger)section;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForFooterInSection:(NSInteger)section;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+@end
+
+
+SWIFT_CLASS("_TtC13money2020201522CheckoutViewController")
+@interface CheckoutViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC13money2020201525ChooseUsageViewController")
 @interface ChooseUsageViewController : UIViewController
@@ -159,6 +203,24 @@ SWIFT_CLASS("_TtC13money2020201525ChooseUsageViewController")
 - (IBAction)continueAsConsumer:(UIButton * __nonnull)sender;
 - (IBAction)continueAsBusiness:(UIButton * __nonnull)sender;
 - (void)markType:(NSString * __nonnull)type;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13money2020201526ConsumerDataViewController")
+@interface ConsumerDataViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13money2020201526ConsumerHomeViewController")
+@interface ConsumerHomeViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -174,6 +236,26 @@ SWIFT_CLASS("_TtC13money2020201523DisplayQRViewController")
 - (void)viewDidAppear:(BOOL)animated;
 - (void)loadQR;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSDictionary;
+
+SWIFT_CLASS("_TtC13money202020154Item")
+@interface Item : NSObject
+@property (nonatomic, copy) NSString * __nonnull itemid;
+@property (nonatomic, copy) NSString * __nonnull name;
+@property (nonatomic, copy) NSString * __nonnull category;
+@property (nonatomic, copy) NSString * __nonnull price;
+- (nonnull instancetype)initWithJson:(NSDictionary * __nonnull)json OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC13money2020201517ItemTableViewCell")
+@interface ItemTableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * __null_unspecified nameLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -234,7 +316,6 @@ SWIFT_CLASS("_TtC13money202020155Place")
 - (NSString * __nonnull)placePhotoURL;
 @end
 
-@class UILabel;
 
 SWIFT_CLASS("_TtC13money2020201518PlaceTableViewCell")
 @interface PlaceTableViewCell : UITableViewCell
@@ -270,7 +351,6 @@ SWIFT_CLASS("_TtC13money2020201526SearchPlacesViewController")
 - (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * __nonnull)locations;
 @end
 
-@class NSIndexPath;
 
 @interface SearchPlacesViewController (SWIFT_EXTENSION(money20202015)) <UITableViewDelegate, UIScrollViewDelegate, UITableViewDataSource>
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForHeaderInSection:(NSInteger)section;

@@ -65,6 +65,38 @@
             endingLineNumber = "74"
             landmarkName = "login(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1)"
+                  moduleName = "money20202015"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
+                  timestampString = "467463165.778657"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "4973">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1).(closure #3)"
+                  moduleName = "money20202015"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
+                  timestampString = "467463165.779514"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -129,6 +161,38 @@
             endingLineNumber = "58"
             landmarkName = "login(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1)"
+                  moduleName = "money20202015"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
+                  timestampString = "467463165.815349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "3291">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "money20202015"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
+                  timestampString = "467463165.815675"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,7 +218,7 @@
                   moduleName = "money20202015"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
-                  timestampString = "467463081.123136"
+                  timestampString = "467463165.840188"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -169,7 +233,7 @@
                   moduleName = "money20202015"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
-                  timestampString = "467463081.123473"
+                  timestampString = "467463165.84048"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"

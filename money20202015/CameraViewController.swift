@@ -8,7 +8,14 @@
 
 import AVFoundation
 
+let SLIDE_ANIMATION_DURATION:NSTimeInterval = 0.4
+
 class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    
+    var items:[Item] = []
+    
+    //Maps itemid to the number of items
+    var itemCountHash:NSMutableDictionary = NSMutableDictionary()
     
     @IBOutlet var cameraView: UIView!
     
@@ -18,16 +25,71 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     
     @IBOutlet var listTableView: UITableView!
     
+    @IBOutlet var switchCameraButton: UIButton!
     
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
+    
+    var isShowingQR:Bool = false {
+        didSet {
+            if isShowingQR {
+                shiftDown()
+            } else {
+                shiftUp()
+            }
+        }
+    }
+    
+    var occupied:Bool = false
+    
+    func shiftDown(){
+        occupied = true
+        view.layoutIfNeeded()
+        listTableViewTopConstraint.constant = cameraViewHeightConstraint.constant
+        UIView.animateWithDuration(SLIDE_ANIMATION_DURATION, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+            }) { (done) -> Void in
+            self.occupied = false
+            self.switchCameraButton.setTitle("Close Camera", forState: .Normal)
+        }
+    }
+    
+    func shiftUp(){
+        occupied = true
+        view.layoutIfNeeded()
+        listTableViewTopConstraint.constant = 0
+        UIView.animateWithDuration(SLIDE_ANIMATION_DURATION, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+            }) { (done) -> Void in
+                self.occupied = false
+                self.switchCameraButton.setTitle("Scan QR Code", forState: .Normal)
+        }
+    }
+    
+    func getItemData(itemid:String){
+        if itemCountHash[itemid] == nil {
+            itemCountHash[itemid] = 1
+            //Talk to server then create Item object and then call addItem
+            let newItem:Item = Item(json: ["name": "Cat"])
+            addItem(newItem)
+        }
+    }
+    
+    func addItem(item:Item) {
+        items.append(item)
+        listTableView.reloadData()
+    }
     
     // Added to support different barcodes
     let supportedBarCodes = [AVMetadataObjectTypeQRCode, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeCode39Code, AVMetadataObjectTypeCode93Code, AVMetadataObjectTypeUPCECode, AVMetadataObjectTypePDF417Code, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeAztecCode]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "ItemTableViewCell", bundle: nil)
+        listTableView.registerNib(nib,
+            forCellReuseIdentifier: "itemCell")
         
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
         // as the media type parameter.
@@ -105,9 +167,63 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
             if metadataObj.stringValue != nil {
-                print(metadataObj.stringValue)//Read value
+                if !occupied && isShowingQR {
+                    print(metadataObj.stringValue)//Read value
+                    getItemData(metadataObj.stringValue)
+                }
             }
         }
+    }
+    
+    @IBAction func switchCameraPressed(sender: UIButton) {
+        isShowingQR = !isShowingQR
+    }
+    
+    @IBAction func checkoutPressed(sender: UIButton) {
+        if let nextViewController = "CheckoutViewController".loadNib() as? CheckoutViewController {
+            self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                print("done nigah")
+            })
+        } else {
+            print("failed loading CheckoutViewController")
+        }
+    }
+}
+
+extension CameraViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.0
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.0
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100.0
+    }
+    
+    func tableView(tableView: UITableView,
+        didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+    }
+    
+    func tableView(tableView: UITableView,
+        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            let cell:ItemTableViewCell = tableView.dequeueReusableCellWithIdentifier(
+                "itemCell",
+                forIndexPath: indexPath) as! ItemTableViewCell
+            let item = items[indexPath.row]
+            cell.nameLabel.text = item.name
+            return cell
     }
 }
 

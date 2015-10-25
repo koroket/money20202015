@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -31,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="678-11-cHi">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="430"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -40,7 +40,7 @@
                                         </connections>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KoR-4y-ogO">
-                                        <rect key="frame" x="0.0" y="540" width="600" height="40"/>
+                                        <rect key="frame" x="0.0" y="430" width="600" height="150"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -57,28 +57,56 @@
                                     <constraint firstItem="KoR-4y-ogO" firstAttribute="top" secondItem="678-11-cHi" secondAttribute="bottom" id="xRE-qK-IKT"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-f1-R95">
-                                <rect key="frame" x="0.0" y="540" width="600" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WwS-U8-yUM" userLabel="Sticky Bottom View">
+                                <rect key="frame" x="0.0" y="430" width="600" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-f1-R95">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Wwg-Ig-15E"/>
+                                        </constraints>
+                                        <state key="normal" title="QR"/>
+                                        <connections>
+                                            <action selector="switchCameraPressed:" destination="OuQ-xg-fhx" eventType="touchUpInside" id="izl-ef-09p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sJ-kS-o2R">
+                                        <rect key="frame" x="0.0" y="100" width="600" height="50"/>
+                                        <animations/>
+                                        <state key="normal" title="Checkout"/>
+                                        <connections>
+                                            <action selector="checkoutPressed:" destination="OuQ-xg-fhx" eventType="touchUpInside" id="9t9-xQ-oOK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Wwg-Ig-15E"/>
+                                    <constraint firstAttribute="bottom" secondItem="9sJ-kS-o2R" secondAttribute="bottom" id="AIr-me-HAV"/>
+                                    <constraint firstAttribute="trailing" secondItem="9sJ-kS-o2R" secondAttribute="trailing" id="G06-tx-QLe"/>
+                                    <constraint firstItem="Oxh-f1-R95" firstAttribute="leading" secondItem="WwS-U8-yUM" secondAttribute="leading" id="Kzz-6Q-4sK"/>
+                                    <constraint firstItem="Oxh-f1-R95" firstAttribute="top" secondItem="WwS-U8-yUM" secondAttribute="top" id="LWu-Mu-kHd"/>
+                                    <constraint firstAttribute="height" constant="150" id="T1U-A7-1QP"/>
+                                    <constraint firstItem="9sJ-kS-o2R" firstAttribute="top" secondItem="Oxh-f1-R95" secondAttribute="bottom" id="YAd-wn-dT6"/>
+                                    <constraint firstItem="9sJ-kS-o2R" firstAttribute="leading" secondItem="WwS-U8-yUM" secondAttribute="leading" id="cHM-hD-fTE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oxh-f1-R95" secondAttribute="trailing" id="ld0-dj-fI2"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="KoR-4y-ogO" firstAttribute="height" secondItem="WwS-U8-yUM" secondAttribute="height" id="0gr-N7-9UR"/>
                             <constraint firstAttribute="trailing" secondItem="805-86-i4E" secondAttribute="trailing" id="2GK-hd-Mjy"/>
+                            <constraint firstAttribute="trailing" secondItem="WwS-U8-yUM" secondAttribute="trailing" id="5SY-Nt-gAi"/>
                             <constraint firstItem="805-86-i4E" firstAttribute="leading" secondItem="hUV-HT-mgf" secondAttribute="leading" id="6lV-gx-07M"/>
-                            <constraint firstAttribute="bottom" secondItem="Oxh-f1-R95" secondAttribute="bottom" id="Dm6-Kj-aqs"/>
                             <constraint firstItem="Nza-rU-NKb" firstAttribute="top" secondItem="hUV-HT-mgf" secondAttribute="top" id="ELj-aZ-d6g"/>
                             <constraint firstItem="Nza-rU-NKb" firstAttribute="leading" secondItem="hUV-HT-mgf" secondAttribute="leading" id="El4-Z7-y4S"/>
-                            <constraint firstItem="Oxh-f1-R95" firstAttribute="leading" secondItem="hUV-HT-mgf" secondAttribute="leading" id="U6a-eN-Ozh"/>
                             <constraint firstItem="805-86-i4E" firstAttribute="top" secondItem="hUV-HT-mgf" secondAttribute="top" id="d1J-k7-AzG"/>
-                            <constraint firstItem="KoR-4y-ogO" firstAttribute="height" secondItem="Oxh-f1-R95" secondAttribute="height" id="fpY-uc-Rsj"/>
                             <constraint firstAttribute="bottom" secondItem="Nza-rU-NKb" secondAttribute="bottom" id="gbx-qW-yaA"/>
-                            <constraint firstAttribute="trailing" secondItem="Oxh-f1-R95" secondAttribute="trailing" id="qmB-iw-KZd"/>
+                            <constraint firstAttribute="bottom" secondItem="WwS-U8-yUM" secondAttribute="bottom" id="jVP-DT-cih"/>
+                            <constraint firstItem="WwS-U8-yUM" firstAttribute="leading" secondItem="hUV-HT-mgf" secondAttribute="leading" id="oUr-ba-gYM"/>
                             <constraint firstAttribute="trailing" secondItem="Nza-rU-NKb" secondAttribute="trailing" id="zNR-dy-pZk"/>
                         </constraints>
                     </view>
@@ -97,6 +125,7 @@
                 <outlet property="cameraViewHeightConstraint" destination="kRl-US-ww0" id="3me-US-Q0A"/>
                 <outlet property="listTableView" destination="678-11-cHi" id="cNx-zP-Uee"/>
                 <outlet property="listTableViewTopConstraint" destination="ELj-aZ-d6g" id="nXY-iM-jLz"/>
+                <outlet property="switchCameraButton" destination="Oxh-f1-R95" id="Peg-07-IDH"/>
             </connections>
             <point key="canvasLocation" x="275" y="334"/>
         </viewController>
