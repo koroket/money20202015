@@ -95,6 +95,8 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import CoreLocation;
 #endif
 
+#import "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Bridging_Header.h"
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
@@ -186,16 +188,40 @@ SWIFT_CLASS("_TtC13money2020201520CameraViewController")
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (BOOL)tableView:(UITableView * __nonnull)tableView shouldHighlightRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 @end
 
 
 SWIFT_CLASS("_TtC13money2020201522CheckoutViewController")
 @interface CheckoutViewController : UIViewController
+@property (nonatomic, copy) NSArray<Item *> * __nonnull items;
+@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified listTableView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)payPressed:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSError;
+@class SIMCreditCardToken;
+
+@interface CheckoutViewController (SWIFT_EXTENSION(money20202015)) <SIMChargeCardViewControllerDelegate>
+- (void)chargeCardCancelled;
+- (void)creditCardTokenFailedWithError:(NSError * __null_unspecified)error;
+- (void)creditCardTokenProcessed:(SIMCreditCardToken * __null_unspecified)token;
+@end
+
+
+@interface CheckoutViewController (SWIFT_EXTENSION(money20202015)) <UITableViewDelegate, UIScrollViewDelegate, UITableViewDataSource>
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForHeaderInSection:(NSInteger)section;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForFooterInSection:(NSInteger)section;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 @end
 
 
@@ -224,6 +250,10 @@ SWIFT_CLASS("_TtC13money2020201526ConsumerHomeViewController")
 @interface ConsumerHomeViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)scanPressed:(UIButton * __nonnull)sender;
+- (IBAction)feedPressed:(UIButton * __nonnull)sender;
+- (IBAction)showDataPressed:(UIButton * __nonnull)sender;
+- (IBAction)settingsPressed:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -258,13 +288,16 @@ SWIFT_CLASS("_TtC13money202020154Item")
 SWIFT_CLASS("_TtC13money2020201517ItemTableViewCell")
 @interface ItemTableViewCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet UILabel * __null_unspecified nameLabel;
+@property (nonatomic, strong) IBOutlet UILabel * __null_unspecified priceLabel;
+@property (nonatomic, strong) IBOutlet UILabel * __null_unspecified countLabel;
+- (IBAction)plusPressed:(UIButton * __nonnull)sender;
+- (IBAction)minusPressed:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
-@class NSError;
 
 SWIFT_CLASS("_TtC13money2020201519LoginViewController")
 @interface LoginViewController : UIViewController <FBSDKLoginButtonDelegate>

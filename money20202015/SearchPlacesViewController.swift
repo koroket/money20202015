@@ -102,6 +102,10 @@ extension SearchPlacesViewController : UITableViewDelegate, UITableViewDataSourc
         didSelectRowAtIndexPath indexPath: NSIndexPath) {
             let place = places[indexPath.row]
             print("Selected place with place id = \(place.pid)")
+            NSUserDefaults.standardUserDefaults().setValue(place.pid, forKey: "businessId")
+            NSUserDefaults.standardUserDefaults().synchronize();
+            
+            //var fbId = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String
             //Do somthing with this
             if isConsumer {
                 if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {

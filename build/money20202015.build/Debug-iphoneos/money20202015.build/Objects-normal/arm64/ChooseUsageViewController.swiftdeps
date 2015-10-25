@@ -6,26 +6,27 @@ provides-nominal:
 provides-member:
 - ["C13money2020201525ChooseUsageViewController", ""]
 provides-dynamic-lookup:
+- "continueAsBusiness"
 - "viewDidLoad"
 - "markType"
-- "continueAsBusiness"
 - "didReceiveMemoryWarning"
 - "continueAsConsumer"
 depends-top-level:
 - !private "print"
-- "UIButton"
-- !private "NSUserDefaults"
-- !private "Tool"
-- !private "StringLiteralType"
+- "UIViewController"
 - !private "??"
-- !private "Void"
-- "ChooseUsageViewController"
 - !private "SERVER"
-- !private "UnicodeScalarType"
 - !private "SearchPlacesViewController"
 - !private "+"
-- "UIViewController"
+- !private "ConsumerHomeViewController"
+- !private "StringLiteralType"
+- "ChooseUsageViewController"
+- "UIButton"
 - "String"
+- !private "NSUserDefaults"
+- !private "UnicodeScalarType"
+- !private "Tool"
+- !private "Void"
 - !private "BooleanLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "NSUserDefaults"]
@@ -47,6 +48,8 @@ depends-member:
 - ["PSs9AnyObject", ""]
 - !private ["Sb", "deinit"]
 - !private ["PSo25CLLocationManagerDelegate", "isConsumer"]
+- !private ["PSo15CNKeyDescriptor", "init"]
+- !private ["PSo15CNKeyDescriptor", "loadNib"]
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
 - !private ["PSs11CVarArgType", "SERVER"]
 - !private ["PSs11CVarArgType", "Tool"]
@@ -64,6 +67,7 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
 - !private ["VSs9Character", "deinit"]
+- !private ["C13money2020201525ChooseUsageViewController", "ConsumerHomeViewController"]
 - !private ["C13money2020201525ChooseUsageViewController", "NSUserDefaults"]
 - !private ["C13money2020201525ChooseUsageViewController", "SERVER"]
 - !private ["C13money2020201525ChooseUsageViewController", "SearchPlacesViewController"]
@@ -175,6 +179,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "loadNib"]
+- !private ["CSo8NSObject", "ConsumerHomeViewController"]
 - !private ["CSo8NSObject", "NSUserDefaults"]
 - !private ["CSo8NSObject", "SERVER"]
 - !private ["CSo8NSObject", "SearchPlacesViewController"]
@@ -270,6 +275,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "ConsumerHomeViewController"]
 - !private ["CSo11UIResponder", "NSUserDefaults"]
 - !private ["CSo11UIResponder", "SERVER"]
 - !private ["CSo11UIResponder", "SearchPlacesViewController"]
@@ -315,6 +321,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "ConsumerHomeViewController"]
 - !private ["CSo16UIViewController", "NSUserDefaults"]
 - !private ["CSo16UIViewController", "SERVER"]
 - !private ["CSo16UIViewController", "SearchPlacesViewController"]
@@ -359,6 +366,7 @@ depends-nominal:
 - "PSs9AnyObject"
 - !private "Sb"
 - !private "PSo25CLLocationManagerDelegate"
+- !private "PSo15CNKeyDescriptor"
 - "PSs11CVarArgType"
 - !private "VSs9Character"
 - "C13money2020201525ChooseUsageViewController"
@@ -458,6 +466,11 @@ depends-external:
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMChargeCardViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/PassKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Contacts.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMCreditCardToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMAddress.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"

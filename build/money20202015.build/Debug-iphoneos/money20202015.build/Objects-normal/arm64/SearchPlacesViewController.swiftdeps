@@ -6,10 +6,9 @@ provides-nominal:
 provides-member:
 - ["C13money2020201526SearchPlacesViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSectionsInTableView"
+- "viewDidAppear"
 - "didReceiveMemoryWarning"
-- "locationManager"
-- "locationManager"
+- "currentLocation"
 - "tableView"
 - "tableView"
 - "tableView"
@@ -17,41 +16,44 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 - "messageTextView"
-- "places"
-- "isConsumer"
-- "currentLocation"
-- "viewDidLoad"
-- "viewDidAppear"
 - "placesTableView"
+- "isConsumer"
+- "numberOfSectionsInTableView"
+- "viewDidLoad"
+- "places"
+- "locationManager"
+- "locationManager"
 depends-top-level:
-- !private "PlaceTableViewCell"
-- !private "kCLLocationAccuracyBest"
-- "Place"
-- "UIViewController"
-- !private "UINib"
-- !private "StringLiteralType"
-- !private "CameraViewController"
-- "SearchPlacesViewController"
-- "CGFloat"
-- "NSIndexPath"
-- "CLLocationManager"
-- "Int"
-- "UITextView"
-- "UITableViewCell"
-- !private "BusinessHomeViewController"
-- "UITableViewDataSource"
-- "CLLocationManagerDelegate"
-- "UITableViewDelegate"
-- !private "Void"
-- "UITableView"
-- "Bool"
-- "BooleanLiteralType"
 - !private "print"
 - "CLLocation"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
+- !private "UINib"
+- !private "StringLiteralType"
+- "UIViewController"
+- "CLLocationManagerDelegate"
+- "UITableView"
+- !private "NSUserDefaults"
+- "UITextView"
+- "CGFloat"
+- !private "kCLLocationAccuracyBest"
+- "Int"
+- !private "PlaceTableViewCell"
+- "Place"
+- "UITableViewCell"
+- "CLLocationManager"
+- !private "BusinessHomeViewController"
+- !private "Void"
+- "BooleanLiteralType"
+- "NSIndexPath"
+- !private "CameraViewController"
+- "SearchPlacesViewController"
+- "Bool"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs9AnyObject", "CGFloat"]
 - !private ["PSs9AnyObject", "CLLocationManager"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "Place"]
 - !private ["PSs9AnyObject", "UINib"]
 - !private ["PSs9AnyObject", "coordinate"]
@@ -100,9 +102,12 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
 - !private ["PSs9AnyObject", "setBody"]
+- !private ["PSs9AnyObject", "setValue"]
 - !private ["PSs9AnyObject", "smartLoad"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
 - !private ["PSs9AnyObject", "startUpdatingLocation"]
 - !private ["PSs9AnyObject", "stopUpdatingLocation"]
+- !private ["PSs9AnyObject", "synchronize"]
 - ["PSs9AnyObject", "tableView"]
 - !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "viewDidAppear"]
@@ -144,6 +149,7 @@ depends-member:
 - !private ["CSo17CLLocationManager", "stopUpdatingLocation"]
 - !private ["PSo25CLLocationManagerDelegate", "CGFloat"]
 - !private ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
+- !private ["PSo25CLLocationManagerDelegate", "NSUserDefaults"]
 - !private ["PSo25CLLocationManagerDelegate", "Place"]
 - !private ["PSo25CLLocationManagerDelegate", "UINib"]
 - !private ["PSo25CLLocationManagerDelegate", "currentLocation"]
@@ -176,10 +182,13 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "tableView"]
 - ["PSo25CLLocationManagerDelegate", "viewForZoomingInScrollView"]
 - ["PSo25CLLocationManagerDelegate", ""]
+- !private ["PSo15CNKeyDescriptor", "init"]
+- !private ["PSo15CNKeyDescriptor", "loadNib"]
 - !private ["PSs11CVarArgType", "CGFloat"]
 - !private ["PSs11CVarArgType", "CLLocationManager"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
 - !private ["PSs11CVarArgType", "Place"]
 - !private ["PSs11CVarArgType", "UINib"]
 - !private ["PSs11CVarArgType", "coordinate"]
@@ -228,9 +237,12 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
 - !private ["PSs11CVarArgType", "setBody"]
+- !private ["PSs11CVarArgType", "setValue"]
 - !private ["PSs11CVarArgType", "smartLoad"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
 - !private ["PSs11CVarArgType", "startUpdatingLocation"]
 - !private ["PSs11CVarArgType", "stopUpdatingLocation"]
+- !private ["PSs11CVarArgType", "synchronize"]
 - ["PSs11CVarArgType", "tableView"]
 - !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "viewDidAppear"]
@@ -262,6 +274,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "Place"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UINib"]
@@ -313,10 +326,13 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - !private ["PSs23CustomStringConvertible", "setBody"]
+- !private ["PSs23CustomStringConvertible", "setValue"]
 - !private ["PSs23CustomStringConvertible", "smartLoad"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "startUpdatingLocation"]
 - !private ["PSs23CustomStringConvertible", "stopUpdatingLocation"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "synchronize"]
 - ["PSs23CustomStringConvertible", "tableView"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - ["PSs23CustomStringConvertible", "viewDidAppear"]
@@ -328,6 +344,7 @@ depends-member:
 - !private ["PSs9Equatable", "CLLocationManager"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
 - !private ["PSs9Equatable", "Place"]
 - !private ["PSs9Equatable", "UINib"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
@@ -377,9 +394,12 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
 - !private ["PSs9Equatable", "setBody"]
+- !private ["PSs9Equatable", "setValue"]
 - !private ["PSs9Equatable", "smartLoad"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
 - !private ["PSs9Equatable", "startUpdatingLocation"]
 - !private ["PSs9Equatable", "stopUpdatingLocation"]
+- !private ["PSs9Equatable", "synchronize"]
 - ["PSs9Equatable", "tableView"]
 - !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "viewDidAppear"]
@@ -398,6 +418,7 @@ depends-member:
 - !private ["PSs8Hashable", "CLLocationManager"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
 - !private ["PSs8Hashable", "Place"]
 - !private ["PSs8Hashable", "UINib"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
@@ -447,9 +468,12 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
 - !private ["PSs8Hashable", "setBody"]
+- !private ["PSs8Hashable", "setValue"]
 - !private ["PSs8Hashable", "smartLoad"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
 - !private ["PSs8Hashable", "startUpdatingLocation"]
 - !private ["PSs8Hashable", "stopUpdatingLocation"]
+- !private ["PSs8Hashable", "synchronize"]
 - ["PSs8Hashable", "tableView"]
 - !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "viewDidAppear"]
@@ -502,6 +526,7 @@ depends-member:
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CLLocationManager"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "Place"]
 - !private ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "coordinate"]
@@ -555,6 +580,7 @@ depends-member:
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CLLocationManager"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "Place"]
 - !private ["PSo26NSExtensionRequestHandling", "UINib"]
 - ["PSo26NSExtensionRequestHandling", "currentLocation"]
@@ -602,6 +628,7 @@ depends-member:
 - !private ["CSo8NSObject", "CameraViewController"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "Place"]
 - !private ["CSo8NSObject", "PlaceTableViewCell"]
 - !private ["CSo8NSObject", "UINib"]
@@ -655,9 +682,12 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - !private ["CSo8NSObject", "setBody"]
+- !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "smartLoad"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
 - !private ["CSo8NSObject", "startUpdatingLocation"]
 - !private ["CSo8NSObject", "stopUpdatingLocation"]
+- !private ["CSo8NSObject", "synchronize"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidAppear"]
@@ -665,6 +695,7 @@ depends-member:
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CLLocationManager"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "Place"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "coordinate"]
@@ -713,9 +744,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - !private ["PSo16NSObjectProtocol", "setBody"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "smartLoad"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "startUpdatingLocation"]
 - !private ["PSo16NSObjectProtocol", "stopUpdatingLocation"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
@@ -729,6 +763,9 @@ depends-member:
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "loadNib"]
+- !private ["CSo14NSUserDefaults", "setValue"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
@@ -755,6 +792,7 @@ depends-member:
 - !private ["C13money2020201526SearchPlacesViewController", "CameraViewController"]
 - ["C13money2020201526SearchPlacesViewController", "Int"]
 - ["C13money2020201526SearchPlacesViewController", "NSIndexPath"]
+- !private ["C13money2020201526SearchPlacesViewController", "NSUserDefaults"]
 - ["C13money2020201526SearchPlacesViewController", "Place"]
 - !private ["C13money2020201526SearchPlacesViewController", "PlaceTableViewCell"]
 - !private ["C13money2020201526SearchPlacesViewController", "UINib"]
@@ -817,6 +855,7 @@ depends-member:
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
 - !private ["PSs10Strideable", "init"]
+- !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["SS", "loadNib"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
@@ -841,6 +880,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CLLocationManager"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "Place"]
 - !private ["PSo21UIAppearanceContainer", "UINib"]
 - ["PSo21UIAppearanceContainer", "currentLocation"]
@@ -887,6 +927,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CLLocationManager"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "Place"]
 - !private ["PSo18UIContentContainer", "UINib"]
 - ["PSo18UIContentContainer", "currentLocation"]
@@ -941,6 +982,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CLLocationManager"]
+- !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "Place"]
 - !private ["PSo18UIFocusEnvironment", "UINib"]
 - ["PSo18UIFocusEnvironment", "currentLocation"]
@@ -999,6 +1041,7 @@ depends-member:
 - !private ["CSo11UIResponder", "CameraViewController"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
 - ["CSo11UIResponder", "Place"]
 - !private ["CSo11UIResponder", "PlaceTableViewCell"]
 - !private ["CSo11UIResponder", "UINib"]
@@ -1053,6 +1096,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "setBody"]
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
 - !private ["PSo20UIScrollViewDelegate", "CLLocationManager"]
+- !private ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
 - !private ["PSo20UIScrollViewDelegate", "Place"]
 - !private ["PSo20UIScrollViewDelegate", "UINib"]
 - !private ["PSo20UIScrollViewDelegate", "currentLocation"]
@@ -1087,6 +1131,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CGFloat"]
 - !private ["PSo16UIStateRestoring", "CLLocationManager"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "Place"]
 - !private ["PSo16UIStateRestoring", "UINib"]
 - ["PSo16UIStateRestoring", "currentLocation"]
@@ -1131,6 +1176,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "placeNameLabel"]
 - !private ["PSo21UITableViewDataSource", "CGFloat"]
 - !private ["PSo21UITableViewDataSource", "CLLocationManager"]
+- !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
 - !private ["PSo21UITableViewDataSource", "Place"]
 - !private ["PSo21UITableViewDataSource", "UINib"]
 - !private ["PSo21UITableViewDataSource", "currentLocation"]
@@ -1165,6 +1211,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "CGFloat"]
 - !private ["PSo19UITableViewDelegate", "CLLocationManager"]
+- !private ["PSo19UITableViewDelegate", "NSUserDefaults"]
 - !private ["PSo19UITableViewDelegate", "Place"]
 - !private ["PSo19UITableViewDelegate", "UINib"]
 - !private ["PSo19UITableViewDelegate", "currentLocation"]
@@ -1202,6 +1249,7 @@ depends-member:
 - !private ["CSo10UITextView", "setBody"]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CLLocationManager"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "Place"]
 - !private ["PSo18UITraitEnvironment", "UINib"]
 - ["PSo18UITraitEnvironment", "currentLocation"]
@@ -1262,6 +1310,7 @@ depends-member:
 - !private ["CSo16UIViewController", "CameraViewController"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
 - ["CSo16UIViewController", "Place"]
 - !private ["CSo16UIViewController", "PlaceTableViewCell"]
 - !private ["CSo16UIViewController", "UINib"]
@@ -1394,6 +1443,7 @@ depends-nominal:
 - !private "VSC22CLLocationCoordinate2D"
 - !private "CSo17CLLocationManager"
 - "PSo25CLLocationManagerDelegate"
+- !private "PSo15CNKeyDescriptor"
 - "PSs11CVarArgType"
 - !private "VSs9Character"
 - !private "PSs14CollectionType"
@@ -1433,6 +1483,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "CSo14NSUserDefaults"
 - "PSs21NilLiteralConvertible"
 - "Sq"
 - !private "PSs16OutputStreamType"
@@ -1542,6 +1593,11 @@ depends-external:
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMChargeCardViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/PassKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Contacts.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMCreditCardToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMAddress.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"

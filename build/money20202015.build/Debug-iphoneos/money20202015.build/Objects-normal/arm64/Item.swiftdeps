@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C13money202020154Item", ""]
 provides-dynamic-lookup:
-- "price"
-- "category"
 - "name"
 - "itemid"
+- "category"
+- "price"
 depends-top-level:
-- "Item"
-- "JSONObject"
-- "NSObject"
 - "String"
-- "StringLiteralType"
 - "NSDictionary"
+- "JSONObject"
+- "Item"
+- "NSObject"
+- "StringLiteralType"
 depends-member:
 - ["PSs9AnyObject", "category"]
 - ["PSs9AnyObject", "init"]
@@ -153,6 +153,11 @@ depends-external:
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMChargeCardViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/PassKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Contacts.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMCreditCardToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMAddress.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"

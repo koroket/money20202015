@@ -7,94 +7,100 @@ provides-nominal:
 provides-member:
 - ["C13money2020201520CameraViewController", ""]
 provides-dynamic-lookup:
-- "switchCameraButton"
-- "didReceiveMemoryWarning"
-- "itemCountHash"
-- "getItemData"
-- "qrCodeFrameView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "listTableViewTopConstraint"
-- "captureSession"
-- "isShowingQR"
 - "shiftDown"
+- "cameraViewHeightConstraint"
+- "qrCodeFrameView"
+- "switchCameraButton"
+- "viewDidLoad"
+- "occupied"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "didReceiveMemoryWarning"
+- "numberOfSectionsInTableView"
+- "itemCountHash"
 - "addItem"
 - "checkoutPressed"
-- "occupied"
-- "supportedBarCodes"
-- "cameraView"
+- "shiftUp"
+- "listTableViewTopConstraint"
+- "switchCameraPressed"
 - "captureOutput"
 - "videoPreviewLayer"
 - "listTableView"
-- "shiftUp"
+- "cameraView"
 - "items"
-- "switchCameraPressed"
-- "numberOfSectionsInTableView"
-- "cameraViewHeightConstraint"
-- "viewDidLoad"
+- "captureSession"
+- "isShowingQR"
+- "supportedBarCodes"
+- "getItemData"
 depends-top-level:
-- !private "+"
-- "AVMetadataObjectTypePDF417Code"
-- "AVMetadataObjectTypeUPCECode"
-- !private "SERVER"
-- "AVMetadataObjectTypeCode93Code"
+- "SLIDE_ANIMATION_DURATION"
+- "AVCaptureConnection"
+- !private "!="
+- !private "dispatch_get_main_queue"
+- !private "CheckoutViewController"
+- "AVCaptureVideoPreviewLayer"
 - !private "ItemTableViewCell"
-- !private "||"
-- "CameraViewController"
-- !private "AVCaptureDevice"
-- !private "print"
-- !private "AVLayerVideoGravityResizeAspectFill"
-- "AVMetadataObjectTypeAztecCode"
-- "AVMetadataObjectTypeEAN13Code"
-- !private "AVCaptureMetadataOutput"
-- "UITableViewDataSource"
 - !private "UINib"
+- "NSTimeInterval"
+- !private "AVCaptureDeviceInput"
+- "UIViewController"
 - "NSMutableDictionary"
-- !private "&&"
-- !private "Tool"
-- "CGFloat"
-- "AVCaptureMetadataOutputObjectsDelegate"
+- !private "AVLayerVideoGravityResizeAspectFill"
+- "NSLayoutConstraint"
+- "Array"
+- "UITableViewCell"
 - !private "!"
 - !private "AVMetadataMachineReadableCodeObject"
-- "UITableView"
 - !private "AVMediaTypeVideo"
 - "UIView"
-- "UIViewController"
-- "Int"
-- !private "dispatch_get_main_queue"
-- "NSTimeInterval"
+- !private "&&"
+- "AVCaptureMetadataOutputObjectsDelegate"
+- !private "Tool"
 - "NSIndexPath"
-- "BooleanLiteralType"
-- "String"
-- "AVCaptureConnection"
-- "UIButton"
-- !private "!="
-- "Bool"
-- !private "AVCaptureDeviceInput"
-- "UITableViewCell"
-- "NSLayoutConstraint"
+- "Int"
+- "UITableView"
 - !private "Void"
-- !private "CheckoutViewController"
-- !private "NSArray"
-- !private "NSDictionary"
-- "AVCaptureSession"
-- "UITableViewDelegate"
-- "Array"
-- !private "UIColor"
-- "AVCaptureOutput"
-- !private "CGRectZero"
-- "AVMetadataObjectTypeCode128Code"
-- "AVMetadataObjectTypeCode39Code"
+- !private "||"
+- !private "AVCaptureDevice"
+- !private "print"
+- "AVMetadataObjectTypeEAN13Code"
+- "Bool"
 - !private "=="
-- "AVMetadataObjectTypeQRCode"
-- "SLIDE_ANIMATION_DURATION"
+- "AVMetadataObjectTypeAztecCode"
+- !private "NSDictionary"
+- "UITableViewDataSource"
+- !private "NSArray"
+- "AVMetadataObjectTypeUPCECode"
+- "UITableViewDelegate"
+- !private "NSString"
+- "AVMetadataObjectTypeCode93Code"
+- "AVMetadataObjectTypePDF417Code"
 - "AnyObject"
+- !private "AVCaptureMetadataOutput"
+- !private ">"
+- !private "UIColor"
+- !private "-"
+- "AVCaptureSession"
+- "AVMetadataObjectTypeCode128Code"
+- "String"
+- "AVMetadataObjectTypeQRCode"
+- "AVMetadataObjectTypeCode39Code"
 - "Item"
-- "AVCaptureVideoPreviewLayer"
+- "CameraViewController"
+- !private "UnicodeScalarType"
+- "CGFloat"
+- !private "+"
+- "BooleanLiteralType"
+- "AVCaptureOutput"
+- !private "??"
+- "UIButton"
+- !private "SERVER"
+- !private "CGRectZero"
 depends-member:
 - !private ["CSo15AVCaptureDevice", "defaultDeviceWithMediaType"]
 - !private ["CSo20AVCaptureDeviceInput", "init"]
@@ -223,6 +229,7 @@ depends-member:
 - ["PSs9AnyObject", "captureSession"]
 - ["PSs9AnyObject", "checkoutPressed"]
 - !private ["PSs9AnyObject", "constant"]
+- !private ["PSs9AnyObject", "countLabel"]
 - !private ["PSs9AnyObject", "defaultDeviceWithMediaType"]
 - !private ["PSs9AnyObject", "deinit"]
 - !private ["PSs9AnyObject", "dequeueReusableCellWithIdentifier"]
@@ -235,9 +242,11 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "isShowingQR"]
 - ["PSs9AnyObject", "itemCountHash"]
+- !private ["PSs9AnyObject", "itemid"]
 - ["PSs9AnyObject", "items"]
 - !private ["PSs9AnyObject", "layer"]
 - !private ["PSs9AnyObject", "layoutIfNeeded"]
+- !private ["PSs9AnyObject", "length"]
 - ["PSs9AnyObject", "listTableView"]
 - ["PSs9AnyObject", "listTableViewTopConstraint"]
 - !private ["PSs9AnyObject", "loadNib"]
@@ -247,6 +256,8 @@ depends-member:
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - ["PSs9AnyObject", "occupied"]
 - !private ["PSs9AnyObject", "presentViewController"]
+- !private ["PSs9AnyObject", "price"]
+- !private ["PSs9AnyObject", "priceLabel"]
 - !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "qrCodeFrameView"]
 - !private ["PSs9AnyObject", "registerNib"]
@@ -271,6 +282,8 @@ depends-member:
 - !private ["PSs9AnyObject", "startRunning"]
 - !private ["PSs9AnyObject", "stringValue"]
 - !private ["PSs9AnyObject", "subscript"]
+- !private ["PSs9AnyObject", "substringFromIndex"]
+- !private ["PSs9AnyObject", "substringToIndex"]
 - ["PSs9AnyObject", "supportedBarCodes"]
 - ["PSs9AnyObject", "switchCameraButton"]
 - ["PSs9AnyObject", "switchCameraPressed"]
@@ -329,6 +342,10 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "transformedMetadataObjectForMetadataObject"]
 - !private ["PSo13CAMediaTiming", "videoGravity"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSo15CNKeyDescriptor", "length"]
+- !private ["PSo15CNKeyDescriptor", "loadNib"]
+- !private ["PSo15CNKeyDescriptor", "substringFromIndex"]
+- !private ["PSo15CNKeyDescriptor", "substringToIndex"]
 - !private ["PSs11CVarArgType", "AVCaptureDevice"]
 - !private ["PSs11CVarArgType", "AVCaptureDeviceInput"]
 - !private ["PSs11CVarArgType", "AVCaptureMetadataOutput"]
@@ -372,6 +389,7 @@ depends-member:
 - ["PSs11CVarArgType", "captureSession"]
 - ["PSs11CVarArgType", "checkoutPressed"]
 - !private ["PSs11CVarArgType", "constant"]
+- !private ["PSs11CVarArgType", "countLabel"]
 - !private ["PSs11CVarArgType", "defaultDeviceWithMediaType"]
 - !private ["PSs11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
@@ -383,9 +401,11 @@ depends-member:
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "isShowingQR"]
 - ["PSs11CVarArgType", "itemCountHash"]
+- !private ["PSs11CVarArgType", "itemid"]
 - ["PSs11CVarArgType", "items"]
 - !private ["PSs11CVarArgType", "layer"]
 - !private ["PSs11CVarArgType", "layoutIfNeeded"]
+- !private ["PSs11CVarArgType", "length"]
 - ["PSs11CVarArgType", "listTableView"]
 - ["PSs11CVarArgType", "listTableViewTopConstraint"]
 - !private ["PSs11CVarArgType", "loadNib"]
@@ -395,6 +415,8 @@ depends-member:
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - ["PSs11CVarArgType", "occupied"]
 - !private ["PSs11CVarArgType", "presentViewController"]
+- !private ["PSs11CVarArgType", "price"]
+- !private ["PSs11CVarArgType", "priceLabel"]
 - !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "qrCodeFrameView"]
 - !private ["PSs11CVarArgType", "registerNib"]
@@ -419,6 +441,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "startRunning"]
 - !private ["PSs11CVarArgType", "stringValue"]
 - !private ["PSs11CVarArgType", "subscript"]
+- !private ["PSs11CVarArgType", "substringFromIndex"]
+- !private ["PSs11CVarArgType", "substringToIndex"]
 - ["PSs11CVarArgType", "supportedBarCodes"]
 - ["PSs11CVarArgType", "switchCameraButton"]
 - ["PSs11CVarArgType", "switchCameraPressed"]
@@ -463,6 +487,7 @@ depends-member:
 - ["C13money2020201520CameraViewController", "NSIndexPath"]
 - ["C13money2020201520CameraViewController", "NSLayoutConstraint"]
 - ["C13money2020201520CameraViewController", "NSMutableDictionary"]
+- !private ["C13money2020201520CameraViewController", "NSString"]
 - !private ["C13money2020201520CameraViewController", "SERVER"]
 - !private ["C13money2020201520CameraViewController", "SLIDE_ANIMATION_DURATION"]
 - ["C13money2020201520CameraViewController", "String"]
@@ -519,6 +544,7 @@ depends-member:
 - !private ["C13money2020201520CameraViewController", "view"]
 - ["C13money2020201520CameraViewController", "viewDidLoad"]
 - ["C13money2020201520CameraViewController", "viewForZoomingInScrollView"]
+- !private ["C13money2020201522CheckoutViewController", "items"]
 - ["PSs14CollectionType", "Element"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
@@ -594,6 +620,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "constant"]
 - !private ["PSs23CustomStringConvertible", "contains"]
 - !private ["PSs23CustomStringConvertible", "count"]
+- !private ["PSs23CustomStringConvertible", "countLabel"]
 - !private ["PSs23CustomStringConvertible", "defaultDeviceWithMediaType"]
 - !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -605,9 +632,11 @@ depends-member:
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "isShowingQR"]
 - ["PSs23CustomStringConvertible", "itemCountHash"]
+- !private ["PSs23CustomStringConvertible", "itemid"]
 - ["PSs23CustomStringConvertible", "items"]
 - !private ["PSs23CustomStringConvertible", "layer"]
 - !private ["PSs23CustomStringConvertible", "layoutIfNeeded"]
+- !private ["PSs23CustomStringConvertible", "length"]
 - ["PSs23CustomStringConvertible", "listTableView"]
 - ["PSs23CustomStringConvertible", "listTableViewTopConstraint"]
 - !private ["PSs23CustomStringConvertible", "loadNib"]
@@ -617,6 +646,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["PSs23CustomStringConvertible", "occupied"]
 - !private ["PSs23CustomStringConvertible", "presentViewController"]
+- !private ["PSs23CustomStringConvertible", "price"]
+- !private ["PSs23CustomStringConvertible", "priceLabel"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "qrCodeFrameView"]
 - !private ["PSs23CustomStringConvertible", "registerNib"]
@@ -641,6 +672,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "startRunning"]
 - !private ["PSs23CustomStringConvertible", "stringValue"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "substringFromIndex"]
+- !private ["PSs23CustomStringConvertible", "substringToIndex"]
 - ["PSs23CustomStringConvertible", "supportedBarCodes"]
 - ["PSs23CustomStringConvertible", "switchCameraButton"]
 - ["PSs23CustomStringConvertible", "switchCameraPressed"]
@@ -700,6 +733,7 @@ depends-member:
 - ["PSs9Equatable", "captureSession"]
 - ["PSs9Equatable", "checkoutPressed"]
 - !private ["PSs9Equatable", "constant"]
+- !private ["PSs9Equatable", "countLabel"]
 - !private ["PSs9Equatable", "defaultDeviceWithMediaType"]
 - !private ["PSs9Equatable", "dequeueReusableCellWithIdentifier"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
@@ -711,9 +745,11 @@ depends-member:
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "isShowingQR"]
 - ["PSs9Equatable", "itemCountHash"]
+- !private ["PSs9Equatable", "itemid"]
 - ["PSs9Equatable", "items"]
 - !private ["PSs9Equatable", "layer"]
 - !private ["PSs9Equatable", "layoutIfNeeded"]
+- !private ["PSs9Equatable", "length"]
 - ["PSs9Equatable", "listTableView"]
 - ["PSs9Equatable", "listTableViewTopConstraint"]
 - !private ["PSs9Equatable", "loadNib"]
@@ -723,6 +759,8 @@ depends-member:
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - ["PSs9Equatable", "occupied"]
 - !private ["PSs9Equatable", "presentViewController"]
+- !private ["PSs9Equatable", "price"]
+- !private ["PSs9Equatable", "priceLabel"]
 - !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "qrCodeFrameView"]
 - !private ["PSs9Equatable", "registerNib"]
@@ -747,6 +785,8 @@ depends-member:
 - !private ["PSs9Equatable", "startRunning"]
 - !private ["PSs9Equatable", "stringValue"]
 - !private ["PSs9Equatable", "subscript"]
+- !private ["PSs9Equatable", "substringFromIndex"]
+- !private ["PSs9Equatable", "substringToIndex"]
 - ["PSs9Equatable", "supportedBarCodes"]
 - ["PSs9Equatable", "switchCameraButton"]
 - ["PSs9Equatable", "switchCameraPressed"]
@@ -760,7 +800,10 @@ depends-member:
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "length"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "loadNib"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "substringFromIndex"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "substringToIndex"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
@@ -808,6 +851,7 @@ depends-member:
 - ["PSs8Hashable", "captureSession"]
 - ["PSs8Hashable", "checkoutPressed"]
 - !private ["PSs8Hashable", "constant"]
+- !private ["PSs8Hashable", "countLabel"]
 - !private ["PSs8Hashable", "defaultDeviceWithMediaType"]
 - !private ["PSs8Hashable", "dequeueReusableCellWithIdentifier"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
@@ -819,9 +863,11 @@ depends-member:
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "isShowingQR"]
 - ["PSs8Hashable", "itemCountHash"]
+- !private ["PSs8Hashable", "itemid"]
 - ["PSs8Hashable", "items"]
 - !private ["PSs8Hashable", "layer"]
 - !private ["PSs8Hashable", "layoutIfNeeded"]
+- !private ["PSs8Hashable", "length"]
 - ["PSs8Hashable", "listTableView"]
 - ["PSs8Hashable", "listTableViewTopConstraint"]
 - !private ["PSs8Hashable", "loadNib"]
@@ -831,6 +877,8 @@ depends-member:
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - ["PSs8Hashable", "occupied"]
 - !private ["PSs8Hashable", "presentViewController"]
+- !private ["PSs8Hashable", "price"]
+- !private ["PSs8Hashable", "priceLabel"]
 - !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "qrCodeFrameView"]
 - !private ["PSs8Hashable", "registerNib"]
@@ -855,6 +903,8 @@ depends-member:
 - !private ["PSs8Hashable", "startRunning"]
 - !private ["PSs8Hashable", "stringValue"]
 - !private ["PSs8Hashable", "subscript"]
+- !private ["PSs8Hashable", "substringFromIndex"]
+- !private ["PSs8Hashable", "substringToIndex"]
 - ["PSs8Hashable", "supportedBarCodes"]
 - ["PSs8Hashable", "switchCameraButton"]
 - ["PSs8Hashable", "switchCameraPressed"]
@@ -890,10 +940,16 @@ depends-member:
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
 - !private ["C13money202020154Item", "deinit"]
 - !private ["C13money202020154Item", "init"]
+- !private ["C13money202020154Item", "itemid"]
 - !private ["C13money202020154Item", "name"]
+- !private ["C13money202020154Item", "price"]
+- !private ["C13money2020201517ItemTableViewCell", "countLabel"]
 - !private ["C13money2020201517ItemTableViewCell", "nameLabel"]
+- !private ["C13money2020201517ItemTableViewCell", "priceLabel"]
 - !private ["P13money2020201510JSONObject", "init"]
+- !private ["P13money2020201510JSONObject", "itemid"]
 - !private ["P13money2020201510JSONObject", "name"]
+- !private ["P13money2020201510JSONObject", "price"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "loadNib"]
@@ -963,6 +1019,7 @@ depends-member:
 - ["PSo8NSCoding", "captureOutput"]
 - ["PSo8NSCoding", "captureSession"]
 - ["PSo8NSCoding", "checkoutPressed"]
+- !private ["PSo8NSCoding", "countLabel"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
@@ -976,6 +1033,7 @@ depends-member:
 - ["PSo8NSCoding", "items"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "layoutIfNeeded"]
+- !private ["PSo8NSCoding", "length"]
 - ["PSo8NSCoding", "listTableView"]
 - ["PSo8NSCoding", "listTableViewTopConstraint"]
 - !private ["PSo8NSCoding", "loadNib"]
@@ -983,6 +1041,7 @@ depends-member:
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "occupied"]
 - !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "priceLabel"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "qrCodeFrameView"]
 - !private ["PSo8NSCoding", "registerNib"]
@@ -1004,6 +1063,8 @@ depends-member:
 - ["PSo8NSCoding", "shiftDown"]
 - ["PSo8NSCoding", "shiftUp"]
 - !private ["PSo8NSCoding", "subscript"]
+- !private ["PSo8NSCoding", "substringFromIndex"]
+- !private ["PSo8NSCoding", "substringToIndex"]
 - ["PSo8NSCoding", "supportedBarCodes"]
 - ["PSo8NSCoding", "switchCameraButton"]
 - ["PSo8NSCoding", "switchCameraPressed"]
@@ -1019,9 +1080,12 @@ depends-member:
 - !private ["PSo9NSCopying", "CGColor"]
 - !private ["PSo9NSCopying", "greenColor"]
 - ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "length"]
 - !private ["PSo9NSCopying", "loadNib"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "subscript"]
+- !private ["PSo9NSCopying", "substringFromIndex"]
+- !private ["PSo9NSCopying", "substringToIndex"]
 - ["CSo12NSDictionary", "init"]
 - !private ["CSo12NSDictionary", "subscript"]
 - !private ["PSo26NSExtensionRequestHandling", "AVCaptureDevice"]
@@ -1098,8 +1162,11 @@ depends-member:
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["CSo18NSLayoutConstraint", "constant"]
 - ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "length"]
 - !private ["PSo16NSMutableCopying", "loadNib"]
 - !private ["PSo16NSMutableCopying", "subscript"]
+- !private ["PSo16NSMutableCopying", "substringFromIndex"]
+- !private ["PSo16NSMutableCopying", "substringToIndex"]
 - ["CSo19NSMutableDictionary", "init"]
 - !private ["CSo19NSMutableDictionary", "subscript"]
 - ["CSo8NSObject", "AVCaptureConnection"]
@@ -1134,6 +1201,7 @@ depends-member:
 - ["CSo8NSObject", "NSIndexPath"]
 - ["CSo8NSObject", "NSLayoutConstraint"]
 - ["CSo8NSObject", "NSMutableDictionary"]
+- !private ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "SERVER"]
 - !private ["CSo8NSObject", "SLIDE_ANIMATION_DURATION"]
 - ["CSo8NSObject", "String"]
@@ -1161,6 +1229,7 @@ depends-member:
 - ["CSo8NSObject", "captureSession"]
 - ["CSo8NSObject", "checkoutPressed"]
 - !private ["CSo8NSObject", "constant"]
+- !private ["CSo8NSObject", "countLabel"]
 - !private ["CSo8NSObject", "defaultDeviceWithMediaType"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -1172,9 +1241,11 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isShowingQR"]
 - ["CSo8NSObject", "itemCountHash"]
+- !private ["CSo8NSObject", "itemid"]
 - ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "layoutIfNeeded"]
+- !private ["CSo8NSObject", "length"]
 - ["CSo8NSObject", "listTableView"]
 - ["CSo8NSObject", "listTableViewTopConstraint"]
 - !private ["CSo8NSObject", "loadNib"]
@@ -1184,6 +1255,8 @@ depends-member:
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "occupied"]
 - !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "price"]
+- !private ["CSo8NSObject", "priceLabel"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "qrCodeFrameView"]
 - !private ["CSo8NSObject", "registerNib"]
@@ -1208,6 +1281,8 @@ depends-member:
 - !private ["CSo8NSObject", "startRunning"]
 - !private ["CSo8NSObject", "stringValue"]
 - !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "substringFromIndex"]
+- !private ["CSo8NSObject", "substringToIndex"]
 - ["CSo8NSObject", "supportedBarCodes"]
 - ["CSo8NSObject", "switchCameraButton"]
 - ["CSo8NSObject", "switchCameraPressed"]
@@ -1261,6 +1336,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "captureSession"]
 - ["PSo16NSObjectProtocol", "checkoutPressed"]
 - !private ["PSo16NSObjectProtocol", "constant"]
+- !private ["PSo16NSObjectProtocol", "countLabel"]
 - !private ["PSo16NSObjectProtocol", "defaultDeviceWithMediaType"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -1272,9 +1348,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isShowingQR"]
 - ["PSo16NSObjectProtocol", "itemCountHash"]
+- !private ["PSo16NSObjectProtocol", "itemid"]
 - ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "layoutIfNeeded"]
+- !private ["PSo16NSObjectProtocol", "length"]
 - ["PSo16NSObjectProtocol", "listTableView"]
 - ["PSo16NSObjectProtocol", "listTableViewTopConstraint"]
 - !private ["PSo16NSObjectProtocol", "loadNib"]
@@ -1284,6 +1362,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "occupied"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "price"]
+- !private ["PSo16NSObjectProtocol", "priceLabel"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "qrCodeFrameView"]
 - !private ["PSo16NSObjectProtocol", "registerNib"]
@@ -1308,6 +1388,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "startRunning"]
 - !private ["PSo16NSObjectProtocol", "stringValue"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "substringFromIndex"]
+- !private ["PSo16NSObjectProtocol", "substringToIndex"]
 - ["PSo16NSObjectProtocol", "supportedBarCodes"]
 - ["PSo16NSObjectProtocol", "switchCameraButton"]
 - ["PSo16NSObjectProtocol", "switchCameraPressed"]
@@ -1324,10 +1406,16 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "CGColor"]
 - !private ["PSo14NSSecureCoding", "greenColor"]
 - ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "length"]
 - !private ["PSo14NSSecureCoding", "loadNib"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["PSo14NSSecureCoding", "substringFromIndex"]
+- !private ["PSo14NSSecureCoding", "substringToIndex"]
+- !private ["CSo8NSString", "length"]
 - !private ["CSo8NSString", "loadNib"]
+- !private ["CSo8NSString", "substringFromIndex"]
+- !private ["CSo8NSString", "substringToIndex"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
@@ -1344,6 +1432,7 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "contains"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSo35SIMChargeCardViewControllerDelegate", "items"]
 - ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
@@ -1368,29 +1457,36 @@ depends-member:
 - !private ["SS", "deinit"]
 - !private ["SS", "loadNib"]
 - !private ["PSs30StringInterpolationConvertible", "loadNib"]
+- !private ["PSs24StringLiteralConvertible", "length"]
 - !private ["PSs24StringLiteralConvertible", "loadNib"]
+- !private ["PSs24StringLiteralConvertible", "substringFromIndex"]
+- !private ["PSs24StringLiteralConvertible", "substringToIndex"]
 - !private ["C13money202020154Tool", "callREST"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "bringSubviewToFront"]
+- !private ["PSo29UIAccessibilityIdentification", "countLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "layoutIfNeeded"]
 - !private ["PSo29UIAccessibilityIdentification", "nameLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "priceLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "bringSubviewToFront"]
+- !private ["PSo12UIAppearance", "countLabel"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "layoutIfNeeded"]
 - !private ["PSo12UIAppearance", "nameLabel"]
+- !private ["PSo12UIAppearance", "priceLabel"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "text"]
@@ -1427,6 +1523,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "captureOutput"]
 - ["PSo21UIAppearanceContainer", "captureSession"]
 - ["PSo21UIAppearanceContainer", "checkoutPressed"]
+- !private ["PSo21UIAppearanceContainer", "countLabel"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
@@ -1445,6 +1542,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "occupied"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "priceLabel"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "qrCodeFrameView"]
 - !private ["PSo21UIAppearanceContainer", "registerNib"]
@@ -1548,24 +1646,28 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "bringSubviewToFront"]
+- !private ["PSo17UICoordinateSpace", "countLabel"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "layoutIfNeeded"]
 - !private ["PSo17UICoordinateSpace", "nameLabel"]
+- !private ["PSo17UICoordinateSpace", "priceLabel"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "bringSubviewToFront"]
+- !private ["PSo13UIDynamicItem", "countLabel"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "layoutIfNeeded"]
 - !private ["PSo13UIDynamicItem", "nameLabel"]
+- !private ["PSo13UIDynamicItem", "priceLabel"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "text"]
@@ -1602,6 +1704,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "captureOutput"]
 - ["PSo18UIFocusEnvironment", "captureSession"]
 - ["PSo18UIFocusEnvironment", "checkoutPressed"]
+- !private ["PSo18UIFocusEnvironment", "countLabel"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
@@ -1620,6 +1723,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "occupied"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "priceLabel"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "qrCodeFrameView"]
 - !private ["PSo18UIFocusEnvironment", "registerNib"]
@@ -1649,7 +1753,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "countLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "nameLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "priceLabel"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo5UINib", "init"]
 - ["CSo11UIResponder", "AVCaptureConnection"]
@@ -1683,6 +1789,7 @@ depends-member:
 - ["CSo11UIResponder", "NSIndexPath"]
 - ["CSo11UIResponder", "NSLayoutConstraint"]
 - ["CSo11UIResponder", "NSMutableDictionary"]
+- !private ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "SERVER"]
 - !private ["CSo11UIResponder", "SLIDE_ANIMATION_DURATION"]
 - ["CSo11UIResponder", "String"]
@@ -1703,6 +1810,7 @@ depends-member:
 - ["CSo11UIResponder", "captureOutput"]
 - ["CSo11UIResponder", "captureSession"]
 - ["CSo11UIResponder", "checkoutPressed"]
+- !private ["CSo11UIResponder", "countLabel"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
@@ -1721,6 +1829,7 @@ depends-member:
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "occupied"]
 - !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "priceLabel"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "qrCodeFrameView"]
 - !private ["CSo11UIResponder", "registerNib"]
@@ -1887,8 +1996,10 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo15UITableViewCell", "countLabel"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "nameLabel"]
+- !private ["CSo15UITableViewCell", "priceLabel"]
 - !private ["PSo21UITableViewDataSource", "AVCaptureDevice"]
 - !private ["PSo21UITableViewDataSource", "AVCaptureDeviceInput"]
 - !private ["PSo21UITableViewDataSource", "AVCaptureMetadataOutput"]
@@ -2048,6 +2159,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "captureOutput"]
 - ["PSo18UITraitEnvironment", "captureSession"]
 - ["PSo18UITraitEnvironment", "checkoutPressed"]
+- !private ["PSo18UITraitEnvironment", "countLabel"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
@@ -2066,6 +2178,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "occupied"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "priceLabel"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "qrCodeFrameView"]
 - !private ["PSo18UITraitEnvironment", "registerNib"]
@@ -2098,12 +2211,14 @@ depends-member:
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "bringSubviewToFront"]
+- !private ["CSo6UIView", "countLabel"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "layoutIfNeeded"]
 - !private ["CSo6UIView", "nameLabel"]
+- !private ["CSo6UIView", "priceLabel"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "text"]
@@ -2138,6 +2253,7 @@ depends-member:
 - ["CSo16UIViewController", "NSIndexPath"]
 - ["CSo16UIViewController", "NSLayoutConstraint"]
 - ["CSo16UIViewController", "NSMutableDictionary"]
+- !private ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "SERVER"]
 - !private ["CSo16UIViewController", "SLIDE_ANIMATION_DURATION"]
 - ["CSo16UIViewController", "String"]
@@ -2194,7 +2310,10 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "length"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "loadNib"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "substringFromIndex"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "substringToIndex"]
 - ["PSs10_ArrayType", "Element"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
@@ -2211,7 +2330,10 @@ depends-member:
 - !private ["PSs32_BuiltinStringLiteralConvertible", "loadNib"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "loadNib"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "loadNib"]
+- !private ["PSs16_CocoaStringType", "length"]
 - !private ["PSs16_CocoaStringType", "loadNib"]
+- !private ["PSs16_CocoaStringType", "substringFromIndex"]
+- !private ["PSs16_CocoaStringType", "substringToIndex"]
 - !private ["PSs24_ColorLiteralConvertible", "CGColor"]
 - !private ["PSs24_ColorLiteralConvertible", "greenColor"]
 - ["PSs24_DestructorSafeContainer", "Element"]
@@ -2260,16 +2382,21 @@ depends-member:
 - !private ["PSs12_Reflectable", "bringSubviewToFront"]
 - !private ["PSs12_Reflectable", "contains"]
 - !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "countLabel"]
 - !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs12_Reflectable", "frame"]
 - ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "layer"]
 - !private ["PSs12_Reflectable", "layoutIfNeeded"]
+- !private ["PSs12_Reflectable", "length"]
 - !private ["PSs12_Reflectable", "loadNib"]
 - !private ["PSs12_Reflectable", "nameLabel"]
+- !private ["PSs12_Reflectable", "priceLabel"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "substringFromIndex"]
+- !private ["PSs12_Reflectable", "substringToIndex"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
@@ -2298,8 +2425,10 @@ depends-nominal:
 - !private "CSo7CALayer"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
+- !private "PSo15CNKeyDescriptor"
 - "PSs11CVarArgType"
 - "C13money2020201520CameraViewController"
+- !private "C13money2020201522CheckoutViewController"
 - "PSs14CollectionType"
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
@@ -2344,6 +2473,7 @@ depends-nominal:
 - !private "PSs21RandomAccessIndexType"
 - !private "VSs5Range"
 - "PSs30RangeReplaceableCollectionType"
+- !private "PSo35SIMChargeCardViewControllerDelegate"
 - "PSs12SequenceType"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
@@ -2436,9 +2566,14 @@ depends-external:
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMChargeCardViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/PassKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Contacts.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMCreditCardToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMAddress.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "f113377388cb62eada6d2d2147b7b1e0"
+interface-hash: "89a63d15caa06f6273bee7f13aa868bc"

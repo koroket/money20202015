@@ -1,47 +1,56 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "myNumSet"
 - "NewItemViewController"
 provides-nominal:
 - "C13money2020201521NewItemViewController"
 provides-member:
 - ["C13money2020201521NewItemViewController", ""]
 provides-dynamic-lookup:
-- "categoryTextField"
-- "presentQR"
-- "didReceiveMemoryWarning"
-- "generatePressed"
 - "viewDidLoad"
-- "priceTextField"
+- "generatePressed"
+- "presentQR"
+- "categoryTextField"
 - "postItem"
 - "nameTextField"
+- "didReceiveMemoryWarning"
+- "priceTextField"
 depends-top-level:
-- "UIViewController"
-- !private "Tool"
-- !private "NSMutableDictionary"
-- "String"
-- "NewItemViewController"
-- !private "print"
-- !private "Void"
+- "NSCharacterSet"
 - !private "BooleanLiteralType"
-- !private "DisplayQRViewController"
+- "NewItemViewController"
 - !private "NSDictionary"
-- "UIButton"
-- !private "??"
-- !private "SERVER"
-- !private "+"
 - "UITextField"
+- "UIViewController"
+- !private "NSMutableDictionary"
+- "UIButton"
+- "myNumSet"
+- !private "Void"
+- !private "print"
+- !private "DisplayQRViewController"
+- !private "Tool"
+- !private "NSArray"
+- "String"
+- !private "SERVER"
+- "StringLiteralType"
+- !private "??"
+- !private "+"
 depends-member:
 - !private ["PSs9AnyObject", "NSMutableDictionary"]
 - !private ["PSs9AnyObject", "SERVER"]
 - !private ["PSs9AnyObject", "Tool"]
 - !private ["PSs9AnyObject", "callREST"]
 - ["PSs9AnyObject", "categoryTextField"]
+- !private ["PSs9AnyObject", "componentsJoinedByString"]
+- !private ["PSs9AnyObject", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs9AnyObject", "deinit"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "generatePressed"]
 - ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "invertedSet"]
 - !private ["PSs9AnyObject", "itemid"]
 - !private ["PSs9AnyObject", "loadNib"]
+- !private ["PSs9AnyObject", "myNumSet"]
 - ["PSs9AnyObject", "nameTextField"]
 - ["PSs9AnyObject", "postItem"]
 - ["PSs9AnyObject", "presentQR"]
@@ -52,15 +61,22 @@ depends-member:
 - !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "componentsJoinedByString"]
+- !private ["PSo15CNKeyDescriptor", "componentsSeparatedByCharactersInSet"]
+- !private ["PSo15CNKeyDescriptor", "loadNib"]
 - !private ["PSs11CVarArgType", "NSMutableDictionary"]
 - !private ["PSs11CVarArgType", "SERVER"]
 - !private ["PSs11CVarArgType", "Tool"]
 - ["PSs11CVarArgType", "categoryTextField"]
+- !private ["PSs11CVarArgType", "componentsJoinedByString"]
+- !private ["PSs11CVarArgType", "componentsSeparatedByCharactersInSet"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
 - ["PSs11CVarArgType", "generatePressed"]
 - ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "invertedSet"]
 - !private ["PSs11CVarArgType", "itemid"]
 - !private ["PSs11CVarArgType", "loadNib"]
+- !private ["PSs11CVarArgType", "myNumSet"]
 - ["PSs11CVarArgType", "nameTextField"]
 - ["PSs11CVarArgType", "postItem"]
 - ["PSs11CVarArgType", "presentQR"]
@@ -71,18 +87,24 @@ depends-member:
 - !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
+- !private ["PSs10Comparable", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs10Comparable", "loadNib"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs28CustomDebugStringConvertible", "loadNib"]
 - !private ["PSs23CustomStringConvertible", "NSMutableDictionary"]
 - !private ["PSs23CustomStringConvertible", "SERVER"]
 - !private ["PSs23CustomStringConvertible", "Tool"]
 - ["PSs23CustomStringConvertible", "categoryTextField"]
+- !private ["PSs23CustomStringConvertible", "componentsJoinedByString"]
+- !private ["PSs23CustomStringConvertible", "componentsSeparatedByCharactersInSet"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["PSs23CustomStringConvertible", "generatePressed"]
 - ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "invertedSet"]
 - !private ["PSs23CustomStringConvertible", "itemid"]
 - !private ["PSs23CustomStringConvertible", "loadNib"]
+- !private ["PSs23CustomStringConvertible", "myNumSet"]
 - ["PSs23CustomStringConvertible", "nameTextField"]
 - ["PSs23CustomStringConvertible", "postItem"]
 - ["PSs23CustomStringConvertible", "presentQR"]
@@ -100,11 +122,15 @@ depends-member:
 - !private ["PSs9Equatable", "SERVER"]
 - !private ["PSs9Equatable", "Tool"]
 - ["PSs9Equatable", "categoryTextField"]
+- !private ["PSs9Equatable", "componentsJoinedByString"]
+- !private ["PSs9Equatable", "componentsSeparatedByCharactersInSet"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
 - ["PSs9Equatable", "generatePressed"]
 - ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "invertedSet"]
 - !private ["PSs9Equatable", "itemid"]
 - !private ["PSs9Equatable", "loadNib"]
+- !private ["PSs9Equatable", "myNumSet"]
 - ["PSs9Equatable", "nameTextField"]
 - ["PSs9Equatable", "postItem"]
 - ["PSs9Equatable", "presentQR"]
@@ -115,16 +141,21 @@ depends-member:
 - !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "loadNib"]
 - !private ["PSs8Hashable", "NSMutableDictionary"]
 - !private ["PSs8Hashable", "SERVER"]
 - !private ["PSs8Hashable", "Tool"]
 - ["PSs8Hashable", "categoryTextField"]
+- !private ["PSs8Hashable", "componentsJoinedByString"]
+- !private ["PSs8Hashable", "componentsSeparatedByCharactersInSet"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
 - ["PSs8Hashable", "generatePressed"]
 - ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "invertedSet"]
 - !private ["PSs8Hashable", "itemid"]
 - !private ["PSs8Hashable", "loadNib"]
+- !private ["PSs8Hashable", "myNumSet"]
 - ["PSs8Hashable", "nameTextField"]
 - ["PSs8Hashable", "postItem"]
 - ["PSs8Hashable", "presentQR"]
@@ -135,16 +166,24 @@ depends-member:
 - !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
+- !private ["PSs14MirrorPathType", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs14MirrorPathType", "loadNib"]
+- !private ["CSo7NSArray", "componentsJoinedByString"]
+- ["CSo14NSCharacterSet", "init"]
+- ["CSo14NSCharacterSet", "invertedSet"]
 - !private ["PSo8NSCoding", "NSMutableDictionary"]
 - !private ["PSo8NSCoding", "SERVER"]
 - !private ["PSo8NSCoding", "Tool"]
 - ["PSo8NSCoding", "categoryTextField"]
+- !private ["PSo8NSCoding", "componentsJoinedByString"]
+- !private ["PSo8NSCoding", "componentsSeparatedByCharactersInSet"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "generatePressed"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "invertedSet"]
 - !private ["PSo8NSCoding", "itemid"]
 - !private ["PSo8NSCoding", "loadNib"]
+- !private ["PSo8NSCoding", "myNumSet"]
 - ["PSo8NSCoding", "nameTextField"]
 - ["PSo8NSCoding", "postItem"]
 - ["PSo8NSCoding", "presentQR"]
@@ -155,8 +194,11 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "componentsJoinedByString"]
+- !private ["PSo9NSCopying", "componentsSeparatedByCharactersInSet"]
 - !private ["PSo9NSCopying", "deinit"]
-- !private ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "invertedSet"]
 - !private ["PSo9NSCopying", "loadNib"]
 - !private ["PSo9NSCopying", "subscript"]
 - !private ["CSo12NSDictionary", "init"]
@@ -169,6 +211,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "generatePressed"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "itemid"]
+- !private ["PSo26NSExtensionRequestHandling", "myNumSet"]
 - ["PSo26NSExtensionRequestHandling", "nameTextField"]
 - ["PSo26NSExtensionRequestHandling", "postItem"]
 - ["PSo26NSExtensionRequestHandling", "presentQR"]
@@ -177,14 +220,19 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "componentsJoinedByString"]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["PSo17NSFastEnumeration", "subscript"]
-- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "componentsJoinedByString"]
+- !private ["PSo16NSMutableCopying", "componentsSeparatedByCharactersInSet"]
+- ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSMutableCopying", "invertedSet"]
 - !private ["PSo16NSMutableCopying", "loadNib"]
 - !private ["PSo16NSMutableCopying", "subscript"]
 - !private ["CSo19NSMutableDictionary", "init"]
 - !private ["CSo19NSMutableDictionary", "subscript"]
 - !private ["CSo8NSObject", "DisplayQRViewController"]
+- !private ["CSo8NSObject", "NSArray"]
 - !private ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSMutableDictionary"]
 - !private ["CSo8NSObject", "SERVER"]
@@ -194,11 +242,15 @@ depends-member:
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "categoryTextField"]
+- !private ["CSo8NSObject", "componentsJoinedByString"]
+- !private ["CSo8NSObject", "componentsSeparatedByCharactersInSet"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "generatePressed"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "invertedSet"]
 - !private ["CSo8NSObject", "itemid"]
 - !private ["CSo8NSObject", "loadNib"]
+- !private ["CSo8NSObject", "myNumSet"]
 - ["CSo8NSObject", "nameTextField"]
 - ["CSo8NSObject", "postItem"]
 - ["CSo8NSObject", "presentQR"]
@@ -212,11 +264,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "SERVER"]
 - !private ["PSo16NSObjectProtocol", "Tool"]
 - ["PSo16NSObjectProtocol", "categoryTextField"]
+- !private ["PSo16NSObjectProtocol", "componentsJoinedByString"]
+- !private ["PSo16NSObjectProtocol", "componentsSeparatedByCharactersInSet"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "generatePressed"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "invertedSet"]
 - !private ["PSo16NSObjectProtocol", "itemid"]
 - !private ["PSo16NSObjectProtocol", "loadNib"]
+- !private ["PSo16NSObjectProtocol", "myNumSet"]
 - ["PSo16NSObjectProtocol", "nameTextField"]
 - ["PSo16NSObjectProtocol", "postItem"]
 - ["PSo16NSObjectProtocol", "presentQR"]
@@ -227,11 +283,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "componentsJoinedByString"]
+- !private ["PSo14NSSecureCoding", "componentsSeparatedByCharactersInSet"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "loadNib"]
 - !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["CSo8NSString", "componentsSeparatedByCharactersInSet"]
 - !private ["CSo8NSString", "loadNib"]
 - !private ["C13money2020201521NewItemViewController", "DisplayQRViewController"]
+- !private ["C13money2020201521NewItemViewController", "NSArray"]
 - !private ["C13money2020201521NewItemViewController", "NSDictionary"]
 - !private ["C13money2020201521NewItemViewController", "NSMutableDictionary"]
 - !private ["C13money2020201521NewItemViewController", "SERVER"]
@@ -245,6 +305,7 @@ depends-member:
 - ["C13money2020201521NewItemViewController", "didReceiveMemoryWarning"]
 - ["C13money2020201521NewItemViewController", "generatePressed"]
 - ["C13money2020201521NewItemViewController", "init"]
+- !private ["C13money2020201521NewItemViewController", "myNumSet"]
 - ["C13money2020201521NewItemViewController", "nameTextField"]
 - ["C13money2020201521NewItemViewController", "postItem"]
 - ["C13money2020201521NewItemViewController", "presentQR"]
@@ -253,15 +314,23 @@ depends-member:
 - !private ["C13money2020201521NewItemViewController", "print"]
 - ["C13money2020201521NewItemViewController", "viewDidLoad"]
 - ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs21NilLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - ["Sq", "Some"]
+- !private ["Sq", "componentsSeparatedByCharactersInSet"]
 - !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs16OutputStreamType", "loadNib"]
+- !private ["PSs12SequenceType", "componentsJoinedByString"]
 - !private ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs10Streamable", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs10Streamable", "loadNib"]
+- !private ["SS", "componentsSeparatedByCharactersInSet"]
 - !private ["SS", "deinit"]
 - !private ["SS", "loadNib"]
+- !private ["PSs30StringInterpolationConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs30StringInterpolationConvertible", "loadNib"]
+- !private ["PSs24StringLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs24StringLiteralConvertible", "loadNib"]
 - !private ["C13money202020154Tool", "callREST"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -274,6 +343,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "generatePressed"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "itemid"]
+- !private ["PSo21UIAppearanceContainer", "myNumSet"]
 - ["PSo21UIAppearanceContainer", "nameTextField"]
 - ["PSo21UIAppearanceContainer", "postItem"]
 - ["PSo21UIAppearanceContainer", "presentQR"]
@@ -291,6 +361,7 @@ depends-member:
 - ["PSo18UIContentContainer", "generatePressed"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "itemid"]
+- !private ["PSo18UIContentContainer", "myNumSet"]
 - ["PSo18UIContentContainer", "nameTextField"]
 - ["PSo18UIContentContainer", "postItem"]
 - ["PSo18UIContentContainer", "presentQR"]
@@ -310,6 +381,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "generatePressed"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "itemid"]
+- !private ["PSo18UIFocusEnvironment", "myNumSet"]
 - ["PSo18UIFocusEnvironment", "nameTextField"]
 - ["PSo18UIFocusEnvironment", "postItem"]
 - ["PSo18UIFocusEnvironment", "presentQR"]
@@ -321,6 +393,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo11UIResponder", "DisplayQRViewController"]
+- !private ["CSo11UIResponder", "NSArray"]
 - !private ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSMutableDictionary"]
 - !private ["CSo11UIResponder", "SERVER"]
@@ -334,6 +407,7 @@ depends-member:
 - ["CSo11UIResponder", "generatePressed"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "itemid"]
+- !private ["CSo11UIResponder", "myNumSet"]
 - ["CSo11UIResponder", "nameTextField"]
 - ["CSo11UIResponder", "postItem"]
 - ["CSo11UIResponder", "presentQR"]
@@ -350,6 +424,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "generatePressed"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "itemid"]
+- !private ["PSo16UIStateRestoring", "myNumSet"]
 - ["PSo16UIStateRestoring", "nameTextField"]
 - ["PSo16UIStateRestoring", "postItem"]
 - ["PSo16UIStateRestoring", "presentQR"]
@@ -369,6 +444,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "generatePressed"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "itemid"]
+- !private ["PSo18UITraitEnvironment", "myNumSet"]
 - ["PSo18UITraitEnvironment", "nameTextField"]
 - ["PSo18UITraitEnvironment", "postItem"]
 - ["PSo18UITraitEnvironment", "presentQR"]
@@ -380,6 +456,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "DisplayQRViewController"]
+- !private ["CSo16UIViewController", "NSArray"]
 - !private ["CSo16UIViewController", "NSDictionary"]
 - !private ["CSo16UIViewController", "NSMutableDictionary"]
 - !private ["CSo16UIViewController", "SERVER"]
@@ -393,6 +470,7 @@ depends-member:
 - ["CSo16UIViewController", "generatePressed"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "itemid"]
+- !private ["CSo16UIViewController", "myNumSet"]
 - ["CSo16UIViewController", "nameTextField"]
 - ["CSo16UIViewController", "postItem"]
 - ["CSo16UIViewController", "presentQR"]
@@ -401,20 +479,31 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "loadNib"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "loadNib"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "loadNib"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "loadNib"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "loadNib"]
+- !private ["PSs16_CocoaStringType", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs16_CocoaStringType", "loadNib"]
+- !private ["PSs21_ObjectiveCBridgeable", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs21_ObjectiveCBridgeable", "loadNib"]
 - ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "componentsJoinedByString"]
+- !private ["PSs12_Reflectable", "componentsSeparatedByCharactersInSet"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "loadNib"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
 depends-nominal:
 - "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "PSo15CNKeyDescriptor"
 - "PSs11CVarArgType"
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
@@ -425,12 +514,14 @@ depends-nominal:
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - "PSs8Hashable"
 - !private "PSs14MirrorPathType"
+- !private "CSo7NSArray"
+- "CSo14NSCharacterSet"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
+- "PSo9NSCopying"
 - !private "CSo12NSDictionary"
 - "PSo26NSExtensionRequestHandling"
 - !private "PSo17NSFastEnumeration"
-- !private "PSo16NSMutableCopying"
+- "PSo16NSMutableCopying"
 - !private "CSo19NSMutableDictionary"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -511,9 +602,14 @@ depends-external:
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMChargeCardViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/PassKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Contacts.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMCreditCardToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMAddress.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "f74c89339146f93949d18dfa41c69057"
+interface-hash: "3962a4c9368c4cd6e9ff3b0e26968c3f"

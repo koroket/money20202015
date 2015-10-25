@@ -6,13 +6,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		rWRqLIfNR7Erym0RgCbPKUBc7KE=
+		wal8IIdxEewJl3+xjjA6qRmdkyQ=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SmDSpHsAEoDRC0ZeffS0c13nYbQ=
+			AAM3pqdI7kqloIShLEFmrUI1V2g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -30,42 +30,42 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q1iKsEG8uGubiPLsUwtAc+0q4NM=
+			nMx+Q3SDRiaVJJLJiR2e9Z00jRY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>BusinessHomeViewController.nib</key>
 		<data>
-		aKqBrRmjJt7fAiaGf3LHigiIgZA=
+		oV2W7F0WZCZ3WamawrnH3KTTees=
 		</data>
 		<key>CameraViewController.nib</key>
 		<data>
-		hGnrSo6X6adpnW2XpF0uodaJA2U=
+		4Lp/IxFqscC3Okk3ZPkNsHY5nDw=
 		</data>
 		<key>CheckoutViewController.nib</key>
 		<data>
-		SbFJmBPn6XSoHFel3RhUmpthEoU=
+		WVA3YZ7CjdOCDZG9WTw0mzC+OZM=
 		</data>
 		<key>ChooseUsageViewController.nib</key>
 		<data>
-		pxYzk10tlsLC31KGsl2AzdbbvL8=
+		dlwRkG8MHsJWAPSWOFVx4YOIr+I=
 		</data>
 		<key>ConsumerDataViewController.nib</key>
 		<data>
-		lFz9BtcAmGGrtJQiIE28C6aOGjc=
+		7n/xT58//uoGy2wuuiQ6KKuf1KU=
 		</data>
 		<key>ConsumerHomeViewController.nib</key>
 		<data>
-		Az0dUZ8RUd31Sb9jzrMcaVUydEs=
+		l6OzCXSgs93HabOwP3d1hR+bVh4=
 		</data>
 		<key>DisplayQRViewController.nib</key>
 		<data>
-		/wc1mOe9LzEZ7ev+YVoBEPuWofw=
+		UOo5zj//idTVHTVVLyIvP9aL/Ec=
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/FBSDKCoreKit</key>
 		<data>
-		k+ZmXGc98Os0CzPf05eLIEfDTHg=
+		7BitW54ARnazrHuwX+rHe5vyCc8=
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/Info.plist</key>
 		<data>
@@ -73,7 +73,7 @@
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		VrIaJa8TX9ASdfi2pKf+vvLPoIk=
+		I4lu0EnwGLzeWITScBAf8F31jPM=
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -85,11 +85,11 @@
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		glrHz20Zl2GPlKtpOPxaOdKp1mU=
+		tHzwGc6xZV0/BqYQ7roClU6T2gE=
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/FBSDKLoginKit</key>
 		<data>
-		V495M8u3butiRMLjBsX1lNrPZIU=
+		+5tXxCqS4JNri1QU2rEaLAE6+8E=
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/Info.plist</key>
 		<data>
@@ -97,7 +97,7 @@
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		KL4hsjpyj5JZN/JWpbvb2+O/Q7Q=
+		S2cBgr+0qFWThFdr88A0O1lZgHM=
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -109,63 +109,67 @@
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		Wdw9qySr5Bj1q9HkqBfilnFTQCc=
+		maNtbc7rn66xyEDO9/XqeX3IIDU=
 		</data>
 		<key>Frameworks/libswiftAVFoundation.dylib</key>
 		<data>
-		aT15fAN/z9wvWBw93t04OrJ3j1k=
+		SjrdjD/vNhKklZs0n6TKJj2rFYk=
 		</data>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
-		IyieUu3YK10miNSJfR1WIlrvB4Q=
+		R8bb/L6LQTdLwTDOc3efbt6d7PY=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		nCNPSAWsd9rr8A0+LWP/9UMrETU=
+		5mUJ0Kd8DcAwTJRj2s0s0ykXy+8=
 		</data>
 		<key>Frameworks/libswiftCoreAudio.dylib</key>
 		<data>
-		dydtFj5ZYEBgYIgNVCh1pITM+0Q=
+		wxk3VqgM2+6Tk+TOR2lfJ8Gq85Q=
 		</data>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<data>
-		sLVoQiAa1PiDDHutzPoETsQiz9g=
+		bRB9rxlWDo3lQGRxvJkgMXXmC5Y=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		HdEq9nGJa7XjI380SAA8uvnbnqA=
+		x44DKiAvJJi8mFtXi+rSwSDLcQc=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		5LEgV6cpy2SN982MriIKJzWMlVI=
+		+0mxl3G6aD69e9BhTEWQs7pYAuE=
 		</data>
 		<key>Frameworks/libswiftCoreLocation.dylib</key>
 		<data>
-		8+CLBgBp77b5F0tENdHD+vTopvw=
+		xjvnWSapeytx86NvBSmhD3/sKwU=
 		</data>
 		<key>Frameworks/libswiftCoreMedia.dylib</key>
 		<data>
-		8yuQLv84zeK0aUmpfN3ei2lgpyo=
+		cQeep54ZBvBUUpaOyqU1KD8hBT4=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		uEfq0LiGAjLl41cMRyD4maQdDYE=
+		tR7jgU3YZBTR9AhIuUSQFgBvYbw=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		Ov1wtPUbzTUIKVxq9wfx6N6k9N4=
+		gRd5cSnjjLvkcma35zt8X9WH+og=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		224iPFNnQBz21E7/wxWvp0aNk3Y=
+		GzAGmqJk+fnqiccsJsvjrbql8qc=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		sXjf5cBexCKeNz+YfGzAau+ir50=
+		BzdxGcPon3sTz1ecx2SL3Qzgbi4=
+		</data>
+		<key>Frameworks/libswiftPassKit.dylib</key>
+		<data>
+		G1rMsKh3kp2071btQ7VkLumssJY=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		XWjWNv9VAJp0/NdQ6jyxwZllmUk=
+		gijjeKlE/C1qSiG0YQtdhvrB9ig=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -173,15 +177,15 @@
 		</data>
 		<key>ItemTableViewCell.nib</key>
 		<data>
-		WpZOw369ySy4KC33jkVTo1TLXb8=
+		BEAqftsoZ34YxcGFLXt01FglCAs=
 		</data>
 		<key>LoginViewController.nib</key>
 		<data>
-		SppPI+Ul1zE9JUY70BptKA1WSzI=
+		aR+Vq1zswlBKhTv9g5liGBaSRN4=
 		</data>
 		<key>NewItemViewController.nib</key>
 		<data>
-		1cLPd/q95jfkyyYxc73YxwT63Qc=
+		wD43Z/eCYkycjffdn2Ek86V+dto=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -189,11 +193,27 @@
 		</data>
 		<key>PlaceTableViewCell.nib</key>
 		<data>
-		QLMFlcSGvqq/xR93ffvKAvqInNk=
+		mxrLvHLYmwHFC5kQ04SdPi6dWIU=
 		</data>
 		<key>SearchPlacesViewController.nib</key>
 		<data>
-		dNHdjM2E00YHBscG2xamejwZFmw=
+		qtq+GMwM/O9TGGz6b0VJutKPwvU=
+		</data>
+		<key>Simplify.bundle/Assets.car</key>
+		<data>
+		1U488agTjM8x/XYlgljI4XDD3hA=
+		</data>
+		<key>Simplify.bundle/Info.plist</key>
+		<data>
+		KzONmMtHhMjEuolUj1Up2JV6UDU=
+		</data>
+		<key>Simplify.bundle/SIMChargeCardViewController.nib</key>
+		<data>
+		x00ETZBFSi4xEGP2Zmei4yjNU9A=
+		</data>
+		<key>Simplify.bundle/SIMResponseViewController.nib</key>
+		<data>
+		6OxRyyp9HnknYtFe9iZNo8tRCmw=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -216,13 +236,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		rWRqLIfNR7Erym0RgCbPKUBc7KE=
+		wal8IIdxEewJl3+xjjA6qRmdkyQ=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SmDSpHsAEoDRC0ZeffS0c13nYbQ=
+			AAM3pqdI7kqloIShLEFmrUI1V2g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -240,42 +260,42 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q1iKsEG8uGubiPLsUwtAc+0q4NM=
+			nMx+Q3SDRiaVJJLJiR2e9Z00jRY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>BusinessHomeViewController.nib</key>
 		<data>
-		aKqBrRmjJt7fAiaGf3LHigiIgZA=
+		oV2W7F0WZCZ3WamawrnH3KTTees=
 		</data>
 		<key>CameraViewController.nib</key>
 		<data>
-		hGnrSo6X6adpnW2XpF0uodaJA2U=
+		4Lp/IxFqscC3Okk3ZPkNsHY5nDw=
 		</data>
 		<key>CheckoutViewController.nib</key>
 		<data>
-		SbFJmBPn6XSoHFel3RhUmpthEoU=
+		WVA3YZ7CjdOCDZG9WTw0mzC+OZM=
 		</data>
 		<key>ChooseUsageViewController.nib</key>
 		<data>
-		pxYzk10tlsLC31KGsl2AzdbbvL8=
+		dlwRkG8MHsJWAPSWOFVx4YOIr+I=
 		</data>
 		<key>ConsumerDataViewController.nib</key>
 		<data>
-		lFz9BtcAmGGrtJQiIE28C6aOGjc=
+		7n/xT58//uoGy2wuuiQ6KKuf1KU=
 		</data>
 		<key>ConsumerHomeViewController.nib</key>
 		<data>
-		Az0dUZ8RUd31Sb9jzrMcaVUydEs=
+		l6OzCXSgs93HabOwP3d1hR+bVh4=
 		</data>
 		<key>DisplayQRViewController.nib</key>
 		<data>
-		/wc1mOe9LzEZ7ev+YVoBEPuWofw=
+		UOo5zj//idTVHTVVLyIvP9aL/Ec=
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/FBSDKCoreKit</key>
 		<data>
-		k+ZmXGc98Os0CzPf05eLIEfDTHg=
+		7BitW54ARnazrHuwX+rHe5vyCc8=
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/Info.plist</key>
 		<data>
@@ -283,7 +303,7 @@
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		VrIaJa8TX9ASdfi2pKf+vvLPoIk=
+		I4lu0EnwGLzeWITScBAf8F31jPM=
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -295,11 +315,11 @@
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		glrHz20Zl2GPlKtpOPxaOdKp1mU=
+		tHzwGc6xZV0/BqYQ7roClU6T2gE=
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/FBSDKLoginKit</key>
 		<data>
-		V495M8u3butiRMLjBsX1lNrPZIU=
+		+5tXxCqS4JNri1QU2rEaLAE6+8E=
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/Info.plist</key>
 		<data>
@@ -307,7 +327,7 @@
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		KL4hsjpyj5JZN/JWpbvb2+O/Q7Q=
+		S2cBgr+0qFWThFdr88A0O1lZgHM=
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -319,83 +339,103 @@
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		Wdw9qySr5Bj1q9HkqBfilnFTQCc=
+		maNtbc7rn66xyEDO9/XqeX3IIDU=
 		</data>
 		<key>Frameworks/libswiftAVFoundation.dylib</key>
 		<data>
-		aT15fAN/z9wvWBw93t04OrJ3j1k=
+		SjrdjD/vNhKklZs0n6TKJj2rFYk=
 		</data>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
-		IyieUu3YK10miNSJfR1WIlrvB4Q=
+		R8bb/L6LQTdLwTDOc3efbt6d7PY=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		nCNPSAWsd9rr8A0+LWP/9UMrETU=
+		5mUJ0Kd8DcAwTJRj2s0s0ykXy+8=
 		</data>
 		<key>Frameworks/libswiftCoreAudio.dylib</key>
 		<data>
-		dydtFj5ZYEBgYIgNVCh1pITM+0Q=
+		wxk3VqgM2+6Tk+TOR2lfJ8Gq85Q=
 		</data>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<data>
-		sLVoQiAa1PiDDHutzPoETsQiz9g=
+		bRB9rxlWDo3lQGRxvJkgMXXmC5Y=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		HdEq9nGJa7XjI380SAA8uvnbnqA=
+		x44DKiAvJJi8mFtXi+rSwSDLcQc=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		5LEgV6cpy2SN982MriIKJzWMlVI=
+		+0mxl3G6aD69e9BhTEWQs7pYAuE=
 		</data>
 		<key>Frameworks/libswiftCoreLocation.dylib</key>
 		<data>
-		8+CLBgBp77b5F0tENdHD+vTopvw=
+		xjvnWSapeytx86NvBSmhD3/sKwU=
 		</data>
 		<key>Frameworks/libswiftCoreMedia.dylib</key>
 		<data>
-		8yuQLv84zeK0aUmpfN3ei2lgpyo=
+		cQeep54ZBvBUUpaOyqU1KD8hBT4=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		uEfq0LiGAjLl41cMRyD4maQdDYE=
+		tR7jgU3YZBTR9AhIuUSQFgBvYbw=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		Ov1wtPUbzTUIKVxq9wfx6N6k9N4=
+		gRd5cSnjjLvkcma35zt8X9WH+og=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		224iPFNnQBz21E7/wxWvp0aNk3Y=
+		GzAGmqJk+fnqiccsJsvjrbql8qc=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		sXjf5cBexCKeNz+YfGzAau+ir50=
+		BzdxGcPon3sTz1ecx2SL3Qzgbi4=
+		</data>
+		<key>Frameworks/libswiftPassKit.dylib</key>
+		<data>
+		G1rMsKh3kp2071btQ7VkLumssJY=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		XWjWNv9VAJp0/NdQ6jyxwZllmUk=
+		gijjeKlE/C1qSiG0YQtdhvrB9ig=
 		</data>
 		<key>ItemTableViewCell.nib</key>
 		<data>
-		WpZOw369ySy4KC33jkVTo1TLXb8=
+		BEAqftsoZ34YxcGFLXt01FglCAs=
 		</data>
 		<key>LoginViewController.nib</key>
 		<data>
-		SppPI+Ul1zE9JUY70BptKA1WSzI=
+		aR+Vq1zswlBKhTv9g5liGBaSRN4=
 		</data>
 		<key>NewItemViewController.nib</key>
 		<data>
-		1cLPd/q95jfkyyYxc73YxwT63Qc=
+		wD43Z/eCYkycjffdn2Ek86V+dto=
 		</data>
 		<key>PlaceTableViewCell.nib</key>
 		<data>
-		QLMFlcSGvqq/xR93ffvKAvqInNk=
+		mxrLvHLYmwHFC5kQ04SdPi6dWIU=
 		</data>
 		<key>SearchPlacesViewController.nib</key>
 		<data>
-		dNHdjM2E00YHBscG2xamejwZFmw=
+		qtq+GMwM/O9TGGz6b0VJutKPwvU=
+		</data>
+		<key>Simplify.bundle/Assets.car</key>
+		<data>
+		1U488agTjM8x/XYlgljI4XDD3hA=
+		</data>
+		<key>Simplify.bundle/Info.plist</key>
+		<data>
+		KzONmMtHhMjEuolUj1Up2JV6UDU=
+		</data>
+		<key>Simplify.bundle/SIMChargeCardViewController.nib</key>
+		<data>
+		x00ETZBFSi4xEGP2Zmei4yjNU9A=
+		</data>
+		<key>Simplify.bundle/SIMResponseViewController.nib</key>
+		<data>
+		6OxRyyp9HnknYtFe9iZNo8tRCmw=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>

@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C13money2020201523DisplayQRViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "itemid"
-- "qrImageView"
+- "viewDidLoad"
 - "viewDidAppear"
 - "loadQR"
-- "viewDidLoad"
+- "itemid"
+- "qrImageView"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIViewController"
+- !private "print"
 - "Bool"
+- "UIViewController"
+- "DisplayQRViewController"
 - "String"
 - "UIImageView"
-- "DisplayQRViewController"
 - !private "StringLiteralType"
-- !private "print"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]
@@ -32,6 +32,7 @@ depends-member:
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
 - !private ["Sb", "deinit"]
+- !private ["PSo15CNKeyDescriptor", "init"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "itemid"]
@@ -246,6 +247,7 @@ depends-member:
 depends-nominal:
 - "PSs9AnyObject"
 - !private "Sb"
+- !private "PSo15CNKeyDescriptor"
 - "PSs11CVarArgType"
 - !private "VSs9Character"
 - !private "PSs10Comparable"
@@ -345,6 +347,11 @@ depends-external:
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMChargeCardViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/PassKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Contacts.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMCreditCardToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Simplify.framework/Headers/SIMAddress.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"

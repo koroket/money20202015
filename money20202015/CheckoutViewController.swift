@@ -68,16 +68,20 @@ extension CheckoutViewController : SIMChargeCardViewControllerDelegate {
         var mainData:NSMutableDictionary = NSMutableDictionary()
         
         var arr: NSMutableArray = NSMutableArray()
+        var totalPrice:Double = 0.0;
         for item in items {
             var data: NSMutableDictionary = NSMutableDictionary()
-            data["businessId"] = "asdf";
-            data["totalPrice"] = 32;
+            data["itemId"] = item.itemid;
+            data["count"] = 1;
             arr.addObject(data)
+            
+            totalPrice += Double(item.price) ?? 0;
         }
-        mainData["businessId"] = "asdf";
-        mainData["totalPrice"] = 32;
         
-
+        mainData["businessId"] = NSUserDefaults.standardUserDefaults().valueForKey("businessId") as? String
+        mainData["totalPrice"] = totalPrice;
+        mainData["items"] = arr;
+        
         Tool.callREST(mainData, url: url, method: "POST") { (response) -> Void in
             print(response);
         }
