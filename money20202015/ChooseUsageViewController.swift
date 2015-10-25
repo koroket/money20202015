@@ -50,7 +50,9 @@ class ChooseUsageViewController: UIViewController {
 //        data["category"] = self.categoryTextField.text ?? "";
         
         //call api to update type
-        var fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId")
+        var fbId = NSUserDefaults.standardUserDefaults().valueForKey("fbId")
+        var url = SERVER + "/markType/\(fbId)/\(type)";
+        
         
     }
 
