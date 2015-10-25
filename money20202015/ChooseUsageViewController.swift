@@ -22,23 +22,45 @@ class ChooseUsageViewController: UIViewController {
     }
 
     @IBAction func continueAsConsumer(sender: UIButton) {
-        if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
+        markType("Consumer");
+//        if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
+//            self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+//                print("done nigah")
+//            })
+//        } else {
+//            print("failed loading CameraViewController")
+//        }
+        if let nextViewController = "SearchPlacesViewController".loadNib() as? SearchPlacesViewController {
+            nextViewController.isConsumer = true
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
         } else {
-            print("failed loading CameraViewController")
+            print("failed loading SearchPlacesViewController")
         }
     }
     
     @IBAction func continueAsBusiness(sender: UIButton) {
-        if let nextViewController = "NewItemViewController".loadNib() as? NewItemViewController {
+        markType("Business")
+        if let nextViewController = "SearchPlacesViewController".loadNib() as? SearchPlacesViewController {
+            nextViewController.isConsumer = false
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
         } else {
-            print("failed loading NewItemViewController")
+            print("failed loading SearchPlacesViewController")
         }
     }
     
+    func markType(type:String){
+//        let data = NSMutableDictionary();
+//        data["item"] = self.nameTextField.text ?? "";
+//        data["price"] = self.priceTextField.text ?? "";
+//        data["category"] = self.categoryTextField.text ?? "";
+        
+        //call api to update type
+        var fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId")
+        
+    }
+
 }

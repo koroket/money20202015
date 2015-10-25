@@ -40,22 +40,25 @@
                                     <action selector="generatePressed:" destination="fjP-IF-I3A" eventType="touchUpInside" id="7TF-hL-DN4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMm-LT-CmO">
-                                <rect key="frame" x="217" y="334" width="42" height="24"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hdr-Qz-k3r">
+                                <rect key="frame" x="20" y="75" width="520" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="RSN-lb-HGr" secondAttribute="trailing" constant="20" id="4VX-XS-P4Z"/>
+                            <constraint firstItem="hdr-Qz-k3r" firstAttribute="leading" secondItem="RSN-lb-HGr" secondAttribute="leading" id="Cyw-8a-deJ"/>
                             <constraint firstItem="dod-t5-n7F" firstAttribute="centerX" secondItem="KwS-Kd-p4I" secondAttribute="centerX" id="FIi-06-Hfc"/>
                             <constraint firstItem="dod-t5-n7F" firstAttribute="top" secondItem="KwS-Kd-p4I" secondAttribute="bottom" constant="40" id="JZJ-DL-Wxv"/>
+                            <constraint firstItem="hdr-Qz-k3r" firstAttribute="top" secondItem="RSN-lb-HGr" secondAttribute="bottom" constant="5" id="Nca-H5-CTk"/>
                             <constraint firstAttribute="trailing" secondItem="KwS-Kd-p4I" secondAttribute="trailing" constant="20" id="QuW-Sl-ZDs"/>
                             <constraint firstItem="RSN-lb-HGr" firstAttribute="leading" secondItem="Ozj-P5-L6P" secondAttribute="leading" constant="20" id="YEF-vC-LYD"/>
                             <constraint firstItem="RSN-lb-HGr" firstAttribute="top" secondItem="Ozj-P5-L6P" secondAttribute="top" constant="40" id="Z0y-ki-xDQ"/>
+                            <constraint firstItem="hdr-Qz-k3r" firstAttribute="trailing" secondItem="RSN-lb-HGr" secondAttribute="trailing" id="Zxd-2e-l8P"/>
                             <constraint firstItem="KwS-Kd-p4I" firstAttribute="leading" secondItem="Ozj-P5-L6P" secondAttribute="leading" constant="20" id="eHx-gb-0vd"/>
                             <constraint firstItem="RSN-lb-HGr" firstAttribute="centerX" secondItem="Ozj-P5-L6P" secondAttribute="centerX" id="wRZ-2r-6sR"/>
                             <constraint firstItem="KwS-Kd-p4I" firstAttribute="top" secondItem="RSN-lb-HGr" secondAttribute="bottom" constant="40" id="wlr-Pe-2KW"/>
@@ -77,6 +80,7 @@
                 </constraints>
             </view>
             <connections>
+                <outlet property="categoryTextField" destination="hdr-Qz-k3r" id="Zx3-aW-owv"/>
                 <outlet property="nameTextField" destination="RSN-lb-HGr" id="3Sw-tU-4Se"/>
                 <outlet property="priceTextField" destination="KwS-Kd-p4I" id="EHG-z6-rpQ"/>
             </connections>

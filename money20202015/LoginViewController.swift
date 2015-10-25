@@ -25,7 +25,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-
+        
+        NSUserDefaults.standardUserDefaults().setValue(result.token.userID, forKey: "fbid")
+        NSUserDefaults.standardUserDefaults().synchronize();
+        
         login(result.token.userID)
     }
     
@@ -37,13 +40,40 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 //Server Related
 extension LoginViewController {
     func login(fbid:String){
-        let url:String = SERVER + "/login.json?fbid=" + fbid
+        let url:String = SERVER + "/login/" + fbid;
+        print(url)
         Tool.callREST(nil, url: url, method: "POST") { (response) -> Void in
-            if let json = response as? NSDictionary {
-                print(json)
-//                saveCookies()
-//                self.performSegueWithIdentifier("loginSuccessful", sender: self)
+            print(response)
+            if let jsonArr = response as? NSArray, json = jsonArr[0] as? NSDictionary {
+                print(json);
                 print("login success")
+                print(json["type"] as? String)
+                if json["type"] as? String == nil {
+                    //take to selection screen
+                    print("choose usage controller")
+                    if let nextViewController = "ChooseUsageViewController".loadNib() as? ChooseUsageViewController {
+                        self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                            print("done nigah")
+                        })
+                    }
+                }
+                else if json["type"] as? String == "Customer" {
+                    //take to consumer screen
+                    if let nextViewController = "ChooseUsageViewController".loadNib() as? ChooseUsageViewController {
+                        self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                            print("done nigah")
+                        })
+                    }
+                }
+                else if json["type"] as? String == "Business" {
+                    //take to business screen
+                    if let nextViewController = "ChooseUsageViewController".loadNib() as? ChooseUsageViewController {
+                        self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                            print("done nigah")
+                        })
+                    }
+                }
+                
             } else {
                 print("login failed")
             }

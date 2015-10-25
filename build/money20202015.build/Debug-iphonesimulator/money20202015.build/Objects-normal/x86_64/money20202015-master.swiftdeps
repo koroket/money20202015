@@ -1,0 +1,14 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "8be917487d86f9c1495b0a0b1fd5a909"
+build_time: [499074907, 892242000]
+inputs:
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/ChooseUsageViewController.swift": [499073773, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/AppDelegate.swift": [499070307, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/DisplayQRViewController.swift": [499063027, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Extension.swift": [499063027, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Tool.swift": [499066554, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift": [499074907, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/NewItemViewController.swift": [499068854, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/CameraViewController.swift": [499063027, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/SerachPlacesViewController.swift": [499063168, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/JSONObject.swift": [499063028, 0]
