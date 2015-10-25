@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -24,6 +24,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFX-RH-P6u">
                                         <rect key="frame" x="256" y="11" width="88" height="21"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="88" id="XPc-jl-nun"/>
                                             <constraint firstAttribute="height" constant="21" id="XVX-hr-Vse"/>
@@ -40,6 +41,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bw-FL-6GM">
                                         <rect key="frame" x="8" y="11" width="48" height="22"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="G2R-v5-Pfr"/>
                                             <constraint firstAttribute="width" constant="48" id="iiK-te-eZh"/>
@@ -47,6 +49,7 @@
                                         <state key="normal" image="Edit + Back Arrow"/>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" red="0.80317873677248675" green="0.80317873677248675" blue="0.80317873677248675" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="0zM-1N-0GW"/>
@@ -74,8 +77,10 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Di3-f7-yQw">
                                                 <rect key="frame" x="10" y="10" width="240" height="240"/>
+                                                <animations/>
                                             </imageView>
                                         </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.80317873679999996" green="0.80317873679999996" blue="0.80317873679999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="Di3-f7-yQw" firstAttribute="centerY" secondItem="0zb-tx-gDu" secondAttribute="centerY" id="2Vl-sY-x92"/>
@@ -89,6 +94,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="0zb-tx-gDu" firstAttribute="centerY" secondItem="pj5-M9-TPa" secondAttribute="centerY" id="382-BH-ajv"/>
@@ -100,6 +106,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYf-cZ-ynr">
                                         <rect key="frame" x="175" y="28" width="250" height="27.5"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="27.5" id="TqQ-zJ-bcH"/>
                                             <constraint firstAttribute="width" constant="250" id="ZSm-qo-9br"/>
@@ -110,6 +117,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price of Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr7-dT-Ybl">
                                         <rect key="frame" x="175" y="71" width="250" height="28"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="27.5" id="b2q-kI-ouD"/>
                                             <constraint firstAttribute="width" constant="250" id="mW8-mm-aOc"/>
@@ -119,6 +127,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="KYf-cZ-ynr" firstAttribute="top" secondItem="4Uf-fg-7xu" secondAttribute="top" constant="28" id="1gY-v1-7vZ"/>
@@ -136,6 +145,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28q-y6-fR5">
                                 <rect key="frame" x="45" y="435" width="123" height="123"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="123" id="iMB-Dy-pea"/>
                                     <constraint firstAttribute="width" constant="123" id="mxs-wW-PHH"/>
@@ -144,6 +154,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kI-v8-VGP">
                                 <rect key="frame" x="432" y="435" width="123" height="123"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="123" id="7bT-8G-b0J"/>
                                     <constraint firstAttribute="width" constant="123" id="eOA-Mt-pi1"/>
