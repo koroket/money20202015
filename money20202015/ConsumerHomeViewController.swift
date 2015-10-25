@@ -22,12 +22,13 @@ class ConsumerHomeViewController: UIViewController {
     }
     
     @IBAction func scanPressed(sender: UIButton) {
-        if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
+        if let nextViewController = "SearchPlacesViewController".loadNib() as? SearchPlacesViewController {
+            nextViewController.isConsumer = true
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
         } else {
-            print("failed loading CameraViewController")
+            print("failed loading SearchPlacesViewController")
         }
     }
     
