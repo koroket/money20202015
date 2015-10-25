@@ -12,6 +12,8 @@ class CheckoutViewController: UIViewController {
     
     var items:[Item] = []
 
+    @IBOutlet var listTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -58,22 +60,63 @@ extension CheckoutViewController : SIMChargeCardViewControllerDelegate {
         
         //call /checkout endpoint from here
         
-        var data: NSDictionary;
         let fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String ?? "";
         let url =  SERVER + "/checkout/" + fbid
         
-        var arr: NSMutableArray;
+        var mainData:NSMutableDictionary = NSMutableDictionary()
+        
+        var arr: NSMutableArray = NSMutableArray()
         for item in items {
+            var data: NSMutableDictionary = NSMutableDictionary()
             data["businessId"] = "asdf";
             data["totalPrice"] = 32;
-            arr.push(item);
+            arr.addObject(data)
         }
+        mainData["businessId"] = "asdf";
+        mainData["totalPrice"] = 32;
         
 
-        Tool.callREST(data, url: url, method: "POST") { (response) -> Void in
+        Tool.callREST(mainData, url: url, method: "POST") { (response) -> Void in
             print(response);
         }
         
         
+    }
+}
+
+extension CheckoutViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.0
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.0
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100.0
+    }
+    
+    func tableView(tableView: UITableView,
+        didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+    }
+    
+    func tableView(tableView: UITableView,
+        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            let cell:ItemTableViewCell = tableView.dequeueReusableCellWithIdentifier(
+                "itemCell",
+                forIndexPath: indexPath) as! ItemTableViewCell
+            let item = items[indexPath.row]
+            cell.nameLabel.text = item.name
+            return cell
     }
 }
