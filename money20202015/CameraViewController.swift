@@ -10,12 +10,19 @@ import AVFoundation
 
 let SLIDE_ANIMATION_DURATION:NSTimeInterval = 0.4
 
+weak var sharedCameraViewController:CameraViewController?
+
 class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     @IBAction func backPressed(sender: UIButton) {
         self.dismissViewControllerAnimated(true) { () -> Void in
             
         }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        sharedCameraViewController = self
     }
     
     var items:[Item] = []
@@ -256,12 +263,13 @@ extension CameraViewController : UITableViewDelegate, UITableViewDataSource {
             let item = items[indexPath.row]
             cell.nameLabel.text = item.name
             cell.priceLabel.text = item.price
+            cell.itemid = item.itemid
             if (item.price as NSString).length >= 3 {
                 let front = (item.price as NSString).substringToIndex((item.price as NSString).length - 2)
                 let end = (item.price as NSString).substringFromIndex((item.price as NSString).length - 2)
                 cell.priceLabel.text = "$" + front + "." + end
             }
-            cell.countLabel.text = itemCountHash[item.itemid] as? String ?? "0"
+            cell.countLabel.text = "\(itemCountHash[item.itemid] as? Int ?? 0)" ?? "0"
             return cell
     }
 }

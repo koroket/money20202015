@@ -10,6 +10,8 @@ import UIKit
 
 var myNumSet:NSCharacterSet = NSCharacterSet(charactersInString: "0123456789").invertedSet
 
+weak var sharedNewItemViewController:NewItemViewController?
+
 class NewItemViewController: UIViewController {
 
     @IBAction func backPressed(sender: UIButton) {
@@ -30,6 +32,11 @@ class NewItemViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(ainmated)
+        sharedNewItemViewController = self
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,7 +49,7 @@ class NewItemViewController: UIViewController {
     func postItem(){
         //send info to server and recieve back itemid
         
-        let url = SERVER + "/createItem/" + "businessIdAF";
+        let url = SERVER + "/createItem/" + (NSUserDefaults.standardUserDefaults().valueForKey("businessId") as? String ?? "");
         let data = NSMutableDictionary();
         data["item"] = self.nameTextField.text ?? "";
         let m:NSArray = (self.priceTextField.text ?? "").componentsSeparatedByCharactersInSet(myNumSet)
@@ -55,17 +62,18 @@ class NewItemViewController: UIViewController {
                 print("Object created!");
                 print(json["_id"] as? String ?? "")
                 
-                self.presentQR(json["_id"] as? String ?? "");
-            
+                let item = Item(json: json)
+                self.presentQR(item);
             } else {
                 print("Could not create object or retrieve ID.")
             }
         }
     }
     
-    func presentQR(itemid:String){
+    func presentQR(item:Item){
         if let nextViewController = "DisplayQRViewController".loadNib() as? DisplayQRViewController {
-            nextViewController.itemid = itemid
+            nextViewController.itemid = item.itemid
+            nextViewController.item = item
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })

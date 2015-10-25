@@ -8,6 +8,8 @@
 
 import UIKit
 
+weak var sharedCheckoutViewCotroller:CheckoutViewController?
+
 class CheckoutViewController: UIViewController {
     
     @IBAction func backPressed(sender: UIButton) {
@@ -18,7 +20,13 @@ class CheckoutViewController: UIViewController {
     
     var items:[Item] = []
 
+    var totalPrice:Double = 0.0;
+    
     var itemCountHash:NSMutableDictionary = NSMutableDictionary()
+    
+    var mainData:NSMutableDictionary = NSMutableDictionary()
+    
+    var arr: NSMutableArray = NSMutableArray()
     
     @IBOutlet var listTableView: UITableView!
     
@@ -29,6 +37,11 @@ class CheckoutViewController: UIViewController {
             forCellReuseIdentifier: "itemCell")
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        sharedCheckoutViewCotroller = self
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,9 +49,20 @@ class CheckoutViewController: UIViewController {
     }
     
     @IBAction func payPressed(sender: UIButton) {
+        totalPrice = 0.0;
+        
+        arr = NSMutableArray()
+        for item in items {
+            var data: NSMutableDictionary = NSMutableDictionary()
+            data["itemId"] = item.itemid;
+            data["count"] = 1;
+            arr.addObject(data)
+            let numCount:Int = itemCountHash[item.itemid] as? Int ?? 1
+            totalPrice += (((Double(item.price) ?? 0.0) * Double(numCount)) ?? 0);
+        }
         let nextViewController = SIMChargeCardViewController(publicKey: "sbpb_NTZlYTgzMmUtOWQ0Mi00NjIyLTk5OTktMGJjNGIxMTE2ZWJj")
         nextViewController.delegate = self
-        nextViewController.amount = 40.34
+        nextViewController.amount = NSDecimalNumber(double: totalPrice / 100.0)
         self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
@@ -73,18 +97,7 @@ extension CheckoutViewController : SIMChargeCardViewControllerDelegate {
         let fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String ?? "";
         let url =  SERVER + "/checkout/" + fbid
         
-        var mainData:NSMutableDictionary = NSMutableDictionary()
-        
-        var arr: NSMutableArray = NSMutableArray()
-        var totalPrice:Double = 0.0;
-        for item in items {
-            var data: NSMutableDictionary = NSMutableDictionary()
-            data["itemId"] = item.itemid;
-            data["count"] = 1;
-            arr.addObject(data)
-            
-            totalPrice += Double(item.price) ?? 0;
-        }
+
         
         mainData["businessId"] = NSUserDefaults.standardUserDefaults().valueForKey("businessId") as? String
         mainData["totalPrice"] = totalPrice;
@@ -132,12 +145,13 @@ extension CheckoutViewController : UITableViewDelegate, UITableViewDataSource {
             let item = items[indexPath.row]
             cell.nameLabel.text = item.name
             cell.priceLabel.text = item.price
+            cell.itemid = item.itemid
             if (item.price as NSString).length >= 3 {
                 let front = (item.price as NSString).substringToIndex((item.price as NSString).length - 2)
                 let end = (item.price as NSString).substringFromIndex((item.price as NSString).length - 2)
                 cell.priceLabel.text = "$" + front + "." + end
             }
-            cell.countLabel.text = itemCountHash[item.itemid] as? String ?? "0"
+            cell.countLabel.text = "\(itemCountHash[item.itemid] as? Int ?? 0)" ?? "0"
             return cell
     }
 }
