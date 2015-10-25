@@ -19,6 +19,8 @@
 		62A2F4A61BDCE07700688656 /* BusinessHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62A2F4A51BDCE07700688656 /* BusinessHomeViewController.xib */; };
 		62A2F4A81BDCE0FF00688656 /* ConsumerDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62A2F4A71BDCE0FF00688656 /* ConsumerDataViewController.xib */; };
 		62A2F4AA1BDCE11D00688656 /* ConsumerDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2F4A91BDCE11D00688656 /* ConsumerDataViewController.swift */; };
+		62A2F4AC1BDCFDFA00688656 /* Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A2F4AB1BDCFDFA00688656 /* Simplify.framework */; };
+		62A2F4AE1BDCFE0700688656 /* Simplify.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62A2F4AD1BDCFE0700688656 /* Simplify.bundle */; };
 		62FB25DF1BDC44E800502514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25DE1BDC44E800502514 /* AppDelegate.swift */; };
 		62FB25E11BDC44E800502514 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25E01BDC44E800502514 /* LoginViewController.swift */; };
 		62FB25E71BDC44E800502514 /* money20202015.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25E51BDC44E800502514 /* money20202015.xcdatamodeld */; };
@@ -94,6 +96,8 @@
 		62A2F4A51BDCE07700688656 /* BusinessHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessHomeViewController.xib; sourceTree = "<group>"; };
 		62A2F4A71BDCE0FF00688656 /* ConsumerDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsumerDataViewController.xib; sourceTree = "<group>"; };
 		62A2F4A91BDCE11D00688656 /* ConsumerDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsumerDataViewController.swift; sourceTree = "<group>"; };
+		62A2F4AB1BDCFDFA00688656 /* Simplify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Simplify.framework; sourceTree = "<group>"; };
+		62A2F4AD1BDCFE0700688656 /* Simplify.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Simplify.bundle; sourceTree = "<group>"; };
 		62FB25DB1BDC44E800502514 /* money20202015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = money20202015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FB25DE1BDC44E800502514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62FB25E01BDC44E800502514 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 				62FB262A1BDC53AE00502514 /* CoreLocation.framework in Frameworks */,
 				62FB26271BDC538D00502514 /* FBSDKLoginKit.framework in Frameworks */,
 				62FB26251BDC538D00502514 /* FBSDKCoreKit.framework in Frameworks */,
+				62A2F4AC1BDCFDFA00688656 /* Simplify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +186,8 @@
 		62FB25DD1BDC44E800502514 /* money20202015 */ = {
 			isa = PBXGroup;
 			children = (
+				62A2F4AD1BDCFE0700688656 /* Simplify.bundle */,
+				62A2F4AB1BDCFDFA00688656 /* Simplify.framework */,
 				62FB26231BDC534E00502514 /* FBSDKCoreKit.framework */,
 				62FB26211BDC534100502514 /* FBSDKLoginKit.framework */,
 				62FB25DE1BDC44E800502514 /* AppDelegate.swift */,
@@ -398,6 +405,7 @@
 				62A2F4A01BDCE01B00688656 /* ConsumerHomeViewController.xib in Resources */,
 				62FB26401BDC8C2E00502514 /* ChooseUsageViewController.xib in Resources */,
 				62FB264E1BDC9FB500502514 /* PlaceTableViewCell.xib in Resources */,
+				62A2F4AE1BDCFE0700688656 /* Simplify.bundle in Resources */,
 				62A2F49A1BDCCE7800688656 /* ItemTableViewCell.xib in Resources */,
 				62A2F49E1BDCDF0A00688656 /* CheckoutViewController.xib in Resources */,
 				62A2F4A81BDCE0FF00688656 /* ConsumerDataViewController.xib in Resources */,
@@ -588,6 +596,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -595,6 +604,7 @@
 				);
 				INFOPLIST_FILE = money20202015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.money.money20202015;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -607,6 +617,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -614,6 +625,7 @@
 				);
 				INFOPLIST_FILE = money20202015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.money.money20202015;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

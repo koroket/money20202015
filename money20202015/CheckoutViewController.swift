@@ -21,6 +21,14 @@ class CheckoutViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func payPressed(sender: UIButton) {
+        let nextViewController = SIMChargeCardViewController(publicKey: "sbpb_NTZlYTgzMmUtOWQ0Mi00NjIyLTk5OTktMGJjNGIxMTE2ZWJj")
+        nextViewController.delegate = self
+        nextViewController.amount = 40.34
+        self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                print("done nigah")
+            })
+    }
 
     /*
     // MARK: - Navigation
@@ -32,4 +40,18 @@ class CheckoutViewController: UIViewController {
     }
     */
 
+}
+
+extension CheckoutViewController : SIMChargeCardViewControllerDelegate {
+    func chargeCardCancelled() {
+        print("ward")
+    }
+    
+    func creditCardTokenFailedWithError(error: NSError!) {
+        print("mannn")
+    }
+    
+    func creditCardTokenProcessed(token: SIMCreditCardToken!) {
+        print("FASHOOO")
+    }
 }
