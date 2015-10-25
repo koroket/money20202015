@@ -51,7 +51,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             self.view.layoutIfNeeded()
             }) { (done) -> Void in
             self.occupied = false
-            self.switchCameraButton.setTitle("Close Camera", forState: .Normal)
+            //self.switchCameraButton.setTitle("Close Camera", forState: .Normal)
         }
     }
     
@@ -63,7 +63,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             self.view.layoutIfNeeded()
             }) { (done) -> Void in
                 self.occupied = false
-                self.switchCameraButton.setTitle("Scan QR Code", forState: .Normal)
+                //self.switchCameraButton.setTitle("Scan QR Code", forState: .Normal)
         }
     }
     

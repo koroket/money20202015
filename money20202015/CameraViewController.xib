@@ -60,38 +60,89 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WwS-U8-yUM" userLabel="Sticky Bottom View">
                                 <rect key="frame" x="0.0" y="430" width="600" height="150"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-f1-R95">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan a QR Code to add an item to your cart!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXR-4d-Dzh">
+                                        <rect key="frame" x="131" y="71.5" width="338" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sJ-kS-o2R">
+                                        <rect key="frame" x="0.0" y="100" width="600" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.80317873679999996" green="0.80317873679999996" blue="0.80317873679999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="iFb-eJ-A3o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                        <state key="normal" title="Proceed To Checkout">
+                                            <color key="titleColor" red="0.531187996" green="0.531187996" blue="0.531187996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="checkoutPressed:" destination="OuQ-xg-fhx" eventType="touchUpInside" id="9t9-xQ-oOK"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Aya-pX-4sH">
+                                        <rect key="frame" x="10" y="103" width="20" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="3qc-HQ-mY4"/>
+                                            <constraint firstAttribute="height" constant="50" id="mFw-se-sxL"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="mFw-se-sxL"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-f1-R95">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Wwg-Ig-15E"/>
                                         </constraints>
-                                        <state key="normal" title="QR"/>
+                                        <state key="normal" image="Search"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Wwg-Ig-15E"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <action selector="switchCameraPressed:" destination="OuQ-xg-fhx" eventType="touchUpInside" id="izl-ef-09p"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sJ-kS-o2R">
-                                        <rect key="frame" x="0.0" y="100" width="600" height="50"/>
-                                        <animations/>
-                                        <state key="normal" title="Checkout"/>
-                                        <connections>
-                                            <action selector="checkoutPressed:" destination="OuQ-xg-fhx" eventType="touchUpInside" id="9t9-xQ-oOK"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="gXR-4d-Dzh" firstAttribute="top" secondItem="WwS-U8-yUM" secondAttribute="top" constant="70" id="13l-qe-UjW"/>
+                                    <constraint firstAttribute="bottom" secondItem="Aya-pX-4sH" secondAttribute="bottom" constant="3" id="6bk-I6-Ben"/>
                                     <constraint firstAttribute="bottom" secondItem="9sJ-kS-o2R" secondAttribute="bottom" id="AIr-me-HAV"/>
+                                    <constraint firstItem="Aya-pX-4sH" firstAttribute="top" secondItem="9sJ-kS-o2R" secondAttribute="bottom" constant="-50" id="AWi-af-uTp"/>
+                                    <constraint firstItem="Aya-pX-4sH" firstAttribute="leading" secondItem="WwS-U8-yUM" secondAttribute="leading" id="Dob-Nb-aE0"/>
                                     <constraint firstAttribute="trailing" secondItem="9sJ-kS-o2R" secondAttribute="trailing" id="G06-tx-QLe"/>
                                     <constraint firstItem="Oxh-f1-R95" firstAttribute="leading" secondItem="WwS-U8-yUM" secondAttribute="leading" id="Kzz-6Q-4sK"/>
                                     <constraint firstItem="Oxh-f1-R95" firstAttribute="top" secondItem="WwS-U8-yUM" secondAttribute="top" id="LWu-Mu-kHd"/>
+                                    <constraint firstItem="gXR-4d-Dzh" firstAttribute="centerX" secondItem="WwS-U8-yUM" secondAttribute="centerX" id="OdW-dI-nXR"/>
+                                    <constraint firstItem="Aya-pX-4sH" firstAttribute="top" secondItem="Oxh-f1-R95" secondAttribute="bottom" id="RZE-uq-jmv"/>
                                     <constraint firstAttribute="height" constant="150" id="T1U-A7-1QP"/>
+                                    <constraint firstItem="9sJ-kS-o2R" firstAttribute="top" secondItem="Oxh-f1-R95" secondAttribute="bottom" constant="15" id="TzU-Ug-uIw"/>
                                     <constraint firstItem="9sJ-kS-o2R" firstAttribute="top" secondItem="Oxh-f1-R95" secondAttribute="bottom" id="YAd-wn-dT6"/>
+                                    <constraint firstItem="Aya-pX-4sH" firstAttribute="top" secondItem="Oxh-f1-R95" secondAttribute="bottom" constant="3" id="bNk-cg-Q2D"/>
                                     <constraint firstItem="9sJ-kS-o2R" firstAttribute="leading" secondItem="WwS-U8-yUM" secondAttribute="leading" id="cHM-hD-fTE"/>
+                                    <constraint firstItem="9sJ-kS-o2R" firstAttribute="top" secondItem="gXR-4d-Dzh" secondAttribute="bottom" constant="5" id="fAK-EU-hQr"/>
                                     <constraint firstAttribute="trailing" secondItem="Oxh-f1-R95" secondAttribute="trailing" id="ld0-dj-fI2"/>
+                                    <constraint firstItem="Aya-pX-4sH" firstAttribute="top" secondItem="9sJ-kS-o2R" secondAttribute="top" constant="3" id="mEA-bD-aud"/>
+                                    <constraint firstItem="Aya-pX-4sH" firstAttribute="leading" secondItem="9sJ-kS-o2R" secondAttribute="leading" constant="10" id="pbT-X2-Uoz"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YAd-wn-dT6"/>
+                                        <exclude reference="AWi-af-uTp"/>
+                                        <exclude reference="Dob-Nb-aE0"/>
+                                        <exclude reference="RZE-uq-jmv"/>
+                                        <exclude reference="bNk-cg-Q2D"/>
+                                        <exclude reference="13l-qe-UjW"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <animations/>
@@ -130,4 +181,8 @@
             <point key="canvasLocation" x="275" y="334"/>
         </viewController>
     </objects>
+    <resources>
+        <image name="Search" width="57" height="49"/>
+        <image name="right arrow" width="13" height="22"/>
+    </resources>
 </document>
