@@ -90,7 +90,9 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import AVFoundation;
 @import FBSDKLoginKit;
 @import Foundation;
+@import ObjectiveC;
 @import CoreGraphics;
+@import CoreLocation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -121,18 +123,22 @@ SWIFT_CLASS("_TtC13money2020201511AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
+@class NSLayoutConstraint;
+@class UITableView;
 @class AVCaptureSession;
 @class AVCaptureVideoPreviewLayer;
-@class UIView;
 @class AVCaptureOutput;
 @class AVCaptureConnection;
-@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13money2020201520CameraViewController")
 @interface CameraViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
-@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified messageLabel;
+@property (nonatomic, strong) IBOutlet UIView * __null_unspecified cameraView;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint * __null_unspecified cameraViewHeightConstraint;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint * __null_unspecified listTableViewTopConstraint;
+@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified listTableView;
 @property (nonatomic, strong) AVCaptureSession * __nullable captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer * __nullable videoPreviewLayer;
 @property (nonatomic, strong) UIView * __nullable qrCodeFrameView;
@@ -214,8 +220,76 @@ SWIFT_CLASS("_TtC13money2020201521NewItemViewController")
 @end
 
 
+SWIFT_CLASS("_TtC13money202020155Place")
+@interface Place : NSObject
+@property (nonatomic, copy) NSString * __nonnull name;
+@property (nonatomic) BOOL isOpened;
+@property (nonatomic) CGFloat longitude;
+@property (nonatomic) CGFloat latitude;
+@property (nonatomic, copy) NSString * __nonnull icon_url;
+@property (nonatomic, copy) NSString * __nonnull photoRef;
+@property (nonatomic, copy) NSString * __nonnull pid;
+- (nonnull instancetype)initWithJson:(NSDictionary * __nonnull)json OBJC_DESIGNATED_INITIALIZER;
++ (void)getPlaces:(CGFloat)latitude longitude:(CGFloat)longitude completionHandler:(void (^ __nonnull)(NSArray<Place *> * __nullable))completionHandler;
+- (NSString * __nonnull)placePhotoURL;
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC13money2020201518PlaceTableViewCell")
+@interface PlaceTableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UIImageView * __null_unspecified placeImageView;
+@property (nonatomic, strong) IBOutlet UILabel * __null_unspecified placeNameLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CLLocationManager;
+@class UITextView;
+@class CLLocation;
+
+SWIFT_CLASS("_TtC13money2020201526SearchPlacesViewController")
+@interface SearchPlacesViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified placesTableView;
+@property (nonatomic, strong) CLLocationManager * __null_unspecified locationManager;
+@property (nonatomic, strong) IBOutlet UITextView * __null_unspecified messageTextView;
+@property (nonatomic) BOOL isConsumer;
+@property (nonatomic, copy) NSArray<Place *> * __nonnull places;
+@property (nonatomic, strong) CLLocation * __nullable currentLocation;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface SearchPlacesViewController (SWIFT_EXTENSION(money20202015)) <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * __nonnull)locations;
+@end
+
+@class NSIndexPath;
+
+@interface SearchPlacesViewController (SWIFT_EXTENSION(money20202015)) <UITableViewDelegate, UIScrollViewDelegate, UITableViewDataSource>
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForHeaderInSection:(NSInteger)section;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForFooterInSection:(NSInteger)section;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+@end
+
+
 @interface UIImageView (SWIFT_EXTENSION(money20202015))
 - (void)smartLoad:(NSString * __nonnull)imgurl;
+@end
+
+
+@interface UITextView (SWIFT_EXTENSION(money20202015))
+- (void)setBody:(NSString * __nonnull)newText;
 @end
 
 @class UIColor;

@@ -7,34 +7,35 @@ provides-member:
 - ["C13money2020201519LoginViewController", ""]
 - ["C13money2020201519LoginViewController", "login"]
 provides-dynamic-lookup:
-- "loginButton"
-- "viewDidLoad"
 - "fbButton"
-- "login"
-- "loginButtonDidLogOut"
+- "loginButton"
 - "loginPressed"
+- "login"
+- "viewDidLoad"
+- "loginButtonDidLogOut"
 depends-top-level:
-- !private "print"
-- "AnyObject"
 - "FBSDKLoginButton"
-- "BooleanLiteralType"
 - "FBSDKLoginButtonDelegate"
-- !private "NSDictionary"
-- "NSError"
-- !private "Tool"
-- "String"
-- !private "StringLiteralType"
-- "LoginViewController"
-- !private "NSArray"
-- !private "+"
-- !private "ChooseUsageViewController"
-- !private "Void"
-- "FBSDKLoginManagerLoginResult"
-- !private "SERVER"
-- "UIViewController"
 - !private "NSUserDefaults"
-- !private "UIControlEvents"
 - !private "=="
+- "String"
+- !private "UIControlEvents"
+- !private "StringLiteralType"
+- "UIViewController"
+- !private "ChooseUsageViewController"
+- "AnyObject"
+- !private "Tool"
+- !private "NSArray"
+- "LoginViewController"
+- !private "NSDictionary"
+- "FBSDKLoginManagerLoginResult"
+- !private "Void"
+- "NSError"
+- !private "SERVER"
+- "BooleanLiteralType"
+- !private "+"
+- !private "print"
+- !private "??"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKLoginButton"]
 - !private ["PSs9AnyObject", "NSUserDefaults"]
@@ -60,6 +61,7 @@ depends-member:
 - !private ["PSs9AnyObject", "synchronize"]
 - !private ["PSs9AnyObject", "token"]
 - !private ["PSs9AnyObject", "userID"]
+- !private ["PSs9AnyObject", "valueForKey"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
 - !private ["PSs23ArrayLiteralConvertible", "TouchUpInside"]
@@ -90,6 +92,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "synchronize"]
 - !private ["PSs11CVarArgType", "token"]
 - !private ["PSs11CVarArgType", "userID"]
+- !private ["PSs11CVarArgType", "valueForKey"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs10Comparable", "loadNib"]
@@ -119,6 +122,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "synchronize"]
 - !private ["PSs23CustomStringConvertible", "token"]
 - !private ["PSs23CustomStringConvertible", "userID"]
+- !private ["PSs23CustomStringConvertible", "valueForKey"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
@@ -147,6 +151,7 @@ depends-member:
 - !private ["PSs9Equatable", "synchronize"]
 - !private ["PSs9Equatable", "token"]
 - !private ["PSs9Equatable", "userID"]
+- !private ["PSs9Equatable", "valueForKey"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "loadNib"]
@@ -196,6 +201,7 @@ depends-member:
 - !private ["PSs8Hashable", "synchronize"]
 - !private ["PSs8Hashable", "token"]
 - !private ["PSs8Hashable", "userID"]
+- !private ["PSs8Hashable", "valueForKey"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
@@ -301,6 +307,7 @@ depends-member:
 - !private ["CSo8NSObject", "synchronize"]
 - !private ["CSo8NSObject", "token"]
 - !private ["CSo8NSObject", "userID"]
+- !private ["CSo8NSObject", "valueForKey"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "FBSDKLoginButton"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
@@ -325,6 +332,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "synchronize"]
 - !private ["PSo16NSObjectProtocol", "token"]
 - !private ["PSo16NSObjectProtocol", "userID"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "loadNib"]
@@ -334,6 +342,7 @@ depends-member:
 - !private ["CSo14NSUserDefaults", "setValue"]
 - !private ["CSo14NSUserDefaults", "standardUserDefaults"]
 - !private ["CSo14NSUserDefaults", "synchronize"]
+- !private ["CSo14NSUserDefaults", "valueForKey"]
 - !private ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs13OptionSetType", "TouchUpInside"]
 - !private ["Sq", "Some"]
@@ -514,7 +523,6 @@ depends-member:
 - !private ["PSs16_CocoaStringType", "loadNib"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "loadNib"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs12_Reflectable", "Some"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "delegate"]
@@ -592,7 +600,6 @@ depends-nominal:
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
 - !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
 - !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
@@ -634,6 +641,7 @@ depends-external:
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"

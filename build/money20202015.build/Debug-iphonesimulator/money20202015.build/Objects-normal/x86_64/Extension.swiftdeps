@@ -6,39 +6,43 @@ provides-member:
 - ["SS", ""]
 - ["CSo6UIView", ""]
 - ["CSo11UIImageView", ""]
+- ["CSo10UITextView", ""]
 - ["SS", "loadNib"]
 - ["CSo6UIView", "circleCrop"]
 - ["CSo6UIView", "createBorder"]
 - ["CSo11UIImageView", "smartLoad"]
+- ["CSo10UITextView", "setBody"]
 provides-dynamic-lookup:
-- "circleCrop"
 - "createBorder"
 - "smartLoad"
+- "circleCrop"
+- "setBody"
 depends-top-level:
-- !private "NSURLConnection"
-- !private "NSURLRequest"
-- "imageCache"
-- !private "UIImage"
-- "UIView"
-- !private "BooleanLiteralType"
-- "NSCache"
-- !private "NSURL"
-- "UIColor"
 - "UIImageView"
-- !private "UINib"
-- "CGFloat"
-- !private "NSOperationQueue"
 - "String"
-- "AnyObject"
+- "NSCache"
 - !private "DISPATCH_QUEUE_PRIORITY_DEFAULT"
-- !private "dispatch_async"
+- "AnyObject"
 - !private "dispatch_get_global_queue"
-- !private "Int"
-- !private "/"
-- !private "dispatch_get_main_queue"
-- !private "Void"
+- "UIColor"
+- !private "NSURLRequest"
 - !private "=="
+- !private "NSURL"
+- !private "/"
+- "UIView"
+- "imageCache"
+- !private "NSURLConnection"
+- !private "Void"
 - !private "arc4random_uniform"
+- "UITextView"
+- !private "NSOperationQueue"
+- "CGFloat"
+- !private "dispatch_get_main_queue"
+- !private "BooleanLiteralType"
+- !private "Int"
+- !private "UIImage"
+- !private "dispatch_async"
+- !private "UINib"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
@@ -58,6 +62,7 @@ depends-member:
 - !private ["PSs9AnyObject", "dispatch_async"]
 - !private ["PSs9AnyObject", "dispatch_get_global_queue"]
 - !private ["PSs9AnyObject", "dispatch_get_main_queue"]
+- !private ["PSs9AnyObject", "editable"]
 - !private ["PSs9AnyObject", "frame"]
 - !private ["PSs9AnyObject", "image"]
 - !private ["PSs9AnyObject", "imageCache"]
@@ -67,9 +72,11 @@ depends-member:
 - !private ["PSs9AnyObject", "mainQueue"]
 - !private ["PSs9AnyObject", "objectForKey"]
 - !private ["PSs9AnyObject", "sendAsynchronousRequest"]
+- ["PSs9AnyObject", "setBody"]
 - !private ["PSs9AnyObject", "setObject"]
 - ["PSs9AnyObject", "smartLoad"]
 - !private ["PSs9AnyObject", "tag"]
+- !private ["PSs9AnyObject", "text"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
@@ -119,6 +126,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "dispatch_async"]
 - !private ["PSs11CVarArgType", "dispatch_get_global_queue"]
 - !private ["PSs11CVarArgType", "dispatch_get_main_queue"]
+- !private ["PSs11CVarArgType", "editable"]
 - !private ["PSs11CVarArgType", "frame"]
 - !private ["PSs11CVarArgType", "image"]
 - !private ["PSs11CVarArgType", "imageCache"]
@@ -128,9 +136,11 @@ depends-member:
 - !private ["PSs11CVarArgType", "mainQueue"]
 - !private ["PSs11CVarArgType", "objectForKey"]
 - !private ["PSs11CVarArgType", "sendAsynchronousRequest"]
+- ["PSs11CVarArgType", "setBody"]
 - !private ["PSs11CVarArgType", "setObject"]
 - ["PSs11CVarArgType", "smartLoad"]
 - !private ["PSs11CVarArgType", "tag"]
+- !private ["PSs11CVarArgType", "text"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
 - !private ["PSs14CollectionType", "SubSequence"]
@@ -172,6 +182,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "dispatch_async"]
 - !private ["PSs23CustomStringConvertible", "dispatch_get_global_queue"]
 - !private ["PSs23CustomStringConvertible", "dispatch_get_main_queue"]
+- !private ["PSs23CustomStringConvertible", "editable"]
 - !private ["PSs23CustomStringConvertible", "frame"]
 - !private ["PSs23CustomStringConvertible", "image"]
 - !private ["PSs23CustomStringConvertible", "imageCache"]
@@ -182,9 +193,11 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "mainQueue"]
 - !private ["PSs23CustomStringConvertible", "objectForKey"]
 - !private ["PSs23CustomStringConvertible", "sendAsynchronousRequest"]
+- ["PSs23CustomStringConvertible", "setBody"]
 - !private ["PSs23CustomStringConvertible", "setObject"]
 - ["PSs23CustomStringConvertible", "smartLoad"]
 - !private ["PSs23CustomStringConvertible", "tag"]
+- !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs9Equatable", "CGColor"]
 - !private ["PSs9Equatable", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSs9Equatable", "Distance"]
@@ -207,6 +220,7 @@ depends-member:
 - !private ["PSs9Equatable", "dispatch_async"]
 - !private ["PSs9Equatable", "dispatch_get_global_queue"]
 - !private ["PSs9Equatable", "dispatch_get_main_queue"]
+- !private ["PSs9Equatable", "editable"]
 - !private ["PSs9Equatable", "frame"]
 - !private ["PSs9Equatable", "image"]
 - !private ["PSs9Equatable", "imageCache"]
@@ -216,9 +230,11 @@ depends-member:
 - !private ["PSs9Equatable", "mainQueue"]
 - !private ["PSs9Equatable", "objectForKey"]
 - !private ["PSs9Equatable", "sendAsynchronousRequest"]
+- ["PSs9Equatable", "setBody"]
 - !private ["PSs9Equatable", "setObject"]
 - ["PSs9Equatable", "smartLoad"]
 - !private ["PSs9Equatable", "tag"]
+- !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "width"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "UINib"]
 - !private ["PSs16ForwardIndexType", "Distance"]
@@ -247,6 +263,7 @@ depends-member:
 - !private ["PSs8Hashable", "dispatch_async"]
 - !private ["PSs8Hashable", "dispatch_get_global_queue"]
 - !private ["PSs8Hashable", "dispatch_get_main_queue"]
+- !private ["PSs8Hashable", "editable"]
 - !private ["PSs8Hashable", "frame"]
 - !private ["PSs8Hashable", "image"]
 - !private ["PSs8Hashable", "imageCache"]
@@ -256,9 +273,11 @@ depends-member:
 - !private ["PSs8Hashable", "mainQueue"]
 - !private ["PSs8Hashable", "objectForKey"]
 - !private ["PSs8Hashable", "sendAsynchronousRequest"]
+- ["PSs8Hashable", "setBody"]
 - !private ["PSs8Hashable", "setObject"]
 - ["PSs8Hashable", "smartLoad"]
 - !private ["PSs8Hashable", "tag"]
+- !private ["PSs8Hashable", "text"]
 - !private ["SQ", "deinit"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
@@ -316,13 +335,16 @@ depends-member:
 - !private ["PSo8NSCoding", "dispatch_async"]
 - !private ["PSo8NSCoding", "dispatch_get_global_queue"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
+- !private ["PSo8NSCoding", "editable"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "imageCache"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "setBody"]
 - ["PSo8NSCoding", "smartLoad"]
 - !private ["PSo8NSCoding", "tag"]
+- !private ["PSo8NSCoding", "text"]
 - !private ["PSo9NSCopying", "CGColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -348,6 +370,7 @@ depends-member:
 - !private ["CSo8NSObject", "dispatch_async"]
 - !private ["CSo8NSObject", "dispatch_get_global_queue"]
 - !private ["CSo8NSObject", "dispatch_get_main_queue"]
+- !private ["CSo8NSObject", "editable"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "image"]
 - !private ["CSo8NSObject", "imageCache"]
@@ -357,9 +380,11 @@ depends-member:
 - !private ["CSo8NSObject", "mainQueue"]
 - !private ["CSo8NSObject", "objectForKey"]
 - !private ["CSo8NSObject", "sendAsynchronousRequest"]
+- ["CSo8NSObject", "setBody"]
 - !private ["CSo8NSObject", "setObject"]
 - ["CSo8NSObject", "smartLoad"]
 - !private ["CSo8NSObject", "tag"]
+- !private ["CSo8NSObject", "text"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSo16NSObjectProtocol", "Int"]
@@ -378,6 +403,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dispatch_async"]
 - !private ["PSo16NSObjectProtocol", "dispatch_get_global_queue"]
 - !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
+- !private ["PSo16NSObjectProtocol", "editable"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "imageCache"]
@@ -387,9 +413,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "mainQueue"]
 - !private ["PSo16NSObjectProtocol", "objectForKey"]
 - !private ["PSo16NSObjectProtocol", "sendAsynchronousRequest"]
+- ["PSo16NSObjectProtocol", "setBody"]
 - !private ["PSo16NSObjectProtocol", "setObject"]
 - ["PSo16NSObjectProtocol", "smartLoad"]
 - !private ["PSo16NSObjectProtocol", "tag"]
+- !private ["PSo16NSObjectProtocol", "text"]
 - !private ["CSo16NSOperationQueue", "mainQueue"]
 - !private ["PSo14NSSecureCoding", "CGColor"]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -442,13 +470,16 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "dispatch_async"]
 - !private ["PSo29UIAccessibilityIdentification", "dispatch_get_global_queue"]
 - !private ["PSo29UIAccessibilityIdentification", "dispatch_get_main_queue"]
+- !private ["PSo29UIAccessibilityIdentification", "editable"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "imageCache"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "setBody"]
 - ["PSo29UIAccessibilityIdentification", "smartLoad"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSo12UIAppearance", "Int"]
 - !private ["PSo12UIAppearance", "NSOperationQueue"]
@@ -461,12 +492,15 @@ depends-member:
 - !private ["PSo12UIAppearance", "dispatch_async"]
 - !private ["PSo12UIAppearance", "dispatch_get_global_queue"]
 - !private ["PSo12UIAppearance", "dispatch_get_main_queue"]
+- !private ["PSo12UIAppearance", "editable"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "imageCache"]
 - !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "setBody"]
 - ["PSo12UIAppearance", "smartLoad"]
 - !private ["PSo12UIAppearance", "tag"]
+- !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "NSOperationQueue"]
@@ -479,12 +513,15 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dispatch_async"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_global_queue"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
+- !private ["PSo21UIAppearanceContainer", "editable"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - !private ["PSo21UIAppearanceContainer", "imageCache"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "setBody"]
 - ["PSo21UIAppearanceContainer", "smartLoad"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
+- !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["PSo17UICoordinateSpace", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSo17UICoordinateSpace", "Int"]
@@ -498,12 +535,15 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "dispatch_async"]
 - !private ["PSo17UICoordinateSpace", "dispatch_get_global_queue"]
 - !private ["PSo17UICoordinateSpace", "dispatch_get_main_queue"]
+- !private ["PSo17UICoordinateSpace", "editable"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "imageCache"]
 - !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "setBody"]
 - ["PSo17UICoordinateSpace", "smartLoad"]
 - !private ["PSo17UICoordinateSpace", "tag"]
+- !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSo13UIDynamicItem", "Int"]
 - !private ["PSo13UIDynamicItem", "NSOperationQueue"]
@@ -516,12 +556,15 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "dispatch_async"]
 - !private ["PSo13UIDynamicItem", "dispatch_get_global_queue"]
 - !private ["PSo13UIDynamicItem", "dispatch_get_main_queue"]
+- !private ["PSo13UIDynamicItem", "editable"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "imageCache"]
 - !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "setBody"]
 - ["PSo13UIDynamicItem", "smartLoad"]
 - !private ["PSo13UIDynamicItem", "tag"]
+- !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "NSOperationQueue"]
@@ -534,12 +577,15 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dispatch_async"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_global_queue"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
+- !private ["PSo18UIFocusEnvironment", "editable"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - !private ["PSo18UIFocusEnvironment", "imageCache"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "setBody"]
 - ["PSo18UIFocusEnvironment", "smartLoad"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
+- !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["CSo11UIImageView", "Int"]
@@ -558,6 +604,8 @@ depends-member:
 - !private ["CSo11UIImageView", "imageCache"]
 - ["CSo11UIImageView", "smartLoad"]
 - !private ["CSo11UIImageView", "tag"]
+- !private ["PSo10UIKeyInput", "editable"]
+- !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo5UINib", "init"]
 - !private ["CSo5UINib", "instantiateWithOwner"]
 - ["CSo11UIResponder", "CGFloat"]
@@ -578,12 +626,27 @@ depends-member:
 - !private ["CSo11UIResponder", "dispatch_async"]
 - !private ["CSo11UIResponder", "dispatch_get_global_queue"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
+- !private ["CSo11UIResponder", "editable"]
 - !private ["CSo11UIResponder", "frame"]
 - !private ["CSo11UIResponder", "image"]
 - !private ["CSo11UIResponder", "imageCache"]
 - !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "setBody"]
 - ["CSo11UIResponder", "smartLoad"]
 - !private ["CSo11UIResponder", "tag"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo12UIScrollView", "String"]
+- !private ["CSo12UIScrollView", "editable"]
+- ["CSo12UIScrollView", "setBody"]
+- !private ["CSo12UIScrollView", "text"]
+- !private ["PSo11UITextInput", "editable"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "editable"]
+- !private ["PSo17UITextInputTraits", "text"]
+- ["CSo10UITextView", "String"]
+- !private ["CSo10UITextView", "editable"]
+- ["CSo10UITextView", "setBody"]
+- !private ["CSo10UITextView", "text"]
 - !private ["PSo18UITraitEnvironment", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "NSOperationQueue"]
@@ -596,12 +659,15 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dispatch_async"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_global_queue"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
+- !private ["PSo18UITraitEnvironment", "editable"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - !private ["PSo18UITraitEnvironment", "imageCache"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "setBody"]
 - ["PSo18UITraitEnvironment", "smartLoad"]
 - !private ["PSo18UITraitEnvironment", "tag"]
+- !private ["PSo18UITraitEnvironment", "text"]
 - ["CSo6UIView", "CGFloat"]
 - !private ["CSo6UIView", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["CSo6UIView", "Int"]
@@ -620,12 +686,15 @@ depends-member:
 - !private ["CSo6UIView", "dispatch_async"]
 - !private ["CSo6UIView", "dispatch_get_global_queue"]
 - !private ["CSo6UIView", "dispatch_get_main_queue"]
+- !private ["CSo6UIView", "editable"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "imageCache"]
 - !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "setBody"]
 - ["CSo6UIView", "smartLoad"]
 - !private ["CSo6UIView", "tag"]
+- !private ["CSo6UIView", "text"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "UINib"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
@@ -692,14 +761,17 @@ depends-member:
 - !private ["PSs12_Reflectable", "dispatch_async"]
 - !private ["PSs12_Reflectable", "dispatch_get_global_queue"]
 - !private ["PSs12_Reflectable", "dispatch_get_main_queue"]
+- !private ["PSs12_Reflectable", "editable"]
 - !private ["PSs12_Reflectable", "frame"]
 - !private ["PSs12_Reflectable", "image"]
 - !private ["PSs12_Reflectable", "imageCache"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "last"]
 - !private ["PSs12_Reflectable", "layer"]
+- ["PSs12_Reflectable", "setBody"]
 - ["PSs12_Reflectable", "smartLoad"]
 - !private ["PSs12_Reflectable", "tag"]
+- !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "width"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
@@ -775,8 +847,13 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "CSo7UIImage"
 - "CSo11UIImageView"
+- !private "PSo10UIKeyInput"
 - !private "CSo5UINib"
 - "CSo11UIResponder"
+- "CSo12UIScrollView"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "CSo10UITextView"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - !private "PSs31UnicodeScalarLiteralConvertible"
@@ -840,8 +917,9 @@ depends-external:
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "fc58ee5fb686f35309a14d97acc03e14"
+interface-hash: "2a804e59f7081a171adc580b29f3dd1e"
