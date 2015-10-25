@@ -33,7 +33,7 @@ class NewItemViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(ainmated)
+        super.viewDidAppear(animated)
         sharedNewItemViewController = self
     }
     
