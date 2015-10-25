@@ -18,6 +18,8 @@ class CheckoutViewController: UIViewController {
     
     var items:[Item] = []
 
+    var itemCountHash:NSMutableDictionary = NSMutableDictionary()
+    
     @IBOutlet var listTableView: UITableView!
     
     override func viewDidLoad() {
@@ -129,6 +131,13 @@ extension CheckoutViewController : UITableViewDelegate, UITableViewDataSource {
                 forIndexPath: indexPath) as! ItemTableViewCell
             let item = items[indexPath.row]
             cell.nameLabel.text = item.name
+            cell.priceLabel.text = item.price
+            if (item.price as NSString).length >= 3 {
+                let front = (item.price as NSString).substringToIndex((item.price as NSString).length - 2)
+                let end = (item.price as NSString).substringFromIndex((item.price as NSString).length - 2)
+                cell.priceLabel.text = "$" + front + "." + end
+            }
+            cell.countLabel.text = itemCountHash[item.itemid] as? String ?? "0"
             return cell
     }
 }

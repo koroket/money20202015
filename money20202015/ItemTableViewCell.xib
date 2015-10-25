@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecv-nw-abF">
-                                <rect key="frame" x="205" y="0.0" width="200" height="45.5"/>
+                                <rect key="frame" x="205" y="0.0" width="125" height="45.5"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="a8u-44-fXv"/>
@@ -37,9 +37,15 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.54728835980000001" green="0.54728835980000001" blue="0.54728835980000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="a8u-44-fXv"/>
+                                        <exclude reference="keL-GJ-c52"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXl-Tb-SkY">
-                                <rect key="frame" x="370" y="0.0" width="30" height="45.5"/>
+                                <rect key="frame" x="360" y="0.0" width="30" height="45.5"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="1aQ-UD-zNQ"/>
@@ -60,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtX-lF-b2B">
-                                <rect key="frame" x="340" y="0.0" width="30" height="45.5"/>
+                                <rect key="frame" x="330" y="0.0" width="30" height="45.5"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="JyI-63-7C7"/>
@@ -77,6 +83,7 @@
                             <constraint firstAttribute="bottom" secondItem="NtX-lF-b2B" secondAttribute="bottom" id="7Ez-nX-9K5"/>
                             <constraint firstAttribute="bottom" secondItem="Ecv-nw-abF" secondAttribute="bottom" id="PHC-Y0-vFt"/>
                             <constraint firstItem="XkP-c5-jZp" firstAttribute="top" secondItem="xQb-qT-Juu" secondAttribute="top" id="Pap-bi-HuG"/>
+                            <constraint firstItem="iGu-OO-sbV" firstAttribute="leading" secondItem="sXl-Tb-SkY" secondAttribute="trailing" id="Pia-bU-o2O"/>
                             <constraint firstItem="Ecv-nw-abF" firstAttribute="top" secondItem="xQb-qT-Juu" secondAttribute="top" id="PyB-y2-rvD"/>
                             <constraint firstItem="iGu-OO-sbV" firstAttribute="leading" secondItem="NtX-lF-b2B" secondAttribute="trailing" id="S8o-0e-YJs"/>
                             <constraint firstAttribute="bottom" secondItem="iGu-OO-sbV" secondAttribute="bottom" id="U30-d3-2e1"/>
@@ -90,9 +97,11 @@
                             <constraint firstItem="NtX-lF-b2B" firstAttribute="top" secondItem="xQb-qT-Juu" secondAttribute="top" id="tgs-gM-unu"/>
                             <constraint firstItem="sXl-Tb-SkY" firstAttribute="top" secondItem="xQb-qT-Juu" secondAttribute="top" id="vUE-8Y-kUs"/>
                             <constraint firstAttribute="trailing" secondItem="iGu-OO-sbV" secondAttribute="trailing" id="wtm-fD-gj5"/>
+                            <constraint firstItem="NtX-lF-b2B" firstAttribute="leading" secondItem="Ecv-nw-abF" secondAttribute="trailing" id="ySA-ef-YJN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="fCl-UU-h6D"/>
                                 <exclude reference="S8o-0e-YJs"/>
                             </mask>
                         </variation>

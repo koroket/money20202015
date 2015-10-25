@@ -208,6 +208,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     @IBAction func checkoutPressed(sender: UIButton) {
         if let nextViewController = "CheckoutViewController".loadNib() as? CheckoutViewController {
             nextViewController.items = self.items;
+            nextViewController.itemCountHash = self.itemCountHash
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
@@ -255,7 +256,7 @@ extension CameraViewController : UITableViewDelegate, UITableViewDataSource {
             let item = items[indexPath.row]
             cell.nameLabel.text = item.name
             cell.priceLabel.text = item.price
-            if (item.price as NSString).length > 3 {
+            if (item.price as NSString).length >= 3 {
                 let front = (item.price as NSString).substringToIndex((item.price as NSString).length - 2)
                 let end = (item.price as NSString).substringFromIndex((item.price as NSString).length - 2)
                 cell.priceLabel.text = "$" + front + "." + end
