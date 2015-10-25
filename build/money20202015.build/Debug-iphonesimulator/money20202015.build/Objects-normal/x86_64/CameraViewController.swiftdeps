@@ -7,91 +7,91 @@ provides-nominal:
 provides-member:
 - ["C13money2020201520CameraViewController", ""]
 provides-dynamic-lookup:
-- "supportedBarCodes"
-- "videoPreviewLayer"
-- "cameraView"
-- "listTableView"
-- "shiftUp"
-- "items"
 - "listTableViewTopConstraint"
 - "isShowingQR"
 - "shiftDown"
-- "getItemData"
-- "captureOutput"
+- "addItem"
+- "viewDidLoad"
 - "captureSession"
+- "didReceiveMemoryWarning"
+- "videoPreviewLayer"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "cameraView"
+- "listTableView"
+- "shiftUp"
+- "captureOutput"
+- "items"
+- "numberOfSectionsInTableView"
+- "getItemData"
+- "supportedBarCodes"
+- "cameraViewHeightConstraint"
+- "switchCameraPressed"
 - "occupied"
 - "switchCameraButton"
-- "numberOfSectionsInTableView"
 - "checkoutPressed"
 - "itemCountHash"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
 - "qrCodeFrameView"
-- "didReceiveMemoryWarning"
-- "switchCameraPressed"
-- "addItem"
-- "cameraViewHeightConstraint"
-- "viewDidLoad"
 depends-top-level:
-- "UITableViewCell"
-- "UIViewController"
-- "AVCaptureMetadataOutputObjectsDelegate"
-- "AnyObject"
-- "UITableViewDataSource"
-- !private "AVMediaTypeVideo"
-- "UITableViewDelegate"
-- !private "Dictionary"
-- "String"
-- "StringLiteralType"
-- "AVMetadataObjectTypeAztecCode"
-- "AVCaptureOutput"
-- !private "AVCaptureDevice"
-- "CGFloat"
-- "NSTimeInterval"
+- !private "print"
+- "AVCaptureConnection"
+- !private "CGRectZero"
 - "NSMutableDictionary"
-- "NSLayoutConstraint"
+- !private "CheckoutViewController"
 - "UIButton"
-- "AVCaptureVideoPreviewLayer"
-- !private "||"
-- !private "AVCaptureDeviceInput"
-- "SLIDE_ANIMATION_DURATION"
-- "Bool"
-- "UIView"
-- !private "AVMetadataMachineReadableCodeObject"
-- "AVCaptureSession"
-- !private "!"
-- "AVMetadataObjectTypeQRCode"
-- !private "=="
-- "UITableView"
-- !private "&&"
+- "AVCaptureMetadataOutputObjectsDelegate"
+- "AVCaptureOutput"
+- "UITableViewCell"
 - !private "ItemTableViewCell"
 - !private "!="
-- !private "Void"
-- !private "AVLayerVideoGravityResizeAspectFill"
-- "AVMetadataObjectTypeUPCECode"
+- "CGFloat"
+- "NSLayoutConstraint"
+- !private "AVMetadataMachineReadableCodeObject"
+- "AVCaptureVideoPreviewLayer"
+- !private "StringLiteralType"
+- "SLIDE_ANIMATION_DURATION"
+- "AVMetadataObjectTypeQRCode"
 - !private "UIColor"
-- !private "UINib"
-- !private "AVCaptureMetadataOutput"
-- !private "CheckoutViewController"
-- "AVMetadataObjectTypeEAN13Code"
-- !private "print"
-- "AVMetadataObjectTypePDF417Code"
+- !private "Void"
+- "NSTimeInterval"
 - "AVMetadataObjectTypeCode128Code"
+- "UITableViewDataSource"
+- "AVMetadataObjectTypeCode39Code"
+- "UITableViewDelegate"
+- "AVMetadataObjectTypeCode93Code"
+- "AVMetadataObjectTypeUPCECode"
+- "NSIndexPath"
+- "String"
+- !private "AVCaptureMetadataOutput"
+- "BooleanLiteralType"
+- "AVMetadataObjectTypeEAN13Code"
+- "Int"
+- !private "Dictionary"
+- "AVMetadataObjectTypePDF417Code"
+- "AVMetadataObjectTypeAztecCode"
+- "AVCaptureSession"
+- !private "dispatch_get_main_queue"
+- !private "AVLayerVideoGravityResizeAspectFill"
+- "Item"
+- !private "AVCaptureDevice"
 - "Array"
 - "CameraViewController"
-- !private "CGRectZero"
-- "Item"
-- "BooleanLiteralType"
-- "AVMetadataObjectTypeCode93Code"
-- "Int"
-- "AVMetadataObjectTypeCode39Code"
-- !private "dispatch_get_main_queue"
-- "AVCaptureConnection"
-- "NSIndexPath"
+- !private "!"
+- !private "AVMediaTypeVideo"
+- !private "UINib"
+- "Bool"
+- "AnyObject"
+- !private "&&"
+- "UITableView"
+- "UIView"
+- !private "AVCaptureDeviceInput"
+- !private "||"
+- !private "=="
+- "UIViewController"
 depends-member:
 - !private ["CSo15AVCaptureDevice", "defaultDeviceWithMediaType"]
 - !private ["CSo20AVCaptureDeviceInput", "init"]
@@ -155,7 +155,6 @@ depends-member:
 - !private ["PSo38AVCaptureMetadataOutputObjectsDelegate", "shiftDown"]
 - !private ["PSo38AVCaptureMetadataOutputObjectsDelegate", "shiftUp"]
 - !private ["PSo38AVCaptureMetadataOutputObjectsDelegate", "supportedBarCodes"]
-- !private ["PSo38AVCaptureMetadataOutputObjectsDelegate", "switchCameraButton"]
 - ["PSo38AVCaptureMetadataOutputObjectsDelegate", "tableView"]
 - !private ["PSo38AVCaptureMetadataOutputObjectsDelegate", "videoPreviewLayer"]
 - !private ["PSo38AVCaptureMetadataOutputObjectsDelegate", "view"]
@@ -261,7 +260,6 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
 - !private ["PSs9AnyObject", "setMetadataObjectsDelegate"]
-- !private ["PSs9AnyObject", "setTitle"]
 - ["PSs9AnyObject", "shiftDown"]
 - ["PSs9AnyObject", "shiftUp"]
 - !private ["PSs9AnyObject", "startRunning"]
@@ -293,7 +291,6 @@ depends-member:
 - ["PSs23ArrayLiteralConvertible", "Element"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
-- !private ["PSs23ArrayLiteralConvertible", "Normal"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
@@ -411,7 +408,6 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
 - !private ["PSs11CVarArgType", "setMetadataObjectsDelegate"]
-- !private ["PSs11CVarArgType", "setTitle"]
 - ["PSs11CVarArgType", "shiftDown"]
 - ["PSs11CVarArgType", "shiftUp"]
 - !private ["PSs11CVarArgType", "startRunning"]
@@ -630,7 +626,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - !private ["PSs23CustomStringConvertible", "setMetadataObjectsDelegate"]
-- !private ["PSs23CustomStringConvertible", "setTitle"]
 - ["PSs23CustomStringConvertible", "shiftDown"]
 - ["PSs23CustomStringConvertible", "shiftUp"]
 - !private ["PSs23CustomStringConvertible", "startRunning"]
@@ -675,7 +670,6 @@ depends-member:
 - !private ["PSs9Equatable", "Item"]
 - !private ["PSs9Equatable", "Key"]
 - ["PSs9Equatable", "NSMutableDictionary"]
-- !private ["PSs9Equatable", "Normal"]
 - !private ["PSs9Equatable", "SLIDE_ANIMATION_DURATION"]
 - !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UINib"]
@@ -740,7 +734,6 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
 - !private ["PSs9Equatable", "setMetadataObjectsDelegate"]
-- !private ["PSs9Equatable", "setTitle"]
 - ["PSs9Equatable", "shiftDown"]
 - ["PSs9Equatable", "shiftUp"]
 - !private ["PSs9Equatable", "startRunning"]
@@ -849,7 +842,6 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
 - !private ["PSs8Hashable", "setMetadataObjectsDelegate"]
-- !private ["PSs8Hashable", "setTitle"]
 - ["PSs8Hashable", "shiftDown"]
 - ["PSs8Hashable", "shiftUp"]
 - !private ["PSs8Hashable", "startRunning"]
@@ -1000,7 +992,6 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillBeginZooming"]
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
-- !private ["PSo8NSCoding", "setTitle"]
 - ["PSo8NSCoding", "shiftDown"]
 - ["PSo8NSCoding", "shiftUp"]
 - !private ["PSo8NSCoding", "subscript"]
@@ -1208,7 +1199,6 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - !private ["CSo8NSObject", "setMetadataObjectsDelegate"]
-- !private ["CSo8NSObject", "setTitle"]
 - ["CSo8NSObject", "shiftDown"]
 - ["CSo8NSObject", "shiftUp"]
 - !private ["CSo8NSObject", "startRunning"]
@@ -1309,7 +1299,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - !private ["PSo16NSObjectProtocol", "setMetadataObjectsDelegate"]
-- !private ["PSo16NSObjectProtocol", "setTitle"]
 - ["PSo16NSObjectProtocol", "shiftDown"]
 - ["PSo16NSObjectProtocol", "shiftUp"]
 - !private ["PSo16NSObjectProtocol", "startRunning"]
@@ -1338,7 +1327,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "subscript"]
 - !private ["CSo8NSString", "loadNib"]
 - ["PSs21NilLiteralConvertible", "Some"]
-- !private ["PSs13OptionSetType", "Normal"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "loadNib"]
@@ -1354,7 +1342,6 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "contains"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
-- !private ["PSs16RawRepresentable", "Normal"]
 - ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
@@ -1367,7 +1354,6 @@ depends-member:
 - !private ["PSs12SequenceType", "count"]
 - ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "subscript"]
-- !private ["PSs14SetAlgebraType", "Normal"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs16SignedNumberType", "Distance"]
@@ -1394,7 +1380,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "nameLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
-- !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
@@ -1407,7 +1392,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "nameLabel"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
-- !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "AVCaptureDevice"]
 - !private ["PSo21UIAppearanceContainer", "AVCaptureDeviceInput"]
@@ -1475,7 +1459,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillBeginZooming"]
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
-- !private ["PSo21UIAppearanceContainer", "setTitle"]
 - ["PSo21UIAppearanceContainer", "shiftDown"]
 - ["PSo21UIAppearanceContainer", "shiftUp"]
 - ["PSo21UIAppearanceContainer", "supportedBarCodes"]
@@ -1488,7 +1471,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "greenColor"]
 - !private ["PSo18UIContentContainer", "AVCaptureDevice"]
@@ -1558,8 +1540,6 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
-- !private ["CSo9UIControl", "setTitle"]
-- !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "bringSubviewToFront"]
@@ -1571,7 +1551,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "nameLabel"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
-- !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
@@ -1584,7 +1563,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "nameLabel"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
-- !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "AVCaptureDevice"]
 - !private ["PSo18UIFocusEnvironment", "AVCaptureDeviceInput"]
@@ -1652,7 +1630,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
-- !private ["PSo18UIFocusEnvironment", "setTitle"]
 - ["PSo18UIFocusEnvironment", "shiftDown"]
 - ["PSo18UIFocusEnvironment", "shiftUp"]
 - ["PSo18UIFocusEnvironment", "supportedBarCodes"]
@@ -1750,7 +1727,6 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillBeginZooming"]
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
-- !private ["CSo11UIResponder", "setTitle"]
 - ["CSo11UIResponder", "shiftDown"]
 - ["CSo11UIResponder", "shiftUp"]
 - ["CSo11UIResponder", "supportedBarCodes"]
@@ -1821,7 +1797,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "shiftDown"]
 - !private ["PSo20UIScrollViewDelegate", "shiftUp"]
 - !private ["PSo20UIScrollViewDelegate", "supportedBarCodes"]
-- !private ["PSo20UIScrollViewDelegate", "switchCameraButton"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "videoPreviewLayer"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
@@ -1955,7 +1930,6 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "shiftDown"]
 - !private ["PSo21UITableViewDataSource", "shiftUp"]
 - !private ["PSo21UITableViewDataSource", "supportedBarCodes"]
-- !private ["PSo21UITableViewDataSource", "switchCameraButton"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - !private ["PSo21UITableViewDataSource", "videoPreviewLayer"]
 - !private ["PSo21UITableViewDataSource", "view"]
@@ -2017,7 +1991,6 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "shiftDown"]
 - !private ["PSo19UITableViewDelegate", "shiftUp"]
 - !private ["PSo19UITableViewDelegate", "supportedBarCodes"]
-- !private ["PSo19UITableViewDelegate", "switchCameraButton"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo19UITableViewDelegate", "videoPreviewLayer"]
 - !private ["PSo19UITableViewDelegate", "view"]
@@ -2089,7 +2062,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
-- !private ["PSo18UITraitEnvironment", "setTitle"]
 - ["PSo18UITraitEnvironment", "shiftDown"]
 - ["PSo18UITraitEnvironment", "shiftUp"]
 - ["PSo18UITraitEnvironment", "supportedBarCodes"]
@@ -2113,7 +2085,6 @@ depends-member:
 - !private ["CSo6UIView", "nameLabel"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
-- !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AVCaptureConnection"]
 - !private ["CSo16UIViewController", "AVCaptureDevice"]
@@ -2275,7 +2246,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "nameLabel"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
-- !private ["PSs12_Reflectable", "setTitle"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
@@ -2345,15 +2315,12 @@ depends-nominal:
 - "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "PSs21NilLiteralConvertible"
-- !private "PSs13OptionSetType"
 - "Sq"
 - !private "PSs16OutputStreamType"
 - !private "PSs21RandomAccessIndexType"
 - !private "VSs5Range"
 - "PSs30RangeReplaceableCollectionType"
-- !private "PSs16RawRepresentable"
 - "PSs12SequenceType"
-- !private "PSs14SetAlgebraType"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "VSs5Slice"
@@ -2365,11 +2332,8 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo8UIButton"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
-- !private "CSo9UIControl"
-- !private "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"

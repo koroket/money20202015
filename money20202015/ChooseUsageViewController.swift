@@ -55,8 +55,8 @@ class ChooseUsageViewController: UIViewController {
     func markType(type:String){
         
         //call api to update type
-        var fbId = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String ?? ""
-        var url = SERVER + "/markType/\(fbId)/\(type)";
+        let fbId = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String ?? ""
+        let url = SERVER + "/markType/\(fbId)/\(type)";
         
         Tool.callREST(nil, url: url, method: "POST") { (response) -> Void in
             print(response)

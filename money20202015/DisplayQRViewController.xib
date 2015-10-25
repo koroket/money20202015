@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -72,8 +72,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pj5-M9-TPa">
                                 <rect key="frame" x="0.0" y="44" width="600" height="245"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zb-tx-gDu">
-                                        <rect key="frame" x="170" y="-7.5" width="260" height="260"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zb-tx-gDu">
+                                        <rect key="frame" x="170" y="-8" width="260" height="261"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Di3-f7-yQw">
                                                 <rect key="frame" x="10" y="10" width="240" height="240"/>
@@ -105,7 +105,7 @@
                                 <rect key="frame" x="0.0" y="289" width="600" height="117"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYf-cZ-ynr">
-                                        <rect key="frame" x="175" y="28" width="250" height="27.5"/>
+                                        <rect key="frame" x="175" y="28" width="250" height="28"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="27.5" id="TqQ-zJ-bcH"/>
@@ -191,6 +191,9 @@
                     <constraint firstItem="wYe-4g-RLQ" firstAttribute="top" secondItem="hEr-p0-vhC" secondAttribute="bottom" id="r7W-Ue-v4E"/>
                 </constraints>
             </view>
+            <connections>
+                <outlet property="qrImageView" destination="Di3-f7-yQw" id="Iee-T6-bgP"/>
+            </connections>
             <point key="canvasLocation" x="375" y="431"/>
         </viewController>
     </objects>

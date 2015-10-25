@@ -44,13 +44,14 @@ class NewItemViewController: UIViewController {
             print(response);
             if let json = response as? NSDictionary {
                 print("Object created!");
-                self.presentQR(json["_id"] as! String);
+                print(json["_id"] as? String ?? "")
+                
+                self.presentQR(json["_id"] as? String ?? "");
+            
             } else {
                 print("Could not create object or retrieve ID.")
             }
         }
-        
-        
     }
     
     func presentQR(itemid:String){

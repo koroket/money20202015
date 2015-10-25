@@ -123,6 +123,7 @@ SWIFT_CLASS("_TtC13money2020201511AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
@@ -130,6 +131,9 @@ SWIFT_CLASS("_TtC13money2020201526BusinessHomeViewController")
 @interface BusinessHomeViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)addItemPressed:(UIButton * __nonnull)sender;
+- (IBAction)showDataPressed:(UIButton * __nonnull)sender;
+- (IBAction)showQueuePressed:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -139,7 +143,6 @@ SWIFT_CLASS("_TtC13money2020201526BusinessHomeViewController")
 @class UIView;
 @class NSLayoutConstraint;
 @class UITableView;
-@class UIButton;
 @class AVCaptureSession;
 @class AVCaptureVideoPreviewLayer;
 @class AVCaptureOutput;

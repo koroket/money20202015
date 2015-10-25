@@ -68,24 +68,32 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     }
     
     func getItemData(itemid:String){
-        print(itemid);
+
+        //print(itemid);
         
         //run when backend can be connected
-//        let url = SERVER + "/getItemInfo/" + itemid;
-//        Tool.callREST(nil, url: url, method: "POST") { (response) -> Void in
-//            print(response)
-        
-        
-//            
-//        }
-        
-        if itemCountHash[itemid] == nil {
-            itemCountHash[itemid] = 1
-            //Talk to server then create Item object and then call addItem
+        let url = SERVER + "/getItemInfo/" + itemid;
             
-            let newItem:Item = Item(json: ["name": "Cat"])
-            addItem(newItem)
-        }
+            if self.itemCountHash[itemid] == nil {
+                self.itemCountHash[itemid] = 1
+                //Talk to server then create Item object and then call addItem
+                
+                let url = SERVER + "/getItemInfo/" + itemid;
+                
+                Tool.callREST(nil, url: url, method: "GET") { (response) -> Void in
+                    print(response)
+                    if let responseArr = response as? NSArray, res = responseArr[0] as? NSDictionary {
+                        //let res = responseArr[0];
+                        let newItem:Item = Item(json: res)
+                        self.addItem(newItem)
+                    }
+                    else {
+                        print("didnt find object");
+                    }
+                
+                }
+                
+            }
     }
     
     func addItem(item:Item) {
