@@ -22,6 +22,7 @@ class ChooseUsageViewController: UIViewController {
     }
 
     @IBAction func continueAsConsumer(sender: UIButton) {
+        markType("Consumer");
         if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
@@ -32,6 +33,7 @@ class ChooseUsageViewController: UIViewController {
     }
     
     @IBAction func continueAsBusiness(sender: UIButton) {
+        markType("Business")
         if let nextViewController = "NewItemViewController".loadNib() as? NewItemViewController {
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
@@ -41,4 +43,15 @@ class ChooseUsageViewController: UIViewController {
         }
     }
     
+    func markType(type:String){
+//        let data = NSMutableDictionary();
+//        data["item"] = self.nameTextField.text ?? "";
+//        data["price"] = self.priceTextField.text ?? "";
+//        data["category"] = self.categoryTextField.text ?? "";
+        
+        //call api to update type
+        var fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId")
+        
+    }
+
 }

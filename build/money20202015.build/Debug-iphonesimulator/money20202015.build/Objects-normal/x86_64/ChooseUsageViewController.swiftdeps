@@ -1,0 +1,351 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ChooseUsageViewController"
+provides-nominal:
+- "C13money2020201525ChooseUsageViewController"
+provides-member:
+- ["C13money2020201525ChooseUsageViewController", ""]
+provides-dynamic-lookup:
+- "continueAsConsumer"
+- "continueAsBusiness"
+- "viewDidLoad"
+- "markType"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- !private "BooleanLiteralType"
+- !private "Void"
+- !private "NSUserDefaults"
+- !private "CameraViewController"
+- !private "print"
+- "UIViewController"
+- "ChooseUsageViewController"
+- !private "NewItemViewController"
+- !private "StringLiteralType"
+- "String"
+- "UIButton"
+depends-member:
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- ["PSs9AnyObject", "continueAsBusiness"]
+- ["PSs9AnyObject", "continueAsConsumer"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "loadNib"]
+- ["PSs9AnyObject", "markType"]
+- !private ["PSs9AnyObject", "presentViewController"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "valueForKey"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- ["PSs11CVarArgType", "continueAsBusiness"]
+- ["PSs11CVarArgType", "continueAsConsumer"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "loadNib"]
+- ["PSs11CVarArgType", "markType"]
+- !private ["PSs11CVarArgType", "presentViewController"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "valueForKey"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["C13money2020201525ChooseUsageViewController", "CameraViewController"]
+- !private ["C13money2020201525ChooseUsageViewController", "NSUserDefaults"]
+- !private ["C13money2020201525ChooseUsageViewController", "NewItemViewController"]
+- ["C13money2020201525ChooseUsageViewController", "String"]
+- ["C13money2020201525ChooseUsageViewController", "UIButton"]
+- !private ["C13money2020201525ChooseUsageViewController", "Void"]
+- ["C13money2020201525ChooseUsageViewController", "continueAsBusiness"]
+- ["C13money2020201525ChooseUsageViewController", "continueAsConsumer"]
+- ["C13money2020201525ChooseUsageViewController", "deinit"]
+- ["C13money2020201525ChooseUsageViewController", "didReceiveMemoryWarning"]
+- ["C13money2020201525ChooseUsageViewController", "init"]
+- ["C13money2020201525ChooseUsageViewController", "markType"]
+- !private ["C13money2020201525ChooseUsageViewController", "presentViewController"]
+- !private ["C13money2020201525ChooseUsageViewController", "print"]
+- ["C13money2020201525ChooseUsageViewController", "viewDidLoad"]
+- !private ["PSs10Comparable", "loadNib"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "loadNib"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- ["PSs23CustomStringConvertible", "continueAsBusiness"]
+- ["PSs23CustomStringConvertible", "continueAsConsumer"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "loadNib"]
+- ["PSs23CustomStringConvertible", "markType"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "valueForKey"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- ["PSs9Equatable", "continueAsBusiness"]
+- ["PSs9Equatable", "continueAsConsumer"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "loadNib"]
+- ["PSs9Equatable", "markType"]
+- !private ["PSs9Equatable", "presentViewController"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "valueForKey"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "loadNib"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- ["PSs8Hashable", "continueAsBusiness"]
+- ["PSs8Hashable", "continueAsConsumer"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "loadNib"]
+- ["PSs8Hashable", "markType"]
+- !private ["PSs8Hashable", "presentViewController"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "valueForKey"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["PSs14MirrorPathType", "loadNib"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- ["PSo8NSCoding", "continueAsBusiness"]
+- ["PSo8NSCoding", "continueAsConsumer"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "loadNib"]
+- ["PSo8NSCoding", "markType"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "loadNib"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- ["PSo26NSExtensionRequestHandling", "continueAsBusiness"]
+- ["PSo26NSExtensionRequestHandling", "continueAsConsumer"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "markType"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "loadNib"]
+- !private ["CSo8NSObject", "CameraViewController"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "NewItemViewController"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "continueAsBusiness"]
+- ["CSo8NSObject", "continueAsConsumer"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "loadNib"]
+- ["CSo8NSObject", "markType"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "valueForKey"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- ["PSo16NSObjectProtocol", "continueAsBusiness"]
+- ["PSo16NSObjectProtocol", "continueAsConsumer"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "loadNib"]
+- ["PSo16NSObjectProtocol", "markType"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "loadNib"]
+- !private ["CSo8NSString", "loadNib"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "valueForKey"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "loadNib"]
+- !private ["PSs10Streamable", "loadNib"]
+- !private ["SS", "loadNib"]
+- !private ["PSs30StringInterpolationConvertible", "loadNib"]
+- !private ["PSs24StringLiteralConvertible", "loadNib"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- ["PSo21UIAppearanceContainer", "continueAsBusiness"]
+- ["PSo21UIAppearanceContainer", "continueAsConsumer"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "markType"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- ["PSo18UIContentContainer", "continueAsBusiness"]
+- ["PSo18UIContentContainer", "continueAsConsumer"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "markType"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- ["PSo18UIFocusEnvironment", "continueAsBusiness"]
+- ["PSo18UIFocusEnvironment", "continueAsConsumer"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "markType"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "CameraViewController"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- !private ["CSo11UIResponder", "NewItemViewController"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "continueAsBusiness"]
+- ["CSo11UIResponder", "continueAsConsumer"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "markType"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- ["PSo16UIStateRestoring", "continueAsBusiness"]
+- ["PSo16UIStateRestoring", "continueAsConsumer"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "markType"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- ["PSo18UITraitEnvironment", "continueAsBusiness"]
+- ["PSo18UITraitEnvironment", "continueAsConsumer"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "markType"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "CameraViewController"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- !private ["CSo16UIViewController", "NewItemViewController"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "continueAsBusiness"]
+- ["CSo16UIViewController", "continueAsConsumer"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "markType"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "loadNib"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "loadNib"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "loadNib"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "loadNib"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "loadNib"]
+- !private ["PSs16_CocoaStringType", "loadNib"]
+- !private ["PSs21_ObjectiveCBridgeable", "loadNib"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "loadNib"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "C13money2020201525ChooseUsageViewController"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "PSs8Hashable"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo14NSUserDefaults"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Bridging_Header.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "a8929b927bbec4af519963c12c57037d"

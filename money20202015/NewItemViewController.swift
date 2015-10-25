@@ -14,6 +14,8 @@ class NewItemViewController: UIViewController {
     
     @IBOutlet var priceTextField: UITextField!
     
+    @IBOutlet weak var categoryTextField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,8 +33,24 @@ class NewItemViewController: UIViewController {
     
     func postItem(){
         //send info to server and recieve back itemid
-        let itemid = "MASA_SWERVE"
-        presentQR(itemid)
+        
+        let url = SERVER + "/createItem/" + "businessIdAF";
+        let data = NSMutableDictionary();
+        data["item"] = self.nameTextField.text ?? "";
+        data["price"] = self.priceTextField.text ?? "";
+        data["category"] = self.categoryTextField.text ?? "";
+        
+        Tool.callREST(data, url: url, method: "POST") { (response) -> Void in
+            print(response);
+            if let json = response as? NSDictionary {
+                print("Object created!");
+                self.presentQR(json["_id"] as! String);
+            } else {
+                print("Could not create object or retrieve ID.")
+            }
+        }
+        
+        
     }
     
     func presentQR(itemid:String){
