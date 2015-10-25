@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C13money202020154Item", ""]
 provides-dynamic-lookup:
-- "price"
 - "itemid"
+- "price"
 - "name"
 - "category"
 depends-top-level:
-- "String"
-- "JSONObject"
-- "NSDictionary"
-- "NSObject"
-- "Item"
 - "StringLiteralType"
+- "NSObject"
+- "JSONObject"
+- "Item"
+- "String"
+- "NSDictionary"
 depends-member:
 - ["PSs9AnyObject", "category"]
 - ["PSs9AnyObject", "init"]

@@ -1,0 +1,22 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "f559a95d864ab749c3c5f62a928ae278"
+build_time: [499086631, 372005000]
+inputs:
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/CameraViewController.swift": [499086025, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/NewItemViewController.swift": [499068854, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Place.swift": [499075717, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/DisplayQRViewController.swift": [499063027, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Extension.swift": [499075717, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Item.swift": [499085564, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/JSONObject.swift": [499063028, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/ChooseUsageViewController.swift": [499085795, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/CheckoutViewController.swift": [499085564, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/ConsumerDataViewController.swift": [499085564, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/BusinessHomeViewController.swift": [499085563, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift": [499085399, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/PlaceTableViewCell.swift": [499075717, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/ConsumerHomeViewController.swift": [499085564, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Tool.swift": [499085266, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/AppDelegate.swift": [499086530, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/SearchPlacesViewController.swift": [499075717, 0]
+  "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/ItemTableViewCell.swift": [499085564, 0]

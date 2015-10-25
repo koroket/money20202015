@@ -1,0 +1,225 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PlaceTableViewCell"
+provides-nominal:
+- "C13money2020201518PlaceTableViewCell"
+provides-member:
+- ["C13money2020201518PlaceTableViewCell", ""]
+provides-dynamic-lookup:
+- "placeImageView"
+- "awakeFromNib"
+- "setSelected"
+- "placeNameLabel"
+depends-top-level:
+- "UIImageView"
+- "UITableViewCell"
+- "UILabel"
+- "PlaceTableViewCell"
+- "Bool"
+depends-member:
+- ["PSs9AnyObject", "awakeFromNib"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "placeImageView"]
+- ["PSs9AnyObject", "placeNameLabel"]
+- ["PSs9AnyObject", "setSelected"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "awakeFromNib"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "placeImageView"]
+- ["PSs11CVarArgType", "placeNameLabel"]
+- ["PSs11CVarArgType", "setSelected"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "awakeFromNib"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "placeImageView"]
+- ["PSs23CustomStringConvertible", "placeNameLabel"]
+- ["PSs23CustomStringConvertible", "setSelected"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "awakeFromNib"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "placeImageView"]
+- ["PSs9Equatable", "placeNameLabel"]
+- ["PSs9Equatable", "setSelected"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "awakeFromNib"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "placeImageView"]
+- ["PSs8Hashable", "placeNameLabel"]
+- ["PSs8Hashable", "setSelected"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "placeImageView"]
+- ["PSo8NSCoding", "placeNameLabel"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "placeImageView"]
+- ["CSo8NSObject", "placeNameLabel"]
+- ["CSo8NSObject", "setSelected"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "placeImageView"]
+- ["PSo16NSObjectProtocol", "placeNameLabel"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C13money2020201518PlaceTableViewCell", "Bool"]
+- ["C13money2020201518PlaceTableViewCell", "UIImageView"]
+- ["C13money2020201518PlaceTableViewCell", "UILabel"]
+- ["C13money2020201518PlaceTableViewCell", "awakeFromNib"]
+- ["C13money2020201518PlaceTableViewCell", "deinit"]
+- ["C13money2020201518PlaceTableViewCell", "init"]
+- ["C13money2020201518PlaceTableViewCell", "placeImageView"]
+- ["C13money2020201518PlaceTableViewCell", "placeNameLabel"]
+- ["C13money2020201518PlaceTableViewCell", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "placeImageView"]
+- ["PSo29UIAccessibilityIdentification", "placeNameLabel"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "placeImageView"]
+- ["PSo12UIAppearance", "placeNameLabel"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "placeImageView"]
+- ["PSo21UIAppearanceContainer", "placeNameLabel"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "placeImageView"]
+- ["PSo17UICoordinateSpace", "placeNameLabel"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "placeImageView"]
+- ["PSo13UIDynamicItem", "placeNameLabel"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "placeImageView"]
+- ["PSo18UIFocusEnvironment", "placeNameLabel"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "placeImageView"]
+- ["PSo27UIGestureRecognizerDelegate", "placeNameLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "placeImageView"]
+- ["CSo11UIResponder", "placeNameLabel"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "placeImageView"]
+- ["CSo15UITableViewCell", "placeNameLabel"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", ""]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "placeImageView"]
+- ["PSo18UITraitEnvironment", "placeNameLabel"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "placeImageView"]
+- ["CSo6UIView", "placeNameLabel"]
+- ["CSo6UIView", "setSelected"]
+- ["PSs12_Reflectable", "awakeFromNib"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "placeImageView"]
+- ["PSs12_Reflectable", "placeNameLabel"]
+- ["PSs12_Reflectable", "setSelected"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C13money2020201518PlaceTableViewCell"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/Bridging_Header.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/sridattbhamidipati/Desktop/money20202015/money20202015/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+interface-hash: "1cb3d0d2f594e6e050683ce8fd4a3f62"

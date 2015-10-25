@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "nameLabel"
 depends-top-level:
-- "UILabel"
-- "ItemTableViewCell"
 - "UITableViewCell"
+- "ItemTableViewCell"
+- "UILabel"
 depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "nameLabel"]

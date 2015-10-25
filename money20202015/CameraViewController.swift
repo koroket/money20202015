@@ -68,6 +68,8 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     }
     
     func getItemData(itemid:String){
+        
+        
         if itemCountHash[itemid] == nil {
             itemCountHash[itemid] = 1
             //Talk to server then create Item object and then call addItem
