@@ -14,7 +14,7 @@ private let _StandardUserDefaultsInstance = NSUserDefaults.standardUserDefaults(
 private let SESSION_NAME:String = "_session"
 var SERVERNAME = "localhost:8080"
 //var SERVER = "http://localhost:8080"
-var SERVER = "https://uhrdgwbmcw.localtunnel.me"
+var SERVER = "https://dutrprzhcf.localtunnel.me"
 
 
 class Tool {

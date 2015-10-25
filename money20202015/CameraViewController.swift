@@ -201,6 +201,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     
     @IBAction func checkoutPressed(sender: UIButton) {
         if let nextViewController = "CheckoutViewController".loadNib() as? CheckoutViewController {
+            nextViewController.items = self.items;
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })

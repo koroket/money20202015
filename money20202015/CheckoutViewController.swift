@@ -9,6 +9,8 @@
 import UIKit
 
 class CheckoutViewController: UIViewController {
+    
+    var items:[Item] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,5 +55,25 @@ extension CheckoutViewController : SIMChargeCardViewControllerDelegate {
     
     func creditCardTokenProcessed(token: SIMCreditCardToken!) {
         print("FASHOOO")
+        
+        //call /checkout endpoint from here
+        
+        var data: NSDictionary;
+        let fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String ?? "";
+        let url =  SERVER + "/checkout/" + fbid
+        
+        var arr: NSMutableArray;
+        for item in items {
+            data["businessId"] = "asdf";
+            data["totalPrice"] = 32;
+            arr.push(item);
+        }
+        
+
+        Tool.callREST(data, url: url, method: "POST") { (response) -> Void in
+            print(response);
+        }
+        
+        
     }
 }
