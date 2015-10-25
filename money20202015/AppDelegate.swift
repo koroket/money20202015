@@ -17,7 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+//        if setUpCookie() {
+//            var storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            self.window?.rootViewController = "LoginViewController".loadNib() as! LoginViewController
+//            self.window?.rootViewController = "CameraViewController".loadNib() as! CameraViewController
+            self.window?.rootViewController = "ChooseUsageViewController".loadNib() as! ChooseUsageViewController
+//        } else {
+//            var storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            var initialViewController = storyboard.instantiateViewControllerWithIdentifier("ViewController") as! UIViewController
+//            self.window?.rootViewController = initialViewController
+//        }
+        
+        self.window?.makeKeyAndVisible()
+        
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

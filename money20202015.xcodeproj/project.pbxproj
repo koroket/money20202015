@@ -8,13 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		62FB25DF1BDC44E800502514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25DE1BDC44E800502514 /* AppDelegate.swift */; };
-		62FB25E11BDC44E800502514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25E01BDC44E800502514 /* ViewController.swift */; };
-		62FB25E41BDC44E800502514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FB25E21BDC44E800502514 /* Main.storyboard */; };
+		62FB25E11BDC44E800502514 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25E01BDC44E800502514 /* LoginViewController.swift */; };
 		62FB25E71BDC44E800502514 /* money20202015.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25E51BDC44E800502514 /* money20202015.xcdatamodeld */; };
 		62FB25E91BDC44E800502514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62FB25E81BDC44E800502514 /* Assets.xcassets */; };
 		62FB25EC1BDC44E800502514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FB25EA1BDC44E800502514 /* LaunchScreen.storyboard */; };
 		62FB25F71BDC44E800502514 /* money20202015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB25F61BDC44E800502514 /* money20202015Tests.swift */; };
 		62FB26021BDC44E800502514 /* money20202015UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26011BDC44E800502514 /* money20202015UITests.swift */; };
+		62FB26171BDC485900502514 /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26161BDC485900502514 /* JSONObject.swift */; };
+		62FB26191BDC48C400502514 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26181BDC48C400502514 /* Tool.swift */; };
+		62FB26251BDC538D00502514 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB26231BDC534E00502514 /* FBSDKCoreKit.framework */; };
+		62FB26261BDC538D00502514 /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB26231BDC534E00502514 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62FB26271BDC538D00502514 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB26211BDC534100502514 /* FBSDKLoginKit.framework */; };
+		62FB26281BDC538D00502514 /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB26211BDC534100502514 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62FB262A1BDC53AE00502514 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB26291BDC53AE00502514 /* CoreLocation.framework */; };
+		62FB262C1BDC672800502514 /* OnBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB262B1BDC672800502514 /* OnBoardViewController.xib */; };
+		62FB262E1BDC67B500502514 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB262D1BDC67B500502514 /* Extension.swift */; };
+		62FB26301BDC6DD900502514 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB262F1BDC6DD900502514 /* LoginViewController.xib */; };
+		62FB26321BDC769F00502514 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26311BDC769F00502514 /* CameraViewController.swift */; };
+		62FB26341BDC7C2100502514 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB26331BDC7C2100502514 /* CameraViewController.xib */; };
+		62FB26361BDC813500502514 /* DisplayQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB26351BDC813500502514 /* DisplayQRViewController.xib */; };
+		62FB26381BDC816400502514 /* DisplayQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26371BDC816400502514 /* DisplayQRViewController.swift */; };
+		62FB263A1BDC855C00502514 /* NewItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB26391BDC855C00502514 /* NewItemViewController.xib */; };
+		62FB263C1BDC866500502514 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB263B1BDC866500502514 /* NewItemViewController.swift */; };
+		62FB263E1BDC8C0F00502514 /* ChooseUsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */; };
+		62FB26401BDC8C2E00502514 /* ChooseUsageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +51,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		62FB261E1BDC523A00502514 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62FB26281BDC538D00502514 /* FBSDKLoginKit.framework in Embed Frameworks */,
+				62FB26261BDC538D00502514 /* FBSDKCoreKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		62FB25DB1BDC44E800502514 /* money20202015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = money20202015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FB25DE1BDC44E800502514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		62FB25E01BDC44E800502514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		62FB25E31BDC44E800502514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62FB25E01BDC44E800502514 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		62FB25E61BDC44E800502514 /* money20202015.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = money20202015.xcdatamodel; sourceTree = "<group>"; };
 		62FB25E81BDC44E800502514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62FB25EB1BDC44E800502514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +80,23 @@
 		62FB25FD1BDC44E800502514 /* money20202015UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = money20202015UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FB26011BDC44E800502514 /* money20202015UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = money20202015UITests.swift; sourceTree = "<group>"; };
 		62FB26031BDC44E800502514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62FB26151BDC47C500502514 /* Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		62FB26161BDC485900502514 /* JSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONObject.swift; sourceTree = "<group>"; };
+		62FB26181BDC48C400502514 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		62FB26211BDC534100502514 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		62FB26231BDC534E00502514 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		62FB26291BDC53AE00502514 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		62FB262B1BDC672800502514 /* OnBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnBoardViewController.xib; sourceTree = "<group>"; };
+		62FB262D1BDC67B500502514 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		62FB262F1BDC6DD900502514 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		62FB26311BDC769F00502514 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		62FB26331BDC7C2100502514 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		62FB26351BDC813500502514 /* DisplayQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayQRViewController.xib; sourceTree = "<group>"; };
+		62FB26371BDC816400502514 /* DisplayQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayQRViewController.swift; sourceTree = "<group>"; };
+		62FB26391BDC855C00502514 /* NewItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewItemViewController.xib; sourceTree = "<group>"; };
+		62FB263B1BDC866500502514 /* NewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
+		62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseUsageViewController.swift; sourceTree = "<group>"; };
+		62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseUsageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FB262A1BDC53AE00502514 /* CoreLocation.framework in Frameworks */,
+				62FB26271BDC538D00502514 /* FBSDKLoginKit.framework in Frameworks */,
+				62FB26251BDC538D00502514 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +130,7 @@
 		62FB25D21BDC44E800502514 = {
 			isa = PBXGroup;
 			children = (
+				62FB26291BDC53AE00502514 /* CoreLocation.framework */,
 				62FB25DD1BDC44E800502514 /* money20202015 */,
 				62FB25F51BDC44E800502514 /* money20202015Tests */,
 				62FB26001BDC44E800502514 /* money20202015UITests */,
@@ -99,9 +151,24 @@
 		62FB25DD1BDC44E800502514 /* money20202015 */ = {
 			isa = PBXGroup;
 			children = (
+				62FB26231BDC534E00502514 /* FBSDKCoreKit.framework */,
+				62FB26211BDC534100502514 /* FBSDKLoginKit.framework */,
 				62FB25DE1BDC44E800502514 /* AppDelegate.swift */,
-				62FB25E01BDC44E800502514 /* ViewController.swift */,
-				62FB25E21BDC44E800502514 /* Main.storyboard */,
+				62FB262D1BDC67B500502514 /* Extension.swift */,
+				62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */,
+				62FB25E01BDC44E800502514 /* LoginViewController.swift */,
+				62FB26311BDC769F00502514 /* CameraViewController.swift */,
+				62FB263B1BDC866500502514 /* NewItemViewController.swift */,
+				62FB26371BDC816400502514 /* DisplayQRViewController.swift */,
+				62FB26151BDC47C500502514 /* Bridging_Header.h */,
+				62FB26181BDC48C400502514 /* Tool.swift */,
+				62FB26161BDC485900502514 /* JSONObject.swift */,
+				62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */,
+				62FB262F1BDC6DD900502514 /* LoginViewController.xib */,
+				62FB262B1BDC672800502514 /* OnBoardViewController.xib */,
+				62FB26331BDC7C2100502514 /* CameraViewController.xib */,
+				62FB26391BDC855C00502514 /* NewItemViewController.xib */,
+				62FB26351BDC813500502514 /* DisplayQRViewController.xib */,
 				62FB25E81BDC44E800502514 /* Assets.xcassets */,
 				62FB25EA1BDC44E800502514 /* LaunchScreen.storyboard */,
 				62FB25ED1BDC44E800502514 /* Info.plist */,
@@ -138,6 +205,7 @@
 				62FB25D71BDC44E800502514 /* Sources */,
 				62FB25D81BDC44E800502514 /* Frameworks */,
 				62FB25D91BDC44E800502514 /* Resources */,
+				62FB261E1BDC523A00502514 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +264,7 @@
 				TargetAttributes = {
 					62FB25DA1BDC44E800502514 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 8V8HUCA3M9;
 					};
 					62FB25F11BDC44E800502514 = {
 						CreatedOnToolsVersion = 7.1;
@@ -232,9 +301,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FB26361BDC813500502514 /* DisplayQRViewController.xib in Resources */,
+				62FB26401BDC8C2E00502514 /* ChooseUsageViewController.xib in Resources */,
+				62FB263A1BDC855C00502514 /* NewItemViewController.xib in Resources */,
+				62FB26301BDC6DD900502514 /* LoginViewController.xib in Resources */,
 				62FB25EC1BDC44E800502514 /* LaunchScreen.storyboard in Resources */,
 				62FB25E91BDC44E800502514 /* Assets.xcassets in Resources */,
-				62FB25E41BDC44E800502514 /* Main.storyboard in Resources */,
+				62FB262C1BDC672800502514 /* OnBoardViewController.xib in Resources */,
+				62FB26341BDC7C2100502514 /* CameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62FB25E11BDC44E800502514 /* ViewController.swift in Sources */,
+				62FB26171BDC485900502514 /* JSONObject.swift in Sources */,
+				62FB26381BDC816400502514 /* DisplayQRViewController.swift in Sources */,
+				62FB263C1BDC866500502514 /* NewItemViewController.swift in Sources */,
+				62FB25E11BDC44E800502514 /* LoginViewController.swift in Sources */,
 				62FB25DF1BDC44E800502514 /* AppDelegate.swift in Sources */,
+				62FB262E1BDC67B500502514 /* Extension.swift in Sources */,
+				62FB26321BDC769F00502514 /* CameraViewController.swift in Sources */,
+				62FB263E1BDC8C0F00502514 /* ChooseUsageViewController.swift in Sources */,
+				62FB26191BDC48C400502514 /* Tool.swift in Sources */,
 				62FB25E71BDC44E800502514 /* money20202015.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +378,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		62FB25E21BDC44E800502514 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62FB25E31BDC44E800502514 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		62FB25EA1BDC44E800502514 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -333,6 +406,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -356,6 +430,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = money20202015/Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -377,6 +452,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -393,6 +469,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = money20202015/Bridging_Header.h;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -401,10 +478,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/money20202015",
+				);
 				INFOPLIST_FILE = money20202015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.money.money20202015;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +497,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/money20202015",
+				);
 				INFOPLIST_FILE = money20202015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.money.money20202015;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
