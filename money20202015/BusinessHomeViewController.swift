@@ -22,6 +22,26 @@ class BusinessHomeViewController: UIViewController {
     }
     
 
+    @IBAction func addItemPressed(sender: UIButton) {
+        if let nextViewController = "NewItemViewController".loadNib() as? NewItemViewController {
+            self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
+                print("done nigah")
+            })
+        } else {
+            print("failed loading NewItemViewController")
+        }
+    }
+    
+    @IBAction func showDataPressed(sender: UIButton) {
+        
+    }
+    
+    @IBAction func showQueuePressed(sender: UIButton) {
+        
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

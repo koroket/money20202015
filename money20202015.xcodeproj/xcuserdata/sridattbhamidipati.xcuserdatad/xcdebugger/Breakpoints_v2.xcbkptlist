@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/LoginViewController.swift"
-            timestampString = "467460265.738446"
+            timestampString = "467466427.344558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "login(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/LoginViewController.swift"
-            timestampString = "467460265.738446"
+            timestampString = "467466427.344558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "login(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -54,46 +54,46 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/LoginViewController.swift"
-            timestampString = "467460265.738446"
+            timestampString = "467466427.344558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "login(_:)"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1)"
                   moduleName = "money20202015"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
-                  timestampString = "467464460.595106"
+                  timestampString = "467468108.333603"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "4044">
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "3328">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1).(closure #3)"
                   moduleName = "money20202015"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
-                  timestampString = "467464460.595523"
+                  timestampString = "467468108.334281"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/LoginViewController.swift"
-            timestampString = "467454499.034233"
+            timestampString = "467466427.344558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/LoginViewController.swift"
-            timestampString = "467454499.034233"
+            timestampString = "467466427.344558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "login(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -150,46 +150,46 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/LoginViewController.swift"
-            timestampString = "467460265.738446"
+            timestampString = "467466427.344558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "login(_:)"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1)"
                   moduleName = "money20202015"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
-                  timestampString = "467464460.597281"
+                  timestampString = "467468296.292717"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "2636">
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1920">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "money20202015"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
-                  timestampString = "467464460.597542"
+                  timestampString = "467468296.293399"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -198,46 +198,46 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/LoginViewController.swift"
-            timestampString = "467460265.738446"
+            timestampString = "467466427.344558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "login(_:)"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1)"
                   moduleName = "money20202015"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
-                  timestampString = "467464460.59902"
+                  timestampString = "467468108.341785"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "3628">
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "2912">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "money20202015.LoginViewController.(login (money20202015.LoginViewController) -&gt; (Swift.String) -&gt; ()).(closure #1).(closure #2)"
                   moduleName = "money20202015"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/LoginViewController.swift"
-                  timestampString = "467464460.599294"
+                  timestampString = "467468108.342438"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
                   offsetFromSymbolStart = "172">
                </Location>
             </Locations>
@@ -262,7 +262,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/ChooseUsageViewController.swift"
@@ -314,12 +314,62 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/CameraViewController.swift"
-            timestampString = "467463628.084097"
+            timestampString = "467470469.342284"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "money20202015/NewItemViewController.swift"
+            timestampString = "467467831.932715"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "postItem()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "money20202015/NewItemViewController.swift"
+            timestampString = "467468206.096211"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "presentQR(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -330,13 +380,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "money20202015/CameraViewController.swift"
-            timestampString = "467463624.304089"
+            timestampString = "467470469.342284"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "getItemData(_:)"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "addItem(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "money20202015.CameraViewController.getItemData (money20202015.CameraViewController)(Swift.String) -&gt; ()"
+                  moduleName = "money20202015"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/CameraViewController.swift"
+                  timestampString = "467470470.430034"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1088">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "money20202015.CameraViewController.(getItemData (money20202015.CameraViewController) -&gt; (Swift.String) -&gt; ()).(closure #1)"
+                  moduleName = "money20202015"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sridattbhamidipati/Desktop/money20202015/money20202015/CameraViewController.swift"
+                  timestampString = "467470470.431472"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "812">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

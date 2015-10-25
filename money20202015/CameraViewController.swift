@@ -51,7 +51,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             self.view.layoutIfNeeded()
             }) { (done) -> Void in
             self.occupied = false
-            self.switchCameraButton.setTitle("Close Camera", forState: .Normal)
+            //self.switchCameraButton.setTitle("Close Camera", forState: .Normal)
         }
     }
     
@@ -63,16 +63,26 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             self.view.layoutIfNeeded()
             }) { (done) -> Void in
                 self.occupied = false
-                self.switchCameraButton.setTitle("Scan QR Code", forState: .Normal)
+                //self.switchCameraButton.setTitle("Scan QR Code", forState: .Normal)
         }
     }
     
     func getItemData(itemid:String){
+        print(itemid);
         
+        //run when backend can be connected
+//        let url = SERVER + "/getItemInfo/" + itemid;
+//        Tool.callREST(nil, url: url, method: "POST") { (response) -> Void in
+//            print(response)
+        
+        
+//            
+//        }
         
         if itemCountHash[itemid] == nil {
             itemCountHash[itemid] = 1
             //Talk to server then create Item object and then call addItem
+            
             let newItem:Item = Item(json: ["name": "Cat"])
             addItem(newItem)
         }

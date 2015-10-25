@@ -112,13 +112,12 @@ extension SearchPlacesViewController : UITableViewDelegate, UITableViewDataSourc
                     print("failed loading CameraViewController")
                 }
             } else {
-                if let nextViewController = "SearchPlacesViewController".loadNib() as? SearchPlacesViewController {
-                    nextViewController.isConsumer = false
+                if let nextViewController = "BusinessHomeViewController".loadNib() as? BusinessHomeViewController {
                     self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                         print("done nigah")
                     })
                 } else {
-                    print("failed loading SearchPlacesViewController")
+                    print("failed loading BusinessHomeViewController")
                 }
             }
     }
