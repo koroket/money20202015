@@ -10,13 +10,21 @@ import UIKit
 
 class CheckoutViewController: UIViewController {
     
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     var items:[Item] = []
 
     @IBOutlet var listTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let nib = UINib(nibName: "ItemTableViewCell", bundle: nil)
+        listTableView.registerNib(nib,
+            forCellReuseIdentifier: "itemCell")
         // Do any additional setup after loading the view.
     }
 

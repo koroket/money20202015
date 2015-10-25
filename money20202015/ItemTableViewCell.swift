@@ -11,4 +11,17 @@ import UIKit
 class ItemTableViewCell: UITableViewCell {
 
     @IBOutlet var nameLabel: UILabel!
+    
+    @IBOutlet var priceLabel: UILabel!
+    
+    @IBOutlet var countLabel: UILabel!
+    
+    @IBAction func plusPressed(sender: UIButton) {
+        
+    }
+    
+    @IBAction func minusPressed(sender: UIButton) {
+        
+    }
+    
 }

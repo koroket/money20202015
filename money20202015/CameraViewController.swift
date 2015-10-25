@@ -12,6 +12,12 @@ let SLIDE_ANIMATION_DURATION:NSTimeInterval = 0.4
 
 class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     var items:[Item] = []
     
     //Maps itemid to the number of items
@@ -237,6 +243,10 @@ extension CameraViewController : UITableViewDelegate, UITableViewDataSource {
             
     }
     
+    func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return false
+    }
+    
     func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             let cell:ItemTableViewCell = tableView.dequeueReusableCellWithIdentifier(
@@ -244,6 +254,13 @@ extension CameraViewController : UITableViewDelegate, UITableViewDataSource {
                 forIndexPath: indexPath) as! ItemTableViewCell
             let item = items[indexPath.row]
             cell.nameLabel.text = item.name
+            cell.priceLabel.text = item.price
+            if (item.price as NSString).length > 3 {
+                let front = (item.price as NSString).substringToIndex((item.price as NSString).length - 2)
+                let end = (item.price as NSString).substringFromIndex((item.price as NSString).length - 2)
+                cell.priceLabel.text = "$" + front + "." + end
+            }
+            cell.countLabel.text = itemCountHash[item.itemid] as? String ?? "0"
             return cell
     }
 }

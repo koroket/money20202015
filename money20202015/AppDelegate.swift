@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        if setUpCookie() {
 //            var storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            self.window?.rootViewController = "LoginViewController".loadNib() as! LoginViewController
+            self.window?.rootViewController = "LoginViewController".loadNib() as! LoginViewController
 //            self.window?.rootViewController = "CameraViewController".loadNib() as! CameraViewController
-            self.window?.rootViewController = "ChooseUsageViewController".loadNib() as! ChooseUsageViewController
+//            self.window?.rootViewController = "ChooseUsageViewController".loadNib() as! ChooseUsageViewController
  //               self.window?.rootViewController = "CameraViewController".loadNib() as! CameraViewController
 //             self.window?.rootViewController = "LoginViewController".loadNib() as! LoginViewController
         

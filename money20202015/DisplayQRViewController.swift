@@ -10,6 +10,12 @@ import UIKit
 
 class DisplayQRViewController: UIViewController {
 
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     @IBOutlet var qrImageView: UIImageView!
     
     var itemid:String?

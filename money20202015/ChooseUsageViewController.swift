@@ -30,13 +30,12 @@ class ChooseUsageViewController: UIViewController {
 //        } else {
 //            print("failed loading CameraViewController")
 //        }
-        if let nextViewController = "SearchPlacesViewController".loadNib() as? SearchPlacesViewController {
-            nextViewController.isConsumer = true
+        if let nextViewController = "ConsumerHomeViewController".loadNib() as? ConsumerHomeViewController {
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
         } else {
-            print("failed loading SearchPlacesViewController")
+            print("failed loading ConsumerHomeViewController")
         }
     }
     

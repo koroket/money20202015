@@ -10,6 +10,12 @@ import UIKit
 
 class BusinessHomeViewController: UIViewController {
 
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

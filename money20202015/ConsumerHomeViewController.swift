@@ -10,10 +10,19 @@ import UIKit
 
 class ConsumerHomeViewController: UIViewController {
 
+    @IBOutlet var profileImageView: UIImageView!
+    
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String {
+            profileImageView.smartLoad("https://graph.facebook.com/" + fbid + "/picture?type=square")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,12 +31,13 @@ class ConsumerHomeViewController: UIViewController {
     }
     
     @IBAction func scanPressed(sender: UIButton) {
-        if let nextViewController = "CameraViewController".loadNib() as? CameraViewController {
+        if let nextViewController = "SearchPlacesViewController".loadNib() as? SearchPlacesViewController {
+            nextViewController.isConsumer = true
             self.presentViewController(nextViewController, animated: true, completion: { () -> Void in
                 print("done nigah")
             })
         } else {
-            print("failed loading CameraViewController")
+            print("failed loading SearchPlacesViewController")
         }
     }
     

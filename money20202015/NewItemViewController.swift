@@ -8,8 +8,16 @@
 
 import UIKit
 
+var myNumSet:NSCharacterSet = NSCharacterSet(charactersInString: "0123456789").invertedSet
+
 class NewItemViewController: UIViewController {
 
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     @IBOutlet var nameTextField: UITextField!
     
     @IBOutlet var priceTextField: UITextField!
@@ -37,7 +45,8 @@ class NewItemViewController: UIViewController {
         let url = SERVER + "/createItem/" + "businessIdAF";
         let data = NSMutableDictionary();
         data["item"] = self.nameTextField.text ?? "";
-        data["price"] = self.priceTextField.text ?? "";
+        let m:NSArray = (self.priceTextField.text ?? "").componentsSeparatedByCharactersInSet(myNumSet)
+        data["price"] = m.componentsJoinedByString("");
         data["category"] = self.categoryTextField.text ?? "";
         
         Tool.callREST(data, url: url, method: "POST") { (response) -> Void in

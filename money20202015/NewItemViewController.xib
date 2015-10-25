@@ -40,8 +40,11 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <state key="normal" title="Cancel">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backPressed:" destination="fjP-IF-I3A" eventType="touchUpInside" id="dtv-o7-g1w"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
