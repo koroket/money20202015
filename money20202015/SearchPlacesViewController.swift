@@ -11,6 +11,12 @@ import CoreLocation
 
 class SearchPlacesViewController: UIViewController {
     
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     @IBOutlet weak var placesTableView: UITableView!
     var locationManager:CLLocationManager!
     

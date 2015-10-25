@@ -10,10 +10,19 @@ import UIKit
 
 class ConsumerHomeViewController: UIViewController {
 
+    @IBOutlet var profileImageView: UIImageView!
+    
+    @IBAction func backPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let fbid = NSUserDefaults.standardUserDefaults().valueForKey("fbId") as? String {
+            profileImageView.smartLoad("https://graph.facebook.com/" + fbid + "/picture?type=square")
+        }
     }
 
     override func didReceiveMemoryWarning() {
