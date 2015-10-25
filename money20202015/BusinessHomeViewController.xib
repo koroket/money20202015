@@ -41,35 +41,6 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-oc-xJx">
                         <rect key="frame" x="34" y="40" width="532" height="532"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k37-Ga-hsN">
-                                <rect key="frame" x="0.0" y="0.0" width="266" height="266"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZr-Z3-O9i">
-                                        <rect key="frame" x="79" y="77" width="110" height="110"/>
-                                        <animations/>
-                                        <state key="normal" image="Add"/>
-                                        <connections>
-                                            <action selector="addItemPressed:" destination="ykG-P7-qe5" eventType="touchUpInside" id="LXy-Xx-UHF"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGg-27-kck">
-                                        <rect key="frame" x="92" y="195" width="84" height="28"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="width" secondItem="k37-Ga-hsN" secondAttribute="width" multiplier="1:2" id="5pb-ht-4YI"/>
-                                    <constraint firstItem="AGg-27-kck" firstAttribute="top" secondItem="AZr-Z3-O9i" secondAttribute="bottom" id="NcN-5A-kq0"/>
-                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="centerY" secondItem="k37-Ga-hsN" secondAttribute="centerY" id="bES-1R-99T"/>
-                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="height" secondItem="k37-Ga-hsN" secondAttribute="height" multiplier="1:2" id="bSl-z7-U78"/>
-                                    <constraint firstItem="AGg-27-kck" firstAttribute="centerX" secondItem="AZr-Z3-O9i" secondAttribute="centerX" id="iDt-AL-xth"/>
-                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="centerX" secondItem="k37-Ga-hsN" secondAttribute="centerX" id="srf-6U-9Xj"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RME-tm-EWW">
                                 <rect key="frame" x="0.0" y="266" width="266" height="266"/>
                                 <subviews>
@@ -164,6 +135,35 @@
                                     <constraint firstItem="6XD-w5-EAg" firstAttribute="centerX" secondItem="YIs-Co-0OD" secondAttribute="centerX" id="M7t-xt-mo7"/>
                                     <constraint firstItem="6XD-w5-EAg" firstAttribute="top" secondItem="YIs-Co-0OD" secondAttribute="bottom" id="XsW-yb-Ibp"/>
                                     <constraint firstItem="YIs-Co-0OD" firstAttribute="centerY" secondItem="Xj4-HL-P27" secondAttribute="centerY" id="xPt-ka-NMB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k37-Ga-hsN">
+                                <rect key="frame" x="0.0" y="0.0" width="266" height="266"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZr-Z3-O9i">
+                                        <rect key="frame" x="79" y="77" width="110" height="110"/>
+                                        <animations/>
+                                        <state key="normal" image="Add"/>
+                                        <connections>
+                                            <action selector="addItemPressed:" destination="ykG-P7-qe5" eventType="touchUpInside" id="LXy-Xx-UHF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGg-27-kck">
+                                        <rect key="frame" x="92" y="195" width="84" height="28"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="width" secondItem="k37-Ga-hsN" secondAttribute="width" multiplier="1:2" id="5pb-ht-4YI"/>
+                                    <constraint firstItem="AGg-27-kck" firstAttribute="top" secondItem="AZr-Z3-O9i" secondAttribute="bottom" id="NcN-5A-kq0"/>
+                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="centerY" secondItem="k37-Ga-hsN" secondAttribute="centerY" id="bES-1R-99T"/>
+                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="height" secondItem="k37-Ga-hsN" secondAttribute="height" multiplier="1:2" id="bSl-z7-U78"/>
+                                    <constraint firstItem="AGg-27-kck" firstAttribute="centerX" secondItem="AZr-Z3-O9i" secondAttribute="centerX" id="iDt-AL-xth"/>
+                                    <constraint firstItem="AZr-Z3-O9i" firstAttribute="centerX" secondItem="k37-Ga-hsN" secondAttribute="centerX" id="srf-6U-9Xj"/>
                                 </constraints>
                             </view>
                         </subviews>
