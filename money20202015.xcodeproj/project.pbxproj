@@ -32,6 +32,7 @@
 		62FB263C1BDC866500502514 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB263B1BDC866500502514 /* NewItemViewController.swift */; };
 		62FB263E1BDC8C0F00502514 /* ChooseUsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */; };
 		62FB26401BDC8C2E00502514 /* ChooseUsageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */; };
+		62FB26421BDC93AB00502514 /* SerachPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB26411BDC93AB00502514 /* SerachPlacesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		62FB263B1BDC866500502514 /* NewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseUsageViewController.swift; sourceTree = "<group>"; };
 		62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseUsageViewController.xib; sourceTree = "<group>"; };
+		62FB26411BDC93AB00502514 /* SerachPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerachPlacesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,21 +156,11 @@
 				62FB26231BDC534E00502514 /* FBSDKCoreKit.framework */,
 				62FB26211BDC534100502514 /* FBSDKLoginKit.framework */,
 				62FB25DE1BDC44E800502514 /* AppDelegate.swift */,
-				62FB262D1BDC67B500502514 /* Extension.swift */,
-				62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */,
-				62FB25E01BDC44E800502514 /* LoginViewController.swift */,
-				62FB26311BDC769F00502514 /* CameraViewController.swift */,
-				62FB263B1BDC866500502514 /* NewItemViewController.swift */,
-				62FB26371BDC816400502514 /* DisplayQRViewController.swift */,
-				62FB26151BDC47C500502514 /* Bridging_Header.h */,
-				62FB26181BDC48C400502514 /* Tool.swift */,
-				62FB26161BDC485900502514 /* JSONObject.swift */,
-				62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */,
-				62FB262F1BDC6DD900502514 /* LoginViewController.xib */,
-				62FB262B1BDC672800502514 /* OnBoardViewController.xib */,
-				62FB26331BDC7C2100502514 /* CameraViewController.xib */,
-				62FB26391BDC855C00502514 /* NewItemViewController.xib */,
-				62FB26351BDC813500502514 /* DisplayQRViewController.xib */,
+				62FB26431BDC93D600502514 /* Helpers */,
+				62FB26441BDC940800502514 /* SharedViewControllers */,
+				62FB26451BDC941200502514 /* ConsumerViewControllers */,
+				62FB26461BDC942000502514 /* BusinessViewControllers */,
+				62FB26471BDC943000502514 /* XIB */,
 				62FB25E81BDC44E800502514 /* Assets.xcassets */,
 				62FB25EA1BDC44E800502514 /* LaunchScreen.storyboard */,
 				62FB25ED1BDC44E800502514 /* Info.plist */,
@@ -193,6 +185,57 @@
 				62FB26031BDC44E800502514 /* Info.plist */,
 			);
 			path = money20202015UITests;
+			sourceTree = "<group>";
+		};
+		62FB26431BDC93D600502514 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				62FB262D1BDC67B500502514 /* Extension.swift */,
+				62FB26181BDC48C400502514 /* Tool.swift */,
+				62FB26161BDC485900502514 /* JSONObject.swift */,
+				62FB26151BDC47C500502514 /* Bridging_Header.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		62FB26441BDC940800502514 /* SharedViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62FB25E01BDC44E800502514 /* LoginViewController.swift */,
+				62FB263D1BDC8C0F00502514 /* ChooseUsageViewController.swift */,
+			);
+			name = SharedViewControllers;
+			sourceTree = "<group>";
+		};
+		62FB26451BDC941200502514 /* ConsumerViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62FB26411BDC93AB00502514 /* SerachPlacesViewController.swift */,
+				62FB26311BDC769F00502514 /* CameraViewController.swift */,
+			);
+			name = ConsumerViewControllers;
+			sourceTree = "<group>";
+		};
+		62FB26461BDC942000502514 /* BusinessViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62FB263B1BDC866500502514 /* NewItemViewController.swift */,
+				62FB26371BDC816400502514 /* DisplayQRViewController.swift */,
+			);
+			name = BusinessViewControllers;
+			sourceTree = "<group>";
+		};
+		62FB26471BDC943000502514 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				62FB263F1BDC8C2E00502514 /* ChooseUsageViewController.xib */,
+				62FB262F1BDC6DD900502514 /* LoginViewController.xib */,
+				62FB262B1BDC672800502514 /* OnBoardViewController.xib */,
+				62FB26331BDC7C2100502514 /* CameraViewController.xib */,
+				62FB26391BDC855C00502514 /* NewItemViewController.xib */,
+				62FB26351BDC813500502514 /* DisplayQRViewController.xib */,
+			);
+			name = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +381,7 @@
 				62FB263C1BDC866500502514 /* NewItemViewController.swift in Sources */,
 				62FB25E11BDC44E800502514 /* LoginViewController.swift in Sources */,
 				62FB25DF1BDC44E800502514 /* AppDelegate.swift in Sources */,
+				62FB26421BDC93AB00502514 /* SerachPlacesViewController.swift in Sources */,
 				62FB262E1BDC67B500502514 /* Extension.swift in Sources */,
 				62FB26321BDC769F00502514 /* CameraViewController.swift in Sources */,
 				62FB263E1BDC8C0F00502514 /* ChooseUsageViewController.swift in Sources */,
